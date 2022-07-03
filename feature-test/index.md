@@ -322,15 +322,13 @@ children: [
 
 ## Panel list
 
-<PanelListItem number="1">
-  First step
+<PanelListItem number="1" title="First step">
   ```
   npm i
   ```
 </PanelListItem>
 
-<PanelListItem number="2" :last="true">
-  Second step
+<PanelListItem number="2" :last="true"  title="Second step">
   ```
   npm run dev
   ```

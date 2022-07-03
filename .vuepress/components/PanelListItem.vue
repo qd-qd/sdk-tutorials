@@ -2,6 +2,7 @@
     .panel-list-item
         .panel-list-item__number {{this.number !== 'check' ? this.number : ''}}
             img.panel-list-item__number__icon.no-zoom(v-if="this.number == 'check'" src="/check-icon.svg")
+        .panel-list-item__title(v-if="this.title") {{this.title}}
         .panel-list-item__content(ref="content")
             slot
         .panel-list-item__last(v-if="this.last === true")
@@ -9,7 +10,7 @@
 
 <script>
 export default {
-    props: ['number', 'last']
+    props: ['number', 'last', 'title']
 }
 </script>
 
@@ -46,6 +47,12 @@ export default {
                 height 16px
                 margin auto
                 filter var(--img-filter)
+
+        &__title
+            position absolute
+            left 50px
+            top 0
+            font-weight bold
 
         &__content
             margin-left 50px
