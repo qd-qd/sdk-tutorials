@@ -15,9 +15,7 @@ Congratulations for making it this far on your journey into Cosmos! There are va
 
 Searching for your next gig? We're working on an improved jobs board where we'll be aggregating all the open roles in the ecosystem. The board will be ready in early August in time for your graduation from the program. If you're interested in receiving updates, sign up below.
 
-<p>&nbsp;</p>
-
-<MailerLiteForm formId="5711254:j1b9z9" accountId="3880640:u4s6c9l6q6"></MailerLiteForm>
+<MailerLiteForm formId="j1b9z9"></MailerLiteForm>
 
 ## Events
 
