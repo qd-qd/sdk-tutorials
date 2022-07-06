@@ -11,11 +11,15 @@ tag: fast-track
 
 Now it's time to consider some practical applications of blockchain. Some people claim blockchain technology has the potential to change the world for the better – is there any evidence of this already?
 
+<HighlightBox type="learning">
+
 This section will cover:
 
 * Public networks
 * Private or "Managed" networks
 * Real World Use Cases
+
+</HighlightBox>
 
 
 ## Blockchain Categorization

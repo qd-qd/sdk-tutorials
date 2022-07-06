@@ -11,12 +11,16 @@ tag: fast-track
 
 In a sense, the central problem blockchain solves is exactly that: *centrality*, the reliance on a single point of authority, one which simultaneously wields power over many mere users while being a key point of potential systemic weakness. However, there are some more specific issues which blockchain was specifically designed to resolve.
 
+<HighlightBox type="learning">
+
 This section will cover:
 
 * The Double-Spending Problem
 * The Byzantine Generals Problem
 * Information Security on Blockchains
 * Public-Private Key encryption
+
+</HighlightBox>
 
 
 ## The Double-Spending Problem

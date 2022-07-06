@@ -9,12 +9,26 @@ tag: fast-track
 
 ## Introduction
 
-In the previous section, you looked at some basic core concepts about what blockchain *is* – a series of "blocks" of organized data, "chained" together in a fixed order – and what blockchain *does* – provides a system for shared record-keeping across a network with no centralized authority, relying on consensus between the participating nodes to reliably update the ledger. You also looked at the differences between centralized, decentralized, and distributed networks, and the advantages distributed networks can provide.
+In the previous section, you looked at the core basics of what blockchain *is* – a series of "blocks" of organized data, "chained" together in a fixed order – and what blockchain *does* – provides a system for shared record-keeping across a network with no centralized authority, relying on consensus between the participating nodes to reliably update the ledger. You also looked at the differences between centralized, decentralized, and distributed networks, and the advantages distributed networks can provide.
 
 Now it's time to widen the perspective a little and examine the specific implications of using blockchain technology as part of the online world. 
 
+<HighlightBox type="learning">
 
-## Why is Blockchain the future of the internet?
+This section will cover:
+
+* Why Blockchain is the future of the internet
+* Web1 > Web2 > Web3
+* Strengths and Weaknesses of Blockchain
+* Cosmos in 100 words
+* What is staking?
+* What is transaction finality?
+* What is interoperability?
+
+</HighlightBox>
+
+
+## Why Blockchain is the future of the internet
 
 If you go back to the *beginning* of the internet – *before the internet even existed*, in fact – you can find the first conceptual seed of what it is now evolving into because of blockchain. 
 

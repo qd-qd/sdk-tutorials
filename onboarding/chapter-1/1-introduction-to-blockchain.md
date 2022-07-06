@@ -7,9 +7,22 @@ tag: fast-track
 
 # Introduction to Blockchain
 
-## Introduction
-
 This first section is intended to provide you with a basic knowledge of what blockchain is and the benefits it offers, as well as introducing some important general terminology that will help you through the rest of the course.
+
+<HighlightBox type="learning">
+
+This section will cover:
+
+* Blockchain in 100 words
+* What exactly is a block? What exactly is a blockchain?
+* What is a ledger?
+* What is a node?
+* Centralized vs Decentralized vs Distributed Networks
+* What is Consensus?
+
+</HighlightBox>
+
+## Introduction
 
 In the last few years, “blockchain” has become almost a household term. With the likes of “Bitcoin” and “NFTs” dominating news headlines around the world, it’s almost certain that everyone has at least heard about it, even if they’re not really sure what it is. So, before going any further, here is a simple, high-level definition of what blockchain is all about:
 
