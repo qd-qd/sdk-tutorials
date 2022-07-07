@@ -13,7 +13,7 @@ Make sure you have everything you need before proceeding:
 
 * You understand the concepts of [Protobuf](../2-main-concepts/protobuf.md).
 * Go is installed.
-* You have the checkers blockchain codebase with the game FIFO. If not, follow the [previous steps](./game-fifo.md) or check out the [relevant version](https://github.com/cosmos/b9-checkers-academy-draft/tree/game-fifo).
+* You have the checkers blockchain codebase with the game FIFO. If not, follow the [previous steps](./game-fifo.md) or check out the [relevant version](https://github.com/cosmos/b9-checkers-academy-draft/tree/v1-game-fifo).
 
 </HighlightBox>
 
@@ -48,7 +48,7 @@ To have Ignite CLI and Protobuf recompile this file, use:
 $ ignite generate proto-go
 ```
 
-On each update the deadline will always be _now_ plus a fixed duration. In this context, _now_ refers to the block's time. Declare this duration as a new constant, plus how the date is to be represented, i.e. encoded in the saved game as a string:
+On each update the deadline will always be _now_ plus a fixed duration. In this context, _now_ refers to the block's time. You cannot use a non-deterministic `Date.now()`, which would be different on each execution. Declare this duration as a new constant, plus how the date is to be represented, i.e. encoded in the saved game as a string:
 
 ```go [https://github.com/cosmos/b9-checkers-academy-draft/blob/58199af8/x/checkers/types/keys.go#L38-L39]
 const (

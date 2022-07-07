@@ -13,7 +13,7 @@ Make sure you have all you need before proceeding with the exercise:
 
 * You understand the concepts of [accounts](../2-main-concepts/accounts.md), [Protobuf](../2-main-concepts/protobuf.md), and [multistore](../2-main-concepts/multistore-keepers.md).
 * Go is installed.
-* You have the bare blockchain scaffold codebase with a single module named `checkers`. If not, follow the [previous steps](./ignitecli.md) or check out the [relevant version](https://github.com/cosmos/b9-checkers-academy-draft/tree/starport-start).
+* You have the bare blockchain scaffold codebase with a single module named `checkers`. If not, follow the [previous steps](./ignitecli.md) or check out the [relevant version](https://github.com/cosmos/b9-checkers-academy-draft/tree/v1-starport-start).
 
 </HighlightBox>
 
@@ -285,6 +285,23 @@ func DefaultGenesis() *GenesisState {
 ```
 
 You can choose to start with no games or insert a number of games to start with. In either case, you must choose the first ID of the first game, which here is set at `1` by reusing the `DefaultIndex` value.
+
+<HighlightBox type="note">
+
+The code makes heavy use of Go pointers throughout:
+
+* `*StoredGame` is the type of a pointer to a `StoredGame` object.
+* `[]*StoredGame` is the type of an array of such pointer types.
+* `[]*StoredGame{}` is an instance of such an array initialized as empty.
+* `NextGame{ Creator... }` is an instance of `NextGame` that is initialized with the values given.
+* When applied to the left of an instance, `&` is the operator that takes the memory address of the instance and returns a pointer to the relevant type.
+* Therefore `&NextGame{ Creator... }` is a pointer to the new instance, and is of type `*NextGame`.
+* `GenesisState.NextGame` is of type [`*NextGame`](https://github.com/cosmos/b9-checkers-academy-draft/blob/c2490f41/x/checkers/types/genesis.pb.go#L29), so `&NextGame{ Creator... }` is what is needed.
+* The `DefaultGenesis()` function is expected to return a pointer `*GenesisState`, therefore it is necessary to apply the `&` operator on the new instance when returning the value `return &GenesisState{ StoredGameList... }`.
+
+If you want to experiment with Go pointers, have a look [here](https://go.dev/tour/methods/5).
+
+</HighlightBox>
 
 ### Protobuf service interfaces
 

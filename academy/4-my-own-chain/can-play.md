@@ -13,7 +13,7 @@ Make sure you have everything you need before proceeding:
 
 * You understand the concepts of [queries](../2-main-concepts/queries.md) and [Protobuf](../2-main-concepts/protobuf.md).
 * You have Go installed.
-* You have the checkers blockchain codebase up to gas metering. If not, follow the [previous steps](./gas-meter.md) or check out [the relevant version](https://github.com/cosmos/b9-checkers-academy-draft/tree/gas-meter).
+* You have the checkers blockchain codebase up to gas metering. If not, follow the [previous steps](./gas-meter.md) or check out [the relevant version](https://github.com/cosmos/b9-checkers-academy-draft/tree/v1-gas-meter).
 
 </HighlightBox>
 
@@ -362,7 +362,7 @@ Take inspiration from [the other ones](https://github.com/cosmos/b9-checkers-aca
         goCtx := sdk.WrapSDKContext(ctx)
         keeper.SetStoredGame(ctx, types.StoredGame{
             Creator:   alice,
-            Index:     "9999999999",
+            Index:     "1",
             Game:      firstTestCase.board,
             Turn:      firstTestCase.turn,
             Red:       bob,
@@ -374,8 +374,16 @@ Take inspiration from [the other ones](https://github.com/cosmos/b9-checkers-aca
             Winner:    "*",
             Wager:     0,
         })
-        _, err := keeper.CanPlayMove(goCtx, nil)
-        require.Error(t, err, "game by id not found: 9999999999")
+        _, err := keeper.CanPlayMove(goCtx, &types.QueryCanPlayMoveRequest{
+            IdValue: "2",
+            Player:  "b",
+            FromX:   2,
+            FromY:   7,
+            ToX:     4,
+            ToY:     5,
+        })
+        require.NotNil(t, err)
+        require.EqualError(t, err, "game by id not found: 2: game by id not found: %s")
     }
     ```
 
