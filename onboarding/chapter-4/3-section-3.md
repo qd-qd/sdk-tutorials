@@ -1,10 +1,10 @@
 ---
-title: "XXX"
+title: "PROPOSED MODULE: COSMOS USE CASES"
 order: 3
 description: XXX
 tag: fast-track
 ---
 
-#
+# PROPOSED MODULE: COSMOS USE CASES
 
-##
+## CONTENT PENDING DISCUSSIONS WITH IC

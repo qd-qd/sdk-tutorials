@@ -1,30 +1,34 @@
 ---
 parent:
-  title: XXX
-  description: XXX
+  title: Blockchain Advanced
+  description: A deeper-dive into the mechanisms of blockchain
   number: 1
-description: XXX
-title: Chapter Overview - TITLE XXX
-tag: fast-track
+description: A deeper-dive into the mechanisms of blockchain
+title: Blockchain Advanced
+tag: deep-dive
 order: 0
 ---
 
-<div class="tm-overline tm-rf-1 tm-lh-title tm-medium tm-muted">ADD TEXT FROM DESCRIPTION</div>
-<h1 class="mt-4 mb-6">TITLE</h1>
+<div class="tm-overline tm-rf-1 tm-lh-title tm-medium tm-muted">A deeper-dive into the mechanisms of blockchain</div>
+<h1 class="mt-4 mb-6">Blockchain Advanced</h1>
 
-ADD TEXT ABOUT CHAPTER
+In the first two chapters of this course, you took an introductory look at a wide variety of elements relating to blockchain, first with [an overview of the field](LINK TO CH1 HERE), and then by focusing in on [the basic mechanisms that underpin the technology](LINK TO CH2 HERE) and how they have evolved into the platform Cosmos provides.
 
-![IMG LP CHAPTER 1]()
+Chapter 3 is designed to provide a deep dive into technicalities of blockchain, suitable for those who will be working directly alongside colleagues in technical roles (such as coders), but will also be of interest to anyone who would like to know in more detail about the functioning of blockchain systems.
+
 
 ## In this module
 
 <HighlightBox type="learning">
 
-In this chapter, you will:
+In this third chapter, you will learn about:
 
-* LEARNING GOALS
+* Networks and Protocols
+* Consensus Mechanisms
+* Deployment Patterns
+* Smart Contracts
+* Cryptocurrency and Crypto Economics
 
-ONLY IF IT STILL APLIES: At the end of this chapter, you can find some [reflection questions](./reflection.md) and a [self-assessment quiz](./self-assessment.md).
 
 </HighlightBox>
 

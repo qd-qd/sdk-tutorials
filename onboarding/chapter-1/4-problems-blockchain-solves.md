@@ -17,8 +17,7 @@ This section will cover:
 
 * The Double-Spending Problem
 * The Byzantine Generals Problem
-* Information Security on Blockchains
-* Public-Private Key encryption
+* Privacy on Blockchains
 
 </HighlightBox>
 
@@ -73,7 +72,7 @@ Achieving consensus about *the truth* is the critical challenge in a hierarchy-f
 In essence, **blockchain is a Byzantine fault-tolerant networking system**. It allows you to interact with unknown peers in a reliable way, but without granting anyone unwarranted trust or authority; it both generates *and* secures a verifiable historical record by its collective, cooperative nature; and it balances the security of work being done in the public eye while maintaining the individual privacy of its users.
 
 
-## Information Security on Blockchains
+## Privacy on blockchains
 
 At the beginning of this course, a serious problem was identified with implications for any distributed, decentralized network: *If every node on the network holds a copy of the shared ledger, how is user privacy or data confidentiality maintained?*
 
@@ -104,41 +103,29 @@ In this context, "a transaction" must be broken down to its most atomic form. To
 
 With these details in mind, how much of this information *needs* to be made secret for a person to feel that a transaction on a blockchain is sufficiently confidential?
 
-### Secrecy where necessary
+### Privacy where necessary
 
 Cryptocurrency will provide a simple case study. Imagine Alice wants to send one Bitcoin to Bob. You can immediately identify the three necessary elements of the transaction:
 
 * Alice (the **sender**)
 * Bob (the **receiver**)
-* 1x Bitcoin (the **package**)
+* 1 Bitcoin (the **package**)
 
-However, not all these elements absolutely *need* to be secret for user confidentiality to be maintained: if the identities of Alice and Bob are disguised, the transfer of currency could be between any two users of the network. Therefore, Alice and Bob need a method of knowing who each other are so they can make the transaction but without anyone else being able to identify them.
+However, not all these elements absolutely *need* to be secret for user confidentiality to be maintained: if the identities of Alice and Bob are disguised, the transfer of currency could be between any two users of the network. Similar to the numbered accounts of secretive banking systems, users don't have to go by their real names. This means there is already a layer of anonymity between a user's personal life and their presence on the network.
 
-However, the solution – a clever system called **Public-Private Key encryption** – actually goes one step further: it allows Alice and Bob to collaborate on their transaction so that not only their identities but also the detail of their transaction can remain confidential.
+However, Alice and Bob would still need a method of confirming who each other are, so they can make the transaction with confidence that they are interacting with the intended person. The solution to this problem is basically the same as the one people have used in the real world since the invention of writing: **Identity is confirmed by using a signature**.
 
+### Signatures
 
-## Public-Private Key encryption
+When you sign your name on a job contract, or sign for a parcel delivery at your door, in effect you are using a unique and verifiable symbol to represent your identity. You always use the same signature, even in different contexts, and it is used as a "proof" that the person holding the pen is who they claim to be. And objects can also be signed as a form of proof, such as when an artist signs their name to a painting, confirming its authenticity.
 
-Instead of using their true identities, each user of a distributed network can chose more or less anything as their identity – similar to the anonymous numbered accounts of secretive banking systems, users don't have to go by their real names. This means there is already a layer of anonymity between a user's personal life and their presence on the network.
+Users of distributed networks use a clever methodology called **Public-private key encryption** to achieve these same kind of proofs – but this kind of signature is impossible to forge! 
 
-In addition, each user has two linked **encryption keys**: one is **private**, which they never share with anyone else, and the other is **public**, which they can freely share with anyone. Any message that is encrypted with the private key can only be read if it is decrypted with the public key. 
+In simplified terms, everyone on the network has a two linked encryption keys: one that can be used by anyone else, and one that they keep secret. To prove that a transaction is legitimately yours, you "sign" it using your **private** key. No one else can do this, but *everyone* else can use your **public** key to confirm your other key made the signature.
 
-<HighlightBox type="tip">
+Public-private key encryption can achieve impressive things. For example, Alice and Bob could use a combination of all four of their public and private keys to establish a secure channel of communication, inaccessible to anyone except themselves – so the detail of their interaction through that channel can be absolutely trusted. This, along with other practical aspects of how blockchain privacy works, will be explored further later in this course.
 
-This system can be used in a number of ways, for example to prove that when you send a message that it was genuinely written by you: 
-
-* You write a message, and encrypt it with your *private* key.
-* You send the message to the recipient.
-* The recipient decrypts it with your *public* key.
-* Therefore, only you could have written the message.
-
-</HighlightBox>
-
-This system is the foundation for confidentiality in blockchain. In an extremely simplified sense, Alice and Bob are able to use a combination of *both* their public and private keys to perform a transaction that will effectively be unreadable to anyone except themselves – so the detail of their transaction becomes confidential too.
-
-Provided that the transaction itself is valid (that Alice has the funds to send, and Bob receives them) it will be included in a new block and added to the chain of previous transactions. There it will be visible to anyone holding a copy of the ledger, but none of them will be able to access the details of it.
-
-This, along with other practical aspects of how blockchain actually works, will be explored further later in this course.
+Signatures are used this way to "identify" participants on the blockchain while preserving their privacy on a general level through user anonymity. While the detail of a transaction could be viewed by any node holding the shared ledger, nothing automatically connects a particular account with a specific person in the real world; nor are users limited to a single presence on the network, so their transactions could be intentionally spread across multiple accounts, further obscuring their business from public knowledge.
 
 
 ## Further learning
