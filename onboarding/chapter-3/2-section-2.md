@@ -142,7 +142,7 @@ The story of The DAO provokes some questions to consider when assessing public b
 
 ## Immutability 
 
-**Immutability** refers to the *unchangeability of objects over time, or the inability to perform changes*. In the case of blockchains, once data has been included in the blockchain editing or deleting it is nearly impossible. The use of hashes ensures a high degree of immutability and easy tampering detection. If data is edited or removed, the block’s hash and chain would fail, and changes could only be introduced using the consensus mechanism of the network.
+**Immutability** refers to the *unchangeability of objects over time, or the inability to perform changes*. In the case of blockchains, once data has been included in the blockchain editing or deleting it is nearly impossible. The use of hashes ensures a high degree of immutability and easy tampering detection. If data is edited or removed, the block's hash and chain would fail, and changes could only be introduced using the consensus mechanism of the network.
 
 <HighlightBox type="info">
 

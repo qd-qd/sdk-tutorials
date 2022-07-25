@@ -166,7 +166,7 @@ The two P2P services mentioned earlier, Napster and BitTorrent, include aspects 
 
 **BitTorrent** is another P2P file-sharing service that is also used to share music. Like Napster, BitTorrent uses a **data storage among peers**. However, it has a **decentralized network structure** since there is no central server. BitTorrent also faced legal complaints due to allegedly facilitating copyright infringement through illegal downloading. But this time, the case was not so clear as with Napster. Why?
 
-Because of BitTorrent’s decentralized coordination of peers, there was no central server that could be turned off to shut down the network.
+Because of BitTorrent's decentralized coordination of peers, there was no central server that could be turned off to shut down the network.
 
 These two examples show how **network design and structure** choices can have far-reaching impacts. Knowing how P2P networks work is essential in understanding blockchain technology. Just think about the similarities between P2P network architecture and the network structure of blockchain applications.
 

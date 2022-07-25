@@ -7,7 +7,7 @@ tag: fast-track
 
 # Introduction to Blockchain Technology
 
-There are many different ways to understand blockchain technology and grasp all that the Cosmos ecosystem has to offer. To give you a thorough understanding and a complete view, you cannot restrict yourself to one single definition and understanding. Instead, you will be presented with a vast spectrum of conceptualizations throughout the first chapter.
+There are many different ways to understand blockchain technology and grasp all that the Cosmos Ecosystem has to offer. To give you a thorough understanding and a complete view, you cannot restrict yourself to one single definition and understanding. Instead, you will be presented with a vast spectrum of conceptualizations throughout the first chapter.
 
 <HighlightBox type="learning">
 

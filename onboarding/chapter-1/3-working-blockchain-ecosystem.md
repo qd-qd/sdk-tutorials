@@ -111,7 +111,7 @@ Whether a person is employed by a conventional company, is a freelancer or membe
 * There is lots of innovation – blockchain technology enables teams to build projects that have never been done before.
 * There are an extremely broad range of use cases, from the purely financial to environmental activism projects.
 * There are often strong ideological factors at play – projects are positioned as being "disruptive" to the status quo, and groups can be prone to division over contentious issues.
-* Lots of projects fail – it’s easy for anyone to get involved, which can result in inexperienced teams working with a complex, still emerging technology.
+* Lots of projects fail – it's easy for anyone to get involved, which can result in inexperienced teams working with a complex, still emerging technology.
 * The environment is both fast-paced and potentially chaotic – legislation changes often, can be inconsistent or even non-existent in different regions, and there is a lot of market volatility.
 
 Some additional factors are worth looking into in a little more detail.
