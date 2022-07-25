@@ -26,7 +26,7 @@ In this final chapter, you will learn about:
 * Inter-Blockchain Communication
 * Onboarding to Cosmos.Network
 * Cosmos-based Use Cases (highly pending!)
-* Engaging with the Cosmos ecosystem
+* Engaging with the Cosmos Ecosystem
 
 </HighlightBox>
 

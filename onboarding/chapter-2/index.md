@@ -29,7 +29,7 @@ In this chapter, you will learn about:
 * Proof of Work
 * Updating the Blockchain
 * Privacy and Confidentiality
-* Engaging with the Cosmos ecosystem
+* Engaging with the Cosmos Ecosystem
 
 
 At the end of the chapter you will find a [Resource Bank](./6-resource-bank.md) which provides a concise run-down of exactly how Cosmos implements the various features of blockchain that have been discussed, and how it can be differentiated from other Web3 service providers. There is also another [self-assessment quiz](./7-self-assessment.md) so you can check your understanding of the chapter and identify subjects for discussion during your weekly support call with a blockchain expert.

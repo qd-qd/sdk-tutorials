@@ -135,7 +135,7 @@ Existing parts of business operations could be substituted with blockchain-based
 
 Since all currencies have to fulfill three functions – *to be a store of value, a unit of account, and a method of transfer* – it can legitimately be asked: **Are cryptocurrencies a better currency compared to fiat money?**
 
-Cryptocurrencies have been vastly publicly discussed and evaluated since Bitcoin’s introduction, and policies to handle these new types of currencies has been different from country to country. The role cryptocurrencies will play in future economic activities and every-day life is difficult to envision, as the spectrum of opinions goes from cryptocurrency integration supporters to complete dismissal advocates. 
+Cryptocurrencies have been vastly publicly discussed and evaluated since Bitcoin's introduction, and policies to handle these new types of currencies has been different from country to country. The role cryptocurrencies will play in future economic activities and every-day life is difficult to envision, as the spectrum of opinions goes from cryptocurrency integration supporters to complete dismissal advocates. 
 
 Fiat money is a good unit of account. However, at least when compared to digital money, cryptocurrencies are even better, as the ledger on which their transfers are recorded on is immutable. They are also more fitting as a method of transfer: they can be transferred in almost real-time, while also having low transaction and storage costs. 
 

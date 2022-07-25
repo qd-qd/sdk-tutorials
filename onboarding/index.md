@@ -1,7 +1,7 @@
 ---
 parent:
   title: Onboarding for non-technical hires
-  description: From blockchain basics to the Cosmos ecosystem
+  description: From blockchain basics to the Cosmos Ecosystem
   number: 1
 description: What is blockchain? What is Cosmos?
 title: Chapter Overview - Blockchain, Cosmos, and its Ecosystem
@@ -9,7 +9,7 @@ tag: fast-track
 order: 0
 ---
 
-<div class="tm-overline tm-rf-1 tm-lh-title tm-medium tm-muted">From blockchain basics to the Cosmos ecosystem</div>
+<div class="tm-overline tm-rf-1 tm-lh-title tm-medium tm-muted">From blockchain basics to the Cosmos Ecosystem</div>
 <h1 class="mt-4 mb-6">Onboarding for non-technical hires</h1>
 
 Congratulations on your new role, and welcome to the Onboarding course! Over the next few weeks, you'll learn all you need to know about Blockchain and Cosmos.

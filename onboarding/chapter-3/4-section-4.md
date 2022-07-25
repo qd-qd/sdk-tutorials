@@ -36,7 +36,7 @@ Essentially, smart contracts are automated agreements between contract creators 
 
 Virtual-machine blockchains like Ethereum addressed the demand for more programmability because, at the time, the options available for building decentralized applications (dApps) were limited. Before Ethereum introduced smart contracts, most developers would build on top of the complex and limited Bitcoin scripting language or fork the Bitcoin codebase, which was hard to work with and customize. The Ethereum Virtual Machine (EVM) brought the possibility of interpreting Turing-complete programs, smart contracts, which were suited for use cases like one-time events such as initial coin offerings (ICOs).
 
-Smart contracts are a main application area in blockchain technology. Understanding what a smart contract is and how it can be deployed (as well as knowing what important aspects to keep in mind when developing and deploying a smart contract) is key to understanding blockchain technology’s possible areas of application and current developments in the field.
+Smart contracts are a main application area in blockchain technology. Understanding what a smart contract is and how it can be deployed (as well as knowing what important aspects to keep in mind when developing and deploying a smart contract) is key to understanding blockchain technology's possible areas of application and current developments in the field.
 
 
 ## Smart contract history
@@ -53,7 +53,7 @@ Smart contracts in blockchain serve that same purpose, but are much more versati
 
 Szabo envisioned a world where contracts could be embedded in all kinds of property with value and be controlled digitally. The main argument is that software could minimize human involvement, therefore lowering costs and creating a more efficient relationships by automating contract performance, monitoring, and enforcement. This is where the "smart" comes in: these type of contracts are "self-enforcing".
 
-Since Szabo’s article, we use the term "smart contract" to describe *a transaction protocol executing the terms of a contract as understood in common law*. It can be understood as a legally binding contract in digital form.
+Since Szabo's article, we use the term "smart contract" to describe *a transaction protocol executing the terms of a contract as understood in common law*. It can be understood as a legally binding contract in digital form.
 
 In 1998, Szabo proposed a digital currency called Bit Gold. While the asset was never actually launched, this Bitcoin predecessor argued for using smart contracts to conduct trustless transactions online.
 
