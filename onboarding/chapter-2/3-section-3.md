@@ -109,4 +109,4 @@ These methodologies may not be immune from manipulation, since they rely on elev
 
 ## Next Up
 
-The [next section](ADD LINK HERE) will address two key concerns that may seem highly significant in the context of a shared ledger: privacy and knowledge.
+The [next section](ADD LINK HERE) will address two key concerns that may seem highly significant in the context of a shared ledger: privacy and confidentiality.
