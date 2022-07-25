@@ -1,16 +1,16 @@
 ---
 parent:
   title: Cosmos Advanced
-  description: XXX
+  description: A deeper-dive into the utility of Cosmos
   number: 1
-description: XXX
+description: A deeper-dive into the utility of Cosmos
 title: Cosmos Advanced
 tag: deep-dive
 order: 0
 ---
 
-<div class="tm-overline tm-rf-1 tm-lh-title tm-medium tm-muted">ADD TEXT FROM DESCRIPTION</div>
-<h1 class="mt-4 mb-6">TITLE</h1>
+<div class="tm-overline tm-rf-1 tm-lh-title tm-medium tm-muted">A deeper-dive into the utility of Cosmos</div>
+<h1 class="mt-4 mb-6">Cosmos Advanced</h1>
 
 Chapter 3 delved into some core features of blockchains. In the final chapter of this course, you are provided with a similar deep dive with a specific focus on how Cosmos builds on the well-established nature of this technology to deliver "an internet of blockchains".
 

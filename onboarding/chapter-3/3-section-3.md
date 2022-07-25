@@ -244,5 +244,5 @@ As information is shared and transactions are signed, it is easier to attribute 
 
 ## Next up
 
-XXXXXXXXXX
+In the [next section](ADD LINK HERE) you will build on the knowledge from [Chapter 1](ADD LINK HERE) with a more detailed exploration of Smart Contracts.
 

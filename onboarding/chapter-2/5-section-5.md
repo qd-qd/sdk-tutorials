@@ -134,4 +134,8 @@ It becomes easier for users to navigate between different blockchains and applic
 
 ## Next up
 
-XXXXXXX
+This concludes Chapter 2 of the Onboarding Course! It has looked in a general way at the mechanisms of how blockchain works, as well as introducing the core features of Cosmos. 
+
+Chapter 3 takes you on a deep-dive into more technical aspects of blockchain, which is then expanded in Chapter 4 with a closer technical look at Cosmos and some use cases of projects that take advantage of the Cosmos Ecosystem.
+
+Before you continue to Chapter 3, it is recommended to take a look at [the Chapter 2 Resource Bank](ADD LINK HERE). Then you can take a short [self-assessment test](ADD LINK HERE) to see how comfortable you are with the information you've received so far.

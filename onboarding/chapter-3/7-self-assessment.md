@@ -1,8 +1,8 @@
 ---
 title: "Self-Assessment Quiz"
-order: 7
+order: 8
 description: XXX
-tag: fast-track
+tag: deep-dive
 ---
 
 # Self-Assessment Quiz - TITLE OF CHAPTER XXX
