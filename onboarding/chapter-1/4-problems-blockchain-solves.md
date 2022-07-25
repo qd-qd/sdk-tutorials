@@ -1,13 +1,11 @@
 ---
 title: "What Problems Does Blockchain Solve?"
 order: 5
-description: Double-Spending, Byzantine Faults, and Data Security
+description: Double-Spending, Byzantine Faults, and data security
 tag: fast-track
 ---
 
 # What problems does Blockchain solve?
-
-## Introduction
 
 In a sense, the central problem blockchain solves is exactly that: *centrality*, the reliance on a single point of authority, one which simultaneously wields power over many mere users while being a key point of potential systemic weakness. However, there are some more specific issues which blockchain was specifically designed to resolve.
 
@@ -21,8 +19,7 @@ This section will cover:
 
 </HighlightBox>
 
-
-## The Double-Spending Problem
+## The double-spending problem
 
 The importance that is placed on physical artifacts may be arbitrary, but they have actuality – the value of gold may change, but a ring on your finger is unique and tangible: no one else has *that* piece of gold. Now compare this to the idea of *digital* artifacts, and the ease with which they can be copied: an image of that ring can be *duplicated infinitely*, and *identically*. This presents obvious problems if digital artifacts are intended to represent assets with value. 
 
@@ -71,8 +68,7 @@ Achieving consensus about *the truth* is the critical challenge in a hierarchy-f
 
 In essence, **blockchain is a Byzantine fault-tolerant networking system**. It allows you to interact with unknown peers in a reliable way, but without granting anyone unwarranted trust or authority; it both generates *and* secures a verifiable historical record by its collective, cooperative nature; and it balances the security of work being done in the public eye while maintaining the individual privacy of its users.
 
-
-## Privacy on blockchains
+## Privacy in blockchains
 
 At the beginning of this course, a serious problem was identified with implications for any distributed, decentralized network: *If every node on the network holds a copy of the shared ledger, how is user privacy or data confidentiality maintained?*
 
