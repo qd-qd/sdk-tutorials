@@ -1,13 +1,13 @@
 ---
 title: "Network and Protocols"
 order: 2
-description: 
+description: Exploring the communication fundamentals of blockchain technology
 tag: deep-dive
 ---
 
 # Networks and Protocols
 
-xxxxxINTRO-PARAxxxxxx
+How different computer systems manage to communicate with each other is at the heart of not only blockchain but any computer network.
 
 <HighlightBox type="learning">
 
@@ -203,4 +203,4 @@ Currency transfers and smart contract implementation is done by adding transacti
 
 ## Next up
 
-xxxxxxxxxxxxxxxxx
+In the [next section](ADD LINK HERE) you will build on the knowledge from [Chapter 2](ADD LINK HERE) and look at consensus mechanisms in greater detail.

@@ -141,4 +141,4 @@ With this information, the requestor can easily generate their own hash of your 
 
 ## Next up
 
-XXXXX
+The [next section](ADD LINK HERE) will build on the introduction to Cosmos from [Chapter 1](ADD LINK HERE) with a closer exploration of various features of Cosmos.

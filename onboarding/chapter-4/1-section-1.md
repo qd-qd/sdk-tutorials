@@ -157,4 +157,4 @@ For a deeper dive on consensus and Tendermint visit:
 
 ## Next up
 
-Xxxxxx
+The [next section](ADD LINK HERE) will introduce you to a variety of tools which developers work with in the Cosmos Ecosystem.

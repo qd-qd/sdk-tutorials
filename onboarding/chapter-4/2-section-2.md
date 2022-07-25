@@ -1,6 +1,6 @@
 ---
 title: "Inter-Blockchain Communication"
-order: 3
+order: 4
 description: Introducing the IBC protocol
 tag: deep-dive
 ---
@@ -51,12 +51,6 @@ This is made possible by specifying a set of data structures, abstractions, and 
 
 IBC can be used to build a wide range of cross-chain applications, which include token transfers, atomic swaps, multi-chain smart contracts with or without mutually comprehensible virtual machines, and data and code sharding of various kinds.
 
-### Atlas: Cosmos SDK module registry and node explorer
-
-[Atlas](https://atlas.cosmos.network/) implements a registry for modules. Developers can publish, update, and download Cosmos SDK modules with Atlas. It is a helpful tool for those who wish to get an overview of existing modules when developing their applications.
-
-Atlas also offers a [node explorer](https://atlas.cosmos.network/nodes) that lets you crawl through the nodes of a Tendermint-based network to discover its topology and the nodes' metadata.
-
 
 ## Hubs, Zones, and the Cosmos Hub
 
@@ -77,8 +71,8 @@ The **[Cosmos Hub](https://hub.cosmos.network/main/hub-overview/overview.html)**
 
 The IBC connection is not limited to Tendermint-based chains. Two types of non-Tendermint chains are supported:
 
-* **Fast-finality chains.** Any fast-finality consensus algorithms can establish a connection with Cosmos by adapting IBC to work with the non-Tendermint consensus mechanism.
-* **Probabilistic-finality chains.** For non-Tendermint blockchains that do not have fast-finality, like Proof-of-Work (PoW), a simple adaptation of IBC is not sufficient. A special kind of proxy-chain called a **peg-zone** helps establish interoperability in these cases.
+* **Fast-finality chains**: any fast-finality consensus algorithms can establish a connection with Cosmos by adapting IBC to work with the non-Tendermint consensus mechanism.
+* **Probabilistic-finality chains**: for non-Tendermint blockchains that do not have fast-finality, like Proof-of-Work (PoW), a simple adaptation of IBC is not sufficient. A special kind of proxy-chain called a **peg-zone** helps establish interoperability in these cases.
 
 ### Peg-zones
 
@@ -104,15 +98,15 @@ Tokens are locked on the Ethereum side by sending them to the `Gravity.sol` smar
 
 When a quorum of validators agrees that tokens have been locked on Ethereum, including the requisite confirmation blocks, a relayer is selected to send an instruction to the Cosmos Gravity module, which issues new tokens. This is non-dilutive: it does not increase the circulating support because an equal number of tokens is locked on the Ethereum side.
 
-To transfer tokens from the Cosmos Hub to the Ethereum blockchain, tokens on the Cosmos network are destroyed and an equal number is released from the `Gravity.sol` smart contract (where they were previously deposited).
+To transfer tokens from the Cosmos Hub to the Ethereum blockchain, tokens on the Cosmos network are destroyed and an equal number are released from the `Gravity.sol` smart contract (where they were previously deposited).
 
 ### Key design components: trust in integrity
 
- If a Cosmos chain is trustworthy, you can trust the Gravity Bridge operated by it as long as it performs within certain parameters. 
+If a Cosmos chain is trustworthy, you can trust the Gravity Bridge operated by it as long as it performs within certain parameters. 
 
 Bridges to Cosmos chains derive their trustworthiness from the degree of trust associated with the Cosmos chain to which they bridge. Peg-zone validators must maintain a trusted Ethereum node. This removes all trust and game theory issues that usually arise when involving independent relayers, dramatically simplifying the design.
 
-The signing of fraudulent validator set updates and transaction batches meant for the Ethereum smart contract is punished on the Cosmos chain by **slashing** – this refers to a financial penalty, specifically the removal of staked value from the validator
+The signing of fraudulent validator set updates and transaction batches meant for the Ethereum smart contract is punished on the Cosmos chain by **slashing** – this refers to a financial penalty, specifically the removal of staked value from the validator.
 
 Verifying the votes of the validator set is the most expensive on-chain operation Gravity has to perform. Existing bridges incur more than double the gas costs for signature sets as small as eight signers.
 
@@ -224,4 +218,4 @@ When the acknowledgment is received successfully on the original sender chain, t
 
 ## Next up
 
-XXXXXXX
+In the [next section](ADD LINK HERE), you will move away from the technical features of Cosmos to look at several hypothetical use cases which highlight the expanded potential for blockchains platformed on the Cosmos ecosystem.

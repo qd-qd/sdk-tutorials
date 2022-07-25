@@ -150,6 +150,13 @@ With Starport, developers can:
 
 When you scaffold with Starport, things like key management, creating validators, and transferring tokens can be done through the CLI.
 
+### Atlas: Cosmos SDK module registry and node explorer
+
+[Atlas](https://atlas.cosmos.network/) implements a registry for modules. Developers can publish, update, and download Cosmos SDK modules with Atlas. It is a helpful tool for those who wish to get an overview of existing modules when developing their applications.
+
+Atlas also offers a [node explorer](https://atlas.cosmos.network/nodes) that lets you crawl through the nodes of a Tendermint-based network to discover its topology and the nodes' metadata.
+
+
 
 ## Further learning
 

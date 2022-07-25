@@ -1,13 +1,11 @@
 ---
 title: "Cryptocurrency and Crypto Economics"
 order: 6
-description: xxxxxxxxx
+description: Exploring the value of cryptocurrencies
 tag: deep-dive
 ---
 
 # Cryptocurrency and Crypto Economics
-
-Since the inception of Bitcoin in 2008, the cryptocurrency space has grown at a very rapid pace. Less than fifteen years later, the estimated number of existing cryptocurrencies is between 10,000 and 20,000, each with their own unique quirks and value propositions. The magnitude with which this crypto-economy has evolved makes it almost impossible to keep up. In addition, with a large number of tokens worth millions of USD being traded daily, it is inevitable that many people question the security and incentives of each of these coins.
 
 In this section, you will take a look at some fundamental concepts that will help in better understanding cryptocurrencies, their advantages and disadvantages, the concepts and terms surrounding them, and the economic phenomenon that come with them.
 
@@ -22,6 +20,8 @@ This section will cover:
 * Barriers to Cryptocurrency Adoption
 
 </HighlightBox>
+
+Since the inception of Bitcoin in 2008, the cryptocurrency space has grown at a very rapid pace. Less than fifteen years later, the estimated number of existing cryptocurrencies is between 10,000 and 20,000, each with their own unique quirks and value propositions. The magnitude with which this crypto-economy has evolved makes it almost impossible to keep up. In addition, with a large number of tokens worth millions of USD being traded daily, it is inevitable that many people question the security and incentives of each of these coins.
 
 
 ## Cryptocurrency Fundamentals
@@ -241,4 +241,6 @@ In conclusion, there are a number of barriers to cryptocurrency becoming accepte
 
 ## Next up
 
-XXXXXXXXXX
+This concludes Chapter 3 of the Onboarding Course! It has provided a closer look at the specifics of blockchain technology, smart contracts, and the significance of crypto on economics. The next chapter will build on this extension of knowledge by focusing on the features of Cosmos in similar detail.
+
+Before you continue to Chapter 4, it is recommended to take a look at [the Chapter 3 Resource Bank](ADD LINK HERE). Then you can take a short [self-assessment test](ADD LINK HERE) to see how comfortable you are with the information you've received so far.

@@ -225,4 +225,4 @@ To summarize, lottery-based algorithms have good speed and scalability but are s
 
 ## Next up
 
-XXXXXXX
+In the [next section](ADD LINK HERE) you will take a closer look at decentralization to see how it impacts deployment mechanisms in blockchain.

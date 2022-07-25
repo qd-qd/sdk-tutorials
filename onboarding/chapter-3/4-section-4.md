@@ -1,11 +1,11 @@
 ---
-title: "Blockchain Technology in More Detail - Smart Contracts"
+title: "Smart Contracts"
 order: 5
-description: xxxxxxxxxxxx
+description: Exploring a new version of a familiar concept in more detail 
 tag: deep-dive
 ---
 
-# Blockchain Technology in More Detail - Smart Contracts
+# Smart Contracts
 
 Back in Chapter 1 you looked at the basics of **Smart Contracts** in the context of [working in the blockchain era](ADD LINK HERE). Now it is time to dive deeper into their nature.
 
@@ -16,7 +16,7 @@ This section will cover:
 * What is a smart contract?
 * Smart contract history
 * Theoretical and Practical understanding
-* Smart contracts in blockchain context
+* Smart contracts in the blockchain context
 * Pros and cons of smart contracts
 
 </HighlightBox>
@@ -69,7 +69,7 @@ When looking at the concept of smart contracts in the **Ethereum protocol**, the
 Smart contract advocates expect that by automating contracting, human error is eliminated and lower error rates can be expected. Intermediaries are expected to pay a secondary role in the future; it is often argued that they would only come into play when addressing performance evaluation and in dispute resolution. For now, smart contracts are mainly used in making fund transfers possible through the blockchain, but they could be used for any processes in which a reliable record is necessary.
 
 
-## Smart contracts in blockchain context
+## Smart contracts in the blockchain context
 
 A **smart contract** represents *a computer protocol intended to provide a self-executing, self-enforcing, and self-verifying contract.* As such, smart contracts allow developers to write custom logic on blockchains.
 
@@ -173,4 +173,4 @@ The scalability issue is one of the main pressure points Cosmos envisioned to ad
 
 ## Next up
 
-xxxxxxxxxxxxxxxxxxx
+In the [final section](ADD LINK HERE) of this chapter you dive deeper into cryptocurrency and crypto economics.

@@ -1,8 +1,8 @@
 ---
 title: "Resource Bank"
-order: 6
+order: 7
 description: XXX
-tag: fast-track
+tag: deep-dive
 ---
 
 # Resource Bank
