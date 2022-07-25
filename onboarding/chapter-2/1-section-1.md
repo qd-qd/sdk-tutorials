@@ -9,7 +9,7 @@ tag: fast-track
 
 You have already looked at what blockchain is – *a distributed ledger* – so now it is time to dive into how blockchain does things differently, adapting a basic concept for use in a complex world.
 
-<HighlightBox type="Learning">
+<HighlightBox type="learning">
 
  This section will cover: 
 

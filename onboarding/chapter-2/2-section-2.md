@@ -9,7 +9,7 @@ tag: fast-track
 
 The [previous section](ADD LINK HERE) looked a little deeper into the practicalities of how a reliable, distributed, append-only ledger can be implemented through the use of hashing. Now it is time to look at the methods used to make sure the information you receive is something you really can be sure about.
 
-<HighlightBox type="Learning">
+<HighlightBox type="learning">
 
 This section will introduce:
 

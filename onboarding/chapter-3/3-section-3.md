@@ -9,7 +9,7 @@ tag: deep-dive
 
 Blockchain was developed as a **decentralized technology** that allows the operation of an infrastructure without hierarchy or authority. A closer look at decentralization helps understand why it is a main criterion to distinguish deployment patterns.
 
-<HighlightBox type="Learning">
+<HighlightBox type="learning">
 
 This section will cover:
 

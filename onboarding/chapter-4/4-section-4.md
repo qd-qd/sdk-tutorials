@@ -11,7 +11,7 @@ In this course you have looked at the features of blockchain in general and of C
 
 Now it's time to bring that same focus more closely onto what Cosmos can allow developers to achieve: creating applications which previous blockchain platforms would have proved too limiting for them to truly flourish.
 
-<HighlightBox type="Learning">
+<HighlightBox type="learning">
 
 This section will cover:
 

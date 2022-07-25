@@ -9,7 +9,7 @@ tag: fast-track
 
 For a long time blockchain application developers were faced with a painful trade-off. General-purpose chains are application-inclusive but are limited to simplistic use cases, while application-specific chains offer greater complexity but narrow the range of utility. This raised the question, *is it possible to build a platform for *all* use cases that does away with the limitations of general-purpose chains?* Thanks to Cosmos, the answer is "Yes".
 
-<HighlightBox type="Learning">
+<HighlightBox type="learning">
 
 This section will cover:
 

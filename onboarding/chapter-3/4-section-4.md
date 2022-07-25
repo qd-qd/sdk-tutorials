@@ -9,7 +9,7 @@ tag: deep-dive
 
 Back in Chapter 1 you looked at the basics of **Smart Contracts** in the context of [working in the blockchain era](ADD LINK HERE). Now it is time to dive deeper into their nature.
 
-<HighlightBox type="Learning"> 
+<HighlightBox type="learning"> 
 
 This section will cover:
 

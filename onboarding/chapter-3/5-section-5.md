@@ -11,7 +11,7 @@ Since the inception of Bitcoin in 2008, the cryptocurrency space has grown at a 
 
 In this section, you will take a look at some fundamental concepts that will help in better understanding cryptocurrencies, their advantages and disadvantages, the concepts and terms surrounding them, and the economic phenomenon that come with them.
 
-<HighlightBox type="Learning">
+<HighlightBox type="learning">
 
 This section will cover:
 

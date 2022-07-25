@@ -9,7 +9,7 @@ tag: deep-dive
 
 A foundational principle of Cosmos is that the development of blockchain solutions become as convenient and accessible as possible. To this end, a variety of tools is available to developers, first and foremost the Cosmos SDK.
 
-<HighlightBox type="Learning"> 
+<HighlightBox type="learning"> 
 
 This section will cover:
 

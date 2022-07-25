@@ -9,7 +9,7 @@ tag: deep-dive
 
 You already have some understanding of Cosmos in detail. Now it is time to look at the underlying technology: Tendermint.
 
-<HighlightBox type="Learning">
+<HighlightBox type="learning">
 
 This section will cover:
 

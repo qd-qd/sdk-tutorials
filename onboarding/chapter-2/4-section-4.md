@@ -9,7 +9,7 @@ tag: fast-track
 
 In an environment where anonymity is typical, access is public, and transactions can carry financial and informational value, desires such as personal privacy and data confidentiality come into conflict with the need for trust in who you are interacting with, and confidence in the validity of any information that is shared. This may seem like an intractable problem, yet there are strategies available which provide elegant and effective solutions.
 
-<HighlightBox type="Learning">
+<HighlightBox type="learning">
 
 This section will cover:
 
