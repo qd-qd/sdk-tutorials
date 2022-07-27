@@ -23,13 +23,13 @@ This section will cover:
 
 ## Measuring decentralization
 
-In [Chapter 1](ADD LINK HERE) you looked at the differences between centralized, decentralized, and distributed networks, and the claim was made that a given network could incorporate elements of all three categories. If this is the case, how can the extent of decentralization be measured?
+In [Chapter 1](ADD LINK HERE), you looked at the differences between centralized, decentralized, and distributed networks, and the claim was made that a given network could incorporate elements of all three categories. If this is the case, how can the extent of decentralization be measured?
 
 <ExpansionPanel title="Measuring decentralization – the minimum Nakamoto coefficient">
 
 The _**Gini coefficient**_ and _**Lorenz curve**_ are often proposed as means to quantitatively measure decentralization. Another useful tool is the _**minimum Nakamoto coefficient**_, as proposed by Balaji S. Srinivasan and Leland Lee, who argue that quantifying decentralization is not only important for purposes of measurement but also of system optimization.
 
-### The minimum Nakamoto coefficient
+**The minimum Nakamoto coefficient**
 
 The _**minimum Nakamoto coefficient**_ quantifies the number of entities that must be compromised in order to compromise the system as a whole. The higher the coefficient, the higher the number of entities required to compromise the system.
 
@@ -44,9 +44,9 @@ To better illustrate the concept of systems and subsystems, **Bitcoin** is a fit
 * Nodes (by country)
 * Ownership (by addresses)
 
-From this perspective, it is only through the decentralization of these subsystems that the larger Bitcoin network can be considered decentralized at all, and the extent to which they are decentralized should therefore be recognized and understood.
+From this perspective, it is only through the decentralization of these subsystems that the larger Bitcoin network can be considered decentralized. The extent to which subsystems are decentralized should therefore be recognized and understood.
 
-<HighlightBox type="Note">
+<HighlightBox type="note">
 
 Subsystems can differ from the ones mentioned above, and can be chosen freely as long as they fulfill the criterion of being **essential to the decentralization of the whole system**.
 
@@ -54,29 +54,31 @@ Subsystems can differ from the ones mentioned above, and can be chosen freely as
 
 Now, that you revised decentralization conceptually, it is time to consider deployment patterns in blockchain technology.
 
+</ExpansionPanel>
+
 ## Deployment patterns
 
 There are several mechanisms essential to ensure the working of a blockchain, like the consensus algorithms used to determine a well-ordered state of transactions and ensure network security. However, blockchains cannot be only differentiated by the consensus mechanism included in their protocols but also by their **deployment patterns**, meaning *the general set-up of the blockchain network*.
 
-There are **two basic different deployment patterns** for blockchains: 
+There are **two basic different deployment patterns** for blockchains:
 
 * Public
-* Managed/Private
+* Managed/private
 
 ![Public and managed network comparison](/onboarding/1-introduction-blockchain/images/comparison-public-vs-rivate.png)
 
 **Public blockchains** represent the classic understanding of how a blockchain network is constituted: they are decentralized and allow for public access. By contrast, **managed blockchain networks** rely on the blockchain data structure but do not have to mitigate the Byzantine Generals Problem, because they operate in a predictable environment with elements of authority and hierarchy.
 
-Managed chains are "private" in a sense because most allow for authentication, authorization, and permission of actions. Therefore, they are often more suitable for traditional businesses that want to make use of the technology for internal or collaborative purposes but without operating on public networks.
+Managed chains are "private" in a sense because most allow for authentication, authorization, and permission of actions. Therefore, they are often more suitable for traditional businesses that want to make use of the technology for internal or collaborative purposes but do not want to operate on public networks.
 
-**The deployment pattern chosen has major implications on the functioning of the network**: what a network is supposed to do and how it is going to fulfill the envisioned tasks depends on its deployment pattern. The main way to differentiate between blockchains is to consider their **form of access**. This refers to:
+**The deployment pattern chosen has major implications on the functioning of the network:** what a network is supposed to do and how it is going to fulfill the envisioned tasks depends on its deployment pattern. The main way to differentiate between blockchains is to consider their **form of access**. This refers to:
 
 * Whether there is a distinction between users or not.
 * Whether access to the blockchain is open (public) or controlled (private).
 
-### Permissioned and Permissionless blockchains
+<ExpansionPanel title="Permissioned and permissionless blockchains">
 
-The terms "private" and "permissioned" are often used synonymously; so to are "public" and "permissionless" (also referred to as *non-permissioned*). It is essential to understand the difference between these terms and what they entail.
+The terms "private" and "permissioned" are often used synonymously; so to are "public" and "permissionless" - also referred to as *non-permissioned*. It is essential to understand the difference between these terms and what they entail.
 
 In **permissioned blockchains**, *an individual or group of participants hold the authority to validate blocks of transactions or to participate in the consensus mechanism*. Permissioned blockchains restrict an actor's involvement in the consensus state, as well as their ability to create smart contracts or transactions. 
 
@@ -84,21 +86,7 @@ In **permissioned blockchains**, *an individual or group of participants hold th
 
 </ExpansionPanel>
 
-### Public vs private/managed
-
-Often private and public blockchain network differences are explained by using an analogy: the difference between the intranet and the internet in the 1990s, with public blockchains compared to the internet and private ones to the intranet.
-
-The difference between both deployment types becomes visible in direct comparison. It is of importance to understand the differences as well as the implications resulting from this difference to better assess what type of blockchain is useful for what situation and/or task.
-
-![Public and managed network comparison](/onboarding/1-introduction-blockchain/images/public-vs-private-comparison-table.png)
-
-In summary, managed networks enable high-performance blockchain networks which can use consensus processes that are not suited for an environment with anonymous users. A known group can create a small network for their own purposes and agree on equitable participation in the block-generation process, minimum performance metrics for acceptable validators, and governance, enabling fast confirmation and even deterministic transaction finality. The principal trade-off for this performance improvement is the shunning of permissionless, public access.
-
-Different deployment patterns have their benefits and drawbacks. They are also more or less suited to different intended network functions. **Cosmos** can be applied to both public *and* private settings and, importantly, *supports communication between networks following different consensus rules*, a seemingly intractable challenge for the predecessors of Cosmos.
-
-Next you will take a deeper dive into the features of these alternative approaches.
-
-## Public networks
+### Public networks
 
 The most obvious way of operating blockchain protocols comes in form of a public network. A public blockchain is characterized by **open access**. Every participant has access to data and can validate as well as add blocks. Anyone, without needing the permission of another authority, can write and read data.
 
@@ -149,7 +137,7 @@ As promising as this sounds, the technology is not without limitations. Chief am
 
 </ExpansionPanel>
 
-## Managed networks
+### Managed networks
 
 Managed networks, just like public networks, rely on blockchain data structures. Unlike public blockchain networks, they do not necessarily need to mitigate the Byzantine Generals Problem, because they operate in a predictable environment with elements of authority, hierarchy, and accountability.
 
@@ -184,7 +172,7 @@ A **consortium blockchain network** is an option often preferred by private ente
 
 </ExpansionPanel>
 
-## Why use managed blockchains?
+### Why use managed blockchains?
 
 It is often argued that managed blockchains are not that different from traditional database networks. Still, we can ascribe them certain merits by pointing out the technical differences between traditional database networks and blockchain-based networks in more detail.
 
@@ -192,7 +180,11 @@ There are good reasons to use a managed network within an organization, even if 
 
 Both deployment types are decentralized P2P networks, which share the distributed ledger with all network participants and synchronize it through the use of a protocol. Also, both guarantee immutability to a certain degree. However, **managed networks have several advantages compared to public blockchains, which often make them seem more fitting for private businesses**.
 
-### Users and access
+<ExpansionPanel title="Reasons for managed blockchains in detail">
+
+Let us look at some of the reasons businesses opt for managed networks.
+
+**Users and access**
 
 All users or participants in managed networks are known. This is fundamentally different from public blockchains, in which the network is open to all participants as soon as they set up the software necessary to interact with the blockchain network. So public networks do not have **entry barriers**, whereas private ones do. Restricting entrance can be especially important to increase network privacy when dealing with sensible information.
 
@@ -205,29 +197,45 @@ How access to the network is granted can vary. Access can be decided by:
 
 Managed networks also allow for restricted access for verification, as the network's owner can decide to grant verification rights selectively.
   
-### Energy consumption
+**Energy consumption**
 
 With network openness comes the problem of **increasing computational power**, and with it high energy consumption. The amount of energy consumption and computational power required to maintain the consensus algorithm and a distributed ledger at a large scale has skyrocketed. This is not only costly but also a major drawback in terms of the environmental sustainability of blockchain technology.
 
-### Privacy
+**Privacy**
 
 One of the most important aspects of managed blockchains concerns **privacy**. As public blockchain networks are open to all participants, the information stored on them is public too. On the one hand, this degree of "publicness" helps ensure the high degree of security attributed to blockchain networks. On the other hand, limited privacy can be an issue for business activities that work with "sensitive" information. 
 
 For this reason, private entities often favor managed blockchain networks over public ones. By being "private", managed blockchains face different implications for their security architecture, as they do not benefit from the same security mechanisms inherent in public blockchains. Security concerns of managed blockchains are comparable to those of traditional database networks. 
 
-### Auditability and transparency
+**Auditability and transparency**
 
 In cryptographically secured chains of data, once data has been added it cannot be changed without re-computing all the following hashes in the chain: blockchain data is **immutable**. This is a valuable attribute for internal record-keeping, since records cannot be changed after sign-off, either through error or through malice. By combining this with smart contract execution and the implementation of critical business processes, internal process executions could become auditable.
 
 As data and information are introduced via transactions, it becomes easy to establish what was introduced into the network when, and by whom. This enables a more cost-efficient and reliable form of bookkeeping than conventional ones. It could also streamline compliance and auditing, as well as make reporting tasks easier. The high degree of audibility and transparency makes managed blockchains especially appealing for business activities that are strongly regulated or have to conduct regular audits.
 
-### Governance
+**Governance**
 
 Managed blockchains allow for a more tailored governance structure than public blockchain networks. Not only can one limit access for participants and verification authorities, but all other aspects related to **user rights and network governance** can be limited as well. This can be very useful depending on the information you wish to store on a network.
 
 Furthermore, platforms that allow for **smart contract execution** enable organizations to implement even more blockchain-based business operations. Processes can be encoded and their execution can be guaranteed and enforced, ideal for compliance-critical processes, or within subsidiaries with unreliable staff or operating in corrupt jurisdictions.
 
 As information is shared and transactions are signed, it is easier to attribute an action to someone and thereby increase the overall transparency of activities. Companies can analyze processes in near real-time and check for worrisome behavior, enforce company guidelines and rules, and ensure reliable compliance control.
+
+</ExpansionPanel>
+
+### Public vs private/managed
+
+Often private and public blockchain network differences are explained by using an analogy: the difference between the intranet and the internet in the 1990s, with public blockchains compared to the internet and private ones to the intranet.
+
+The difference between both deployment types becomes visible in direct comparison. It is of importance to understand the differences as well as the implications resulting from this difference to better assess what type of blockchain is useful for what situation and/or task.
+
+![Public and managed network comparison](/onboarding/1-introduction-blockchain/images/public-vs-private-comparison-table.png)
+
+In summary, managed networks enable high-performance blockchain networks, which can use consensus processes that are not suited for an environment with anonymous users. A known group can create a small network for their own purposes and agree on equitable participation in the block-generation process, minimum performance metrics for acceptable validators, and governance enabling fast confirmation and even deterministic transaction finality. The principal trade-off for this performance improvement is the shunning of permissionless, public access.
+
+Different deployment patterns have their benefits and drawbacks. They are also more or less suited to different intended network functions. **Cosmos** can be applied to both public *and* private settings and, importantly, *supports communication between networks following different consensus rules*, a seemingly intractable challenge for the predecessors of Cosmos.
+
+Next you will take a deeper dive into the features of these alternative approaches.
 
 ## Further learning
 
