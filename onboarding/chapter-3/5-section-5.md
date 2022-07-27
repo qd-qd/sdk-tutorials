@@ -13,15 +13,52 @@ In this section, you will take a look at some fundamental concepts that will hel
 
 This section will cover:
 
-* Digital money and the onset of cryptocurrencies
-* Cryptocurrency fundamentals
 * Crypto economics
+* Cryptocurrency fundamentals
+* Digital money and the onset of cryptocurrencies
 * The potential of cryptocurrencies
 * Barriers to cryptocurrency adoption
 
 </HighlightBox>
 
 Since the inception of Bitcoin in 2008, the cryptocurrency space has grown at a very rapid pace. Less than fifteen years later, the estimated number of existing cryptocurrencies lies between 10,000 and 20,000, each with its unique quirks and value propositions. The magnitude with which this crypto-economy has evolved makes it almost impossible to keep up. In addition, with a large number of tokens worth millions of US-Dollars being traded daily, it is inevitable that many people question the security and incentives of each of these tokens.
+
+## Crypto economics
+
+**Crypto Economics** is the coming together of *cryptography* and *economics*: 
+
+* **Cryptography** provides the means to authenticate messages, create the immutable chain, secure addresses, etc.
+* **Economic insights** are used to create structures within distributed systems that make node behavior more predictable.
+
+One could say, cryptography ensures backward-facing security through practical systems, and economics ensures forward-facing security through incentive systems.
+
+The way an economy acts is strongly linked to existing *and possible* fiscal and monetary policy:
+
+* **Monetary policy:** all political decisions and regulations targeted at governing money supply, i.e. creating a well-equilibrated supply and demand of money.
+* **Fiscal policy:** decisions and regulations in the area of financial governance, i.e. creating a system of well-equilibrated revenues (taxes) and expenditures (spending).
+
+The appearance of cryptocurrencies may yet have an immense disruptive impact on the fiscal and monetary policies of governments. Before the introduction of blockchain technology, there was already precedent for how any change to the accepted conventions could be viewed as threatening before ultimately being embraced. The proposal of **the Euro** – transferring centralized currency from the national to supranational level – seemed like insanity before it was implemented, but has since become a comfortable convenience both across the Eurozone and for its trading partners outside that economic block.
+
+The question to be answered is whether a decentralized currency can be embraced on equivalent scales.
+
+### The crypto economy
+
+One of the concepts often discussed in the context of blockchain technology is the so-called global **crypto economy**. The spectrum in which this concept is discussed ranges from the fundamentalist free market advocates to large corporations trying to anticipate and capture emerging applications.
+
+It is important to note that the term "crypto economy" is merely used to describe *new and sometimes different business models*. It is still just economics, the same rules apply and it can be assessed with traditional analytic models. The only difference is the scope and access of the underlying infrastructure.
+
+The concept of the crypto economy could translate to two types of business models:
+
+* **Internal business models:** a pure crypto economy is where all activity happens **within one blockchain network**. The blockchain network is not used to track or react to things happening outside of the network.
+* **Mixed business models:** mixed approaches combine activity happening outside the blockchain network with activity or tracking within it.
+
+The blockchain network and processes **within** can be seen as belonging to the **internal sphere**, whereas the realm **outside** of a blockchain can be seen as being part of the **external sphere**.
+
+![Crypto economy](images/crypto-economy-no-glass-01.png)
+
+Most new blockchain-associated business models can be counted to the mixed category. These are much more common and can be expected to continue being more popular than internal blockchain business models. Such business activities typically rely on external data and will have to maintain doing so. Furthermore, in many cases, it is probably more cost-efficient to employ mixed business models.
+
+Existing parts of business operations could be substituted with blockchain-based solutions in cases where these are more efficient, while those parts that would not benefit much from a blockchain-based solution or are not well-suited for implementation on a blockchain could be kept in the external realm. Thus, mixed business models will probably be more implemented than internal business models.
 
 ## Cryptocurrency fundamentals
 
@@ -90,43 +127,6 @@ However, a general problem of digital products also applies to money: *multiplic
 Efforts to decentralize digital money again suffered from it not being a suitable store of value, even if a decentralized currency system would remain a good method of transfer and unit of account. How to regulate the governance of money supply, access, and transferring remained an issue in a decentralized system. This is where cryptocurrencies come in handy.
 
 </ExpansionPanel>
-
-## Crypto economics
-
-**Crypto Economics** is the coming together of *cryptography* and *economics*: 
-
-* **Cryptography** provides the means to authenticate messages, create the immutable chain, secure addresses, etc.
-* **Economic insights** are used to create structures within distributed systems that make node behavior more predictable.
-
-One could say, cryptography ensures backward-facing security through practical systems, and economics ensures forward-facing security through incentive systems.
-
-The way an economy acts is strongly linked to existing *and possible* fiscal and monetary policy:
-
-* **Monetary policy:** all political decisions and regulations targeted at governing money supply, i.e. creating a well-equilibrated supply and demand of money.
-* **Fiscal policy:** decisions and regulations in the area of financial governance, i.e. creating a system of well-equilibrated revenues (taxes) and expenditures (spending).
-
-The appearance of cryptocurrencies may yet have an immense disruptive impact on the fiscal and monetary policies of governments. Before the introduction of blockchain technology, there was already precedent for how any change to the accepted conventions could be viewed as threatening before ultimately being embraced. The proposal of **the Euro** – transferring centralized currency from the national to supranational level – seemed like insanity before it was implemented, but has since become a comfortable convenience both across the Eurozone and for its trading partners outside that economic block.
-
-The question to be answered is whether a decentralized currency can be embraced on equivalent scales.
-
-### The crypto economy
-
-One of the concepts often discussed in the context of blockchain technology is the so-called global **crypto economy**. The spectrum in which this concept is discussed ranges from the fundamentalist free market advocates to large corporations trying to anticipate and capture emerging applications.
-
-It is important to note that the term "crypto economy" is merely used to describe *new and sometimes different business models*. It is still just economics, the same rules apply and it can be assessed with traditional analytic models. The only difference is the scope and access of the underlying infrastructure.
-
-The concept of the crypto economy could translate to two types of business models:
-
-* **Internal business models:** a pure crypto economy is where all activity happens **within one blockchain network**. The blockchain network is not used to track or react to things happening outside of the network.
-* **Mixed business models:** mixed approaches combine activity happening outside the blockchain network with activity or tracking within it.
-
-The blockchain network and processes **within** can be seen as belonging to the **internal sphere**, whereas the realm **outside** of a blockchain can be seen as being part of the **external sphere**.
-
-![Crypto economy](images/crypto-economy-no-glass-01.png)
-
-Most new blockchain-associated business models can be counted to the mixed category. These are much more common and can be expected to continue being more popular than internal blockchain business models. Such business activities typically rely on external data and will have to maintain doing so. Furthermore, in many cases, it is probably more cost-efficient to employ mixed business models.
-
-Existing parts of business operations could be substituted with blockchain-based solutions in cases where these are more efficient, while those parts that would not benefit much from a blockchain-based solution or are not well-suited for implementation on a blockchain could be kept in the external realm. Thus, mixed business models will probably be more implemented than internal business models.
 
 ## The potential of cryptocurrencies
 
