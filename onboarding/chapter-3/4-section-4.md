@@ -27,14 +27,6 @@ A contract is commonly known as a *formalization of a relationship and/or transa
 
 **Trust mechanisms** in traditional contract law are based on human agents, institutions with authority to enforce contracts, and the concept of intent. Smart contracts by contrast operate on trust mechanisms based on their source code and rely on signaling transparency. Smart contracts, even if part of the digital world, are not free from public constraints and are under the influence of economic and societal norms.
 
-## What is a smart contract?
-
-Essentially, smart contracts are automated agreements between contract creators and recipients, *written in code*. They are baked into blockchains that exist across distributed, decentralized networks – meaning **smart contracts are immutable and irreversible**. These contracts allow for the execution, enforcement, and verification of agreements among anonymous parties without needing a central authority, legal system, or external enforcement system.
-
-Virtual-machine blockchains like Ethereum addressed the demand for more programmability because, at the time, the options available for building decentralized applications (dApps) were limited. Before Ethereum introduced smart contracts, most developers would build on top of the complex and limited Bitcoin scripting language or fork the Bitcoin codebase, which was hard to work with and customize. The Ethereum Virtual Machine (EVM) brought the possibility of interpreting Turing-complete programs, smart contracts, which were suited for use cases like one-time events such as initial coin offerings (ICOs).
-
-Smart contracts are a main application area in blockchain technology. Understanding what a smart contract is and how it can be deployed, as well as knowing what important aspects to keep in mind when developing and deploying a smart contract is key to understanding blockchain technology's possible areas of application and current developments in the field.
-
 ## Smart contract history
 
 Nick Szabo first used the term **smart contract** in the 1990s in his paper [Formalizing and Securing Relationships on Public Networks](https://journals.uic.edu/ojs/index.php/fm/article/view/548/469). He introduced the possibility of efficiently transferring automated traditional contracts from common law into distributed protocols, especially in conjunction with digital transactions.
@@ -55,7 +47,15 @@ In 1998, Szabo proposed a digital currency called Bit Gold. While the asset was 
 
 Smart contracts later resurfaced with the rise of **distributed ledger technology** (DLT), which revitalized the debate surrounding their advantages and usefulness, as well as the potential application areas for smart contracts.
 
-## Theoretical and practical understanding
+## What is a smart contract?
+
+Essentially, smart contracts are automated agreements between contract creators and recipients, *written in code*. They are baked into blockchains that exist across distributed, decentralized networks – meaning **smart contracts are immutable and irreversible**. These contracts allow for the execution, enforcement, and verification of agreements among anonymous parties without needing a central authority, legal system, or external enforcement system.
+
+Virtual-machine blockchains like Ethereum addressed the demand for more programmability because, at the time, the options available for building decentralized applications (dApps) were limited. Before Ethereum introduced smart contracts, most developers would build on top of the complex and limited Bitcoin scripting language or fork the Bitcoin codebase, which was hard to work with and customize. The Ethereum Virtual Machine (EVM) brought the possibility of interpreting Turing-complete programs, smart contracts, which were suited for use cases like one-time events such as initial coin offerings (ICOs).
+
+Smart contracts are a main application area in blockchain technology. Understanding what a smart contract is and how it can be deployed, as well as knowing what important aspects to keep in mind when developing and deploying a smart contract is key to understanding blockchain technology's possible areas of application and current developments in the field.
+
+### Theoretical and practical understanding
 
 The term smart contract is often misused or misunderstood. They can be viewed either from a theoretical perspective - essentially differentiating them from the conventional notion of a contract - or more practically in the context of the Ethereum protocol.
 
