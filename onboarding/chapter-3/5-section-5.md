@@ -23,8 +23,7 @@ This section will cover:
 
 Since the inception of Bitcoin in 2008, the cryptocurrency space has grown at a very rapid pace. Less than fifteen years later, the estimated number of existing cryptocurrencies is between 10,000 and 20,000, each with their own unique quirks and value propositions. The magnitude with which this crypto-economy has evolved makes it almost impossible to keep up. In addition, with a large number of tokens worth millions of USD being traded daily, it is inevitable that many people question the security and incentives of each of these coins.
 
-
-## Cryptocurrency Fundamentals
+## Cryptocurrency fundamentals
 
 The term cryptocurrency is a combination of two concepts, **cryptography** and **currency**. It is worth defining both terms precisely and concisely before continuing.
 
@@ -56,8 +55,7 @@ Gold was a popular currency for centuries. As a rare material that cannot be rep
 
 However, material-based currencies have their disadvantages. Mixing gold with less valuable metals to dilute its purity and deceive traders regarding its apparent value became a serious issue, and its significant weight makes it difficult to transport in large quantities. And gold could also take an ornamental form; this might increase its value beyond that of the raw materials, but would pose an impediment to trading a smaller portion than the total, unless a desperate trader was willing to melt his treasures or break them into pieces.
 
-
-### A new era: Paper or "fiat" money
+### A new era - Paper or "fiat" money
 
 As a reaction, new systems were introduced. The one remaining until nowadays is **paper money**, or fiat money. The first use of paper money was recorded in China during the Yuan and Ming dynasties.
 
@@ -83,8 +81,7 @@ These functions have until recently been the main task area of centralized autho
 
 </ExpansionPanel>
 
-
-## Digital Money and the onset of Cryptocurrency
+## Digital money and the onset of cryptocurrencies
 
 The digitalisation of money has many advantages, but can also be problematic. As computer systems emerged and continuously improved, digital ledger keeping and accounting was introduced. Most of our current monetary system is ruled by "digital money".
 
@@ -94,8 +91,7 @@ However, a general problem of digital products also applies to money: *multiplic
 
 Efforts to decentralize digital money again suffered from it not being a suitable store of value, even if a decentralized currency system would remain a good method of transfer and unit of account. How to regulate the governance of money supply, access, and transferring remained an issue in a decentralized system. This is where cryptocurrencies come in handy.
 
-
-## Crypto Economics
+## Crypto economics
 
 **Crypto Economics** is the coming together of *cryptography* and *economics*: 
 
@@ -110,7 +106,7 @@ The appearance of cryptocurrencies may yet have an immense disruptive impact on 
 
 The question to be answered is whether a decentralized currency can be embraced on equivalent scales.
 
-### The Crypto Economy
+### The crypto economy
 
 One of the concepts often discussed in the context of blockchain technology is the so-called global **crypto economy**. The spectrum in which this concept is discussed ranges from the fundamentalist free market advocates to large corporations trying to anticipate and capture emerging applications.
 
@@ -130,8 +126,7 @@ These are much more common and can be expected to continue being more popular th
 
 Existing parts of business operations could be substituted with blockchain-based solutions in cases where these are more efficient, while those parts which would not benefit much from a blockchain-based solution or are not well-suited for an implementation on a blockchain could be kept in the external realm. Thus, mixed business models will probably be more implemented than internal business models.
 
-
-## The Potential of Cryptocurrencies
+## The potential of cryptocurrencies
 
 Since all currencies have to fulfill three functions – *to be a store of value, a unit of account, and a method of transfer* – it can legitimately be asked: **Are cryptocurrencies a better currency compared to fiat money?**
 
@@ -211,8 +206,7 @@ There are two common ways that tokens have been **issued** in the past for ICOs:
 
 Because of their similarity to stock offerings, many projects execute their ICOs as software pre-sales(e.g. Ethereum and DECENT). However, currently the legal dimension of ICOs is uncertain and the practice of token offerings has been debated and criticized.
 
-
-## Barriers of Cryptocurrency Adoption
+## Barriers of cryptocurrency adoption
 
 There are a number of factors that can hinder the adoption of cryptocurrencies. First and foremost, the use of cryptocurrencies is strongly related to the degree they are entrusted as currencies. As mentioned, trust is derived from the rules and postulations of the underlying blockchain protocol. As cryptocurrencies are the result of decentralized networks, they cannot rely on the trust mechanisms observed in central authorities.
 
@@ -230,7 +224,6 @@ Another result of high volatility is that cryptocurrencies are not well-suited a
 
 In conclusion, there are a number of barriers to cryptocurrency becoming accepted on a wider basis, but also great potential. The adoption of cryptocurrencies depends largely on consumers feeling comfortable using and trusting in them. In addition, adoption will also depend on how the cryptocurrency environment develops: Will a handful of currencies become dominant? Will volatility fall with decreasing speculation once the dust settles? Only time will tell.
 
-
 ## Further learning
 
 * [European Securities and Markets Authority (2019): Initial Coin Offerings and Crypto-Assets](https://www.esma.europa.eu/sites/default/files/library/esma50-157-1391_crypto_advice.pdf)
@@ -243,4 +236,4 @@ In conclusion, there are a number of barriers to cryptocurrency becoming accepte
 
 This concludes Chapter 3 of the Onboarding Course! It has provided a closer look at the specifics of blockchain technology, smart contracts, and the significance of crypto on economics. The next chapter will build on this extension of knowledge by focusing on the features of Cosmos in similar detail.
 
-Before you continue to Chapter 4, it is recommended to take a look at [the Chapter 3 Resource Bank](ADD LINK HERE). Then you can take a short [self-assessment test](ADD LINK HERE) to see how comfortable you are with the information you've received so far.
+Before you continue to Chapter 4, it is recommended to take a look at [the Chapter 3 Resource Bank](ADD LINK HERE). Then you can take a short [self-assessment test](ADD LINK HERE) to see how comfortable you are with the information you have received so far.

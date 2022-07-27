@@ -15,20 +15,17 @@ This section will cover:
 
 * What is a smart contract?
 * Smart contract history
-* Theoretical and Practical understanding
+* Theoretical and practical understanding
 * Smart contracts in the blockchain context
 * Pros and cons of smart contracts
 
 </HighlightBox>
-
-## Introduction
 
 A contract is commonly known as a *formalization of a relationship and/or transaction*. In common law a contract is understood as a "meeting of minds" – which entails an intricate play of trust-building and relies on a legal system evolved over centuries with deep underlying traditions and understandings.
 
 **Smart contracts are not equal to contracts in the realm of traditional, non-digital law**. It is essential to differentiate smart contracts from existing contract forms, and to be mindful of this to avoid unintended consequences and the transfer of misconceptions.
 
 **Trust mechanisms** in traditional contract law are based on human agents, institutions with authority to enforce contracts, and the concept of intent. Smart contracts by contrast operate on trust mechanisms based on their source code, and rely on signaling transparency. Smart contracts, even if part of the digital world, are not free from public constraints, as well as under the influence of economic and societal norms.
-
 
 ## What is a smart contract?
 
@@ -37,7 +34,6 @@ Essentially, smart contracts are automated agreements between contract creators 
 Virtual-machine blockchains like Ethereum addressed the demand for more programmability because, at the time, the options available for building decentralized applications (dApps) were limited. Before Ethereum introduced smart contracts, most developers would build on top of the complex and limited Bitcoin scripting language or fork the Bitcoin codebase, which was hard to work with and customize. The Ethereum Virtual Machine (EVM) brought the possibility of interpreting Turing-complete programs, smart contracts, which were suited for use cases like one-time events such as initial coin offerings (ICOs).
 
 Smart contracts are a main application area in blockchain technology. Understanding what a smart contract is and how it can be deployed (as well as knowing what important aspects to keep in mind when developing and deploying a smart contract) is key to understanding blockchain technology's possible areas of application and current developments in the field.
-
 
 ## Smart contract history
 
@@ -59,15 +55,13 @@ In 1998, Szabo proposed a digital currency called Bit Gold. While the asset was 
 
 Smart contracts later resurfaced with the rise of **distributed ledger technology** (DLT), which revitalized the debate surrounding their advantages and usefulness, as well as the potential applications of smart contracts.
 
-
-## Theoretical and Practical understanding
+## Theoretical and practical understanding
 
 The term smart contract is often misused or misunderstood. They can be viewed either from a theoretical perspective (essentially differentiating them from the conventional notion of a contract) or more practically in the context of the Ethereum protocol.
 
 When looking at the concept of smart contracts in the **Ethereum protocol**, the focus is on the application. Code storing and execution is possible on Ethereum's distributed ledger network, and smart contracts in Ethereum partially achieve what Szabo envisioned, as one can transfer and hold funds to secure and enforce predefined transactions and relationships. The contract itself contains the enforcement of its terms, as the execution of the agreement is clear at the moment it is deployed. This leads to third parties playing a much smaller role. 
 
 Smart contract advocates expect that by automating contracting, human error is eliminated and lower error rates can be expected. Intermediaries are expected to pay a secondary role in the future; it is often argued that they would only come into play when addressing performance evaluation and in dispute resolution. For now, smart contracts are mainly used in making fund transfers possible through the blockchain, but they could be used for any processes in which a reliable record is necessary.
-
 
 ## Smart contracts in the blockchain context
 
@@ -101,7 +95,6 @@ Smart contracts cannot be changed once deployed, as immutability in blockchain n
 Since smart contracts exist on the blockchain, as soon as the contract terms are met transactions are automatically carried out; data is recorded securely, and cannot be altered nor deleted. Thus, there is no need for verification outside the contract – assuming the code leads to no unintended consequences.
 
 The smart contract itself can verify proper execution with the conditions specified, because all actions are conducted in form of transactions, which are traceable and permanent. In the end, the immutability of blockchain networks combined with the automation of a deployed smart contract make them self-verifying.
-
 
 ## Pros and cons of smart contracts
 
@@ -164,13 +157,11 @@ The amount of resources available for smart contract execution are limited to th
 
 The scalability issue is one of the main pressure points Cosmos envisioned to address. You will learn more about the benefits Cosmos provides in this regard during [Chapter 4](ADD LINK HERE).
 
-
-## Further Learning
+## Further learning
 
 * ?????
 * ?????
-
 
 ## Next up
 
-In the [final section](ADD LINK HERE) of this chapter you dive deeper into cryptocurrency and crypto economics.
+In the [final section](ADD LINK HERE) of this chapter, you dive deeper into cryptocurrency and crypto economics.

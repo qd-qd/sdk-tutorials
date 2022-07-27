@@ -21,7 +21,6 @@ This section will cover:
 
 </HighlightBox>
 
-
 ## Measuring decentralization
 
 In [Chapter 1](ADD LINK HERE) you looked at the differences between centralized, decentralized, and distributed networks, and the claim was made that a given network could incorporate elements of all three categories. If this is the case, how can the extent of decentralization be measured?
@@ -54,7 +53,6 @@ Subsystems can differ from the ones mentioned above, and can be chosen freely as
 </HighlightBox>
 
 Now, that you revised decentralization conceptually, it is time to consider deployment patterns in blockchain technology.
-
 
 ## Deployment patterns
 
@@ -99,7 +97,6 @@ In summary, managed networks enable high-performance blockchain networks which c
 Different deployment patterns have their benefits and drawbacks. They are also more or less suited to different intended network functions. **Cosmos** can be applied to both public *and* private settings and, importantly, *supports communication between networks following different consensus rules*, a seemingly intractable challenge for the predecessors of Cosmos.
 
 Next you will take a deeper dive into the features of these alternative approaches.
-
 
 ## Public networks
 
@@ -152,7 +149,6 @@ As promising as this sounds, the technology is not without limitations. Chief am
 
 </ExpansionPanel>
 
-
 ## Managed networks
 
 Managed networks, just like public networks, rely on blockchain data structures. Unlike public blockchain networks, they do not necessarily need to mitigate the Byzantine Generals Problem, because they operate in a predictable environment with elements of authority, hierarchy, and accountability.
@@ -187,7 +183,6 @@ A **consortium blockchain network** is an option often preferred by private ente
 * **Different consensus approaches**: because the scope of participants can be limited, crypto-economic incentives might not be necessary for a consortium blockchain network. Alternatively, the creation and verification of blocks may be executed by a limited group of authorized nodes.
 
 </ExpansionPanel>
-
 
 ## Why use managed blockchains?
 
@@ -234,15 +229,12 @@ Furthermore, platforms that allow for **smart contract execution** enable organi
 
 As information is shared and transactions are signed, it is easier to attribute an action to someone and thereby increase the overall transparency of activities. Companies can analyze processes in near real-time and check for worrisome behavior, enforce company guidelines and rules, and ensure reliable compliance control.
 
-
 ## Further learning
 
 * If you are interesting in learning more about Game Theory, [this is a useful overview](http://www.dklevine.com/general/whatis.htm)
 * XXX
 * XXX
 
-
 ## Next up
 
-In the [next section](ADD LINK HERE) you will build on the knowledge from [Chapter 1](ADD LINK HERE) with a more detailed exploration of Smart Contracts.
-
+In the [next section](ADD LINK HERE), you will build on the knowledge from [Chapter 1](ADD LINK HERE) with a more detailed exploration of smart contracts.
