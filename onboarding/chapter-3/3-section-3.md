@@ -31,7 +31,7 @@ The _**Gini coefficient**_ and _**Lorenz curve**_ are often proposed as means to
 
 **The minimum Nakamoto coefficient**
 
-The _**minimum Nakamoto coefficient**_ quantifies the number of entities that must be compromised in order to compromise the system as a whole. The higher the coefficient, the higher the number of entities required to compromise the system.
+The _**minimum Nakamoto coefficient**_ quantifies the number of entities that must be compromised to compromise the system as a whole. The higher the coefficient, the higher the number of entities required to compromise the system.
 
 Srinivasan and Lee argued that decentralization of *subsystems* is essential to that of the overall system. This "multi-dimensionality" of decentralization encourages taking a broader view when analyzing decentralization and thinking of possible network vulnerabilities.
 
@@ -48,7 +48,7 @@ From this perspective, it is only through the decentralization of these subsyste
 
 <HighlightBox type="note">
 
-Subsystems can differ from the ones mentioned above, and can be chosen freely as long as they fulfill the criterion of being **essential to the decentralization of the whole system**.
+Subsystems can differ from the ones mentioned above and can be chosen freely as long as they fulfill the criterion of being **essential to the decentralization of the whole system**.
 
 </HighlightBox>
 
@@ -96,10 +96,10 @@ Because network participants are not vetted and can add to the ledger without pr
 
 A proof-of-work based public blockchain network has a few **specific attributes**:
 
-* **Accessibility**: all you need to connect is the client software and an internet connection. No AML, KYC, identity checks, or subscription payment is required.
-* **No hierarchy**: all nodes are equal, meaning no individual node has more authority than another. All validators are also equal.
-* **Crypto-economic incentives**: the lack of a central authority means there is no absolute defense against malicious behavior. Instead, the network usually incentivizes benevolent behavior and disincentivizes behavior that endangers the network's functioning.
-* **Full decentralization**: many public networks are completely decentralized because they are non-hierarchical and fully accessible. The playing field for market participants is therefore relatively level, so traditional business models may not work as well.
+* **Accessibility:** all you need to connect is the client software and an internet connection. No AML, KYC, identity checks, or subscription payment is required.
+* **No hierarchy:** all nodes are equal, meaning no individual node has more authority than another. All validators are also equal.
+* **Crypto-economic incentives:** the lack of a central authority means there is no absolute defense against malicious behavior. Instead, the network usually incentivizes benevolent behavior and disincentivizes behavior that endangers the network's functioning.
+* **Full decentralization:** many public networks are completely decentralized because they are non-hierarchical and fully accessible. The playing field for market participants is therefore relatively level, so traditional business models may not work as well.
 
 The two most popular examples of functioning public networks are Bitcoin and Ethereum.
 
@@ -111,9 +111,9 @@ Bitcoin was first introduced with the publication of the original paper [*Bitcoi
 
 This **chain of ownership** is the essence of blockchain technology. With complete transparency, a user can recreate every transaction that has ever been verified back to the genesis block and confirm the order of the transactions. Ownership of every single cryptocurrency unit can be traced back through each transaction in which ownership was transferred. Thus any participant can verify new payments and make sure no double-spending is taking place.
 
-When they are created each Bitcoin is registered to a so-called **Bitcoin address**, by picking a random private key and then computing the corresponding address. This is comparable to the different forms of secrecy that were discussed regarding public-key cryptosystems in [Chapter 2](ADD LINK HERE). 
+When they are created each Bitcoin is registered to a so-called **Bitcoin address**, by picking a random private key and then computing the corresponding address. This is comparable to the different forms of secrecy that were discussed regarding public-key cryptosystems in [Chapter 2](ADD LINK HERE).
 
-The number of possible private keys which are valid is so high that *brute force attacks* to steal Bitcoin tokens directly are unfeasible. Moreover, Bitcoin tokens can only be spent if the owner knows the *corresponding key* and *digitally signs* the transaction so the network can verify the signing with a public key. Because transactions are announced publicly, the public key of the parties is not anonymous. In the end, one has a chain of ownership.
+The number of possible private keys that are valid is so high that *brute force attacks* to steal Bitcoin tokens directly are unfeasible. Moreover, Bitcoin tokens can only be spent if the owner knows the *corresponding key* and *digitally signs* the transaction so the network can verify the signing with a public key. Because transactions are announced publicly, the public key of the parties is not anonymous. In the end, one has a chain of ownership.
 
 It is worth noting that without that private key, the owner of a Bitcoin token does not have the means to prove ownership. Therefore, losing the private key equals losing all their coins.
 
@@ -121,17 +121,17 @@ It is worth noting that without that private key, the owner of a Bitcoin token d
 
 <ExpansionPanel title="Introduction to Ethereum">
 
-Ethereum was derived from a forking of Bitcoin. It is a distributed computing platform and operating system with smart contract features, and emerged because a range of proposals to change Bitcoin were refused by the Bitcoin community.
+Ethereum was derived from a forking of Bitcoin. It is a distributed computing platform and operating system with smart contract features and emerged because a range of proposals to change Bitcoin was refused by the Bitcoin community.
 
 The most important difference compared to Bitcoin is the implementation of distributed code execution through the **Ethereum Virtual Machine (EVM)**. Through this, the Ethereum network enables the deployment of **smart contracts** as part of the data of a transaction. The implementation of such a state machine using blockchain was revolutionary in itself.
 
 In practice, a smart contract in the EVM is an autonomous agent with an internal account. In Ethereum, smart contracts are stored on every single node. They are secure in the same sense that all information stored on the blockchain is secure, although because every node calculates all smart contracts this can lead to performance issues regarding the blockchain's speed.
 
-As discussed in [Chapter 1](ADD LINK HERE), Ethereum has a much faster block time than Bitcoin, which means at any given time a portion of the miners will be working on already solved/old blocks. Ethereum addresses this concern by including valid blocks that are not ultimately on the canonical chain as **uncles** to increase the total difficulty of the chain, capturing the "work" that would otherwise be wasted. 
+As discussed in [Chapter 1](ADD LINK HERE), Ethereum has a much faster block time than Bitcoin, which means at any given time a portion of the miners will be working on already solved/old blocks. Ethereum addresses this concern by including valid blocks that are not ultimately on the canonical chain as **uncles** to increase the total difficulty of the chain, capturing the "work" that would otherwise be wasted.
 
 The EVM is considered "Turing complete", meaning it is effectively a computer capable of running any program. However, Turing-completeness is open to the "halting problem", which is when a program enters a loop and the computer becomes unable to proceed with other activities. This is particularly difficult to solve in distributed, hierarchy-free computing.
 
-Ethereum's solution was to introduce **gas**, a kind of fuel-currency which is charged as a fee for performing computational steps. Every block has a maximum gas limit, which sets the number of computational steps that can be executed – just like a combustion engine, if the gas runs out then the program stops. By attaching financial costs to every step in a program and limiting the funds available, transactions that enter a loop will run out of gas, freeing the system from the halting problem.
+Ethereum's solution was to introduce **gas**, a kind of fuel currency that is charged as a fee for performing computational steps. Every block has a maximum gas limit, which sets the number of computational steps that can be executed – just like a combustion engine, if the gas runs out then the program stops. By attaching financial costs to every step in a program and limiting the funds available, transactions that enter a loop will run out of gas, freeing the system from the halting problem.
 
 As promising as this sounds, the technology is not without limitations. Chief among these limitations is capacity, not only in terms of transactions per second but also in terms of the complexity of transactions that can be handled by the network. Ethereum's virtual machine paradigm places limits on transaction complexity to ensure that a single contract or a single transaction does not overload the shared, distributed computer. This constraint is inherent to the design choice of using a virtual machine model.
 
@@ -147,11 +147,11 @@ Managed networks can be used in cases where elements of trust already exist betw
 
 <ExpansionPanel title="An example use case - interbank settlement">
 
-Consider a network of financial institutions. Currently, each bank runs its own legacy infrastructure. When these banks try and settle trades between their customers, their systems need to interact with each other often through several layers of third-party software. 
+Consider a network of financial institutions. Currently, each bank runs its legacy infrastructure. When these banks try and settle trades between their customers, their systems need to interact with each other often through several layers of third-party software.
 
 ![Bank - Insurer - Central Bank Overview](/onboarding/1-introduction-blockchain/images/private-blockchain-01.png)
 
-Instead, they could use blockchain technology to settle inter-bank transactions. In such a system, the banks operate a common blockchain network to which only they have access. Rather than keeping their own versions of ledgers, they operate on the same ledger.
+Instead, they could use blockchain technology to settle inter-bank transactions. In such a system, the banks operate a common blockchain network to which only they have access. Rather than keeping their versions of ledgers, they operate on the same ledger.
 
 This arrangement has no need for public access. Nor is it necessary to discourage 51%-attackers, because 100% of resources for block creation are controlled by the network. Still, the risk of attacks against the blockchain creation tools or the private corporate servers remains, with success granting an attacker control over the network's resources and the power to alter transactions as they wish.
 
@@ -163,16 +163,7 @@ Many mechanisms vital in public blockchains are not necessary or even undesirabl
 
 This is often unacceptable, for example for traditional financial institutions. Still, one of the biggest expenses financial and other institutions face is the operation and maintenance of infrastructure and the costs resulting from leaks, hacks, reconciliation with trading partners, errors, and data incompatibility. For this reason, many financial firms have been looking into blockchain technology, especially managed blockchains, to try to mitigate very specific issue areas and investigate this technology as a viable alternative to existing siloed systems.
 
-<ExpansionPanel title="Consortium blockchain networks">
-
-A **consortium blockchain network** is an option often preferred by private enterprises, especially financial market players, to pool resources to develop a shared blockchain. A consortium might use the same protocol or infrastructure as a public blockchain, but with a few differentiating attributes:
-
-* **Limited access**: unlike public networks, many consortium blockchain models limit access to vetted and approved participants.
-* **Different consensus approaches**: because the scope of participants can be limited, crypto-economic incentives might not be necessary for a consortium blockchain network. Alternatively, the creation and verification of blocks may be executed by a limited group of authorized nodes.
-
-</ExpansionPanel>
-
-### Why use managed blockchains?
+**Why use managed blockchains?**
 
 It is often argued that managed blockchains are not that different from traditional database networks. Still, we can ascribe them certain merits by pointing out the technical differences between traditional database networks and blockchain-based networks in more detail.
 
@@ -199,7 +190,7 @@ Managed networks also allow for restricted access for verification, as the netwo
   
 **Energy consumption**
 
-With network openness comes the problem of **increasing computational power**, and with it high energy consumption. The amount of energy consumption and computational power required to maintain the consensus algorithm and a distributed ledger at a large scale has skyrocketed. This is not only costly but also a major drawback in terms of the environmental sustainability of blockchain technology.
+With network openness comes the problem of **increasing computational power** and with it high energy consumption. The amount of energy consumption and computational power required to maintain the consensus algorithm and a distributed ledger at a large scale has skyrocketed. This is not only costly but also a major drawback in terms of the environmental sustainability of blockchain technology.
 
 **Privacy**
 
@@ -209,9 +200,9 @@ For this reason, private entities often favor managed blockchain networks over p
 
 **Auditability and transparency**
 
-In cryptographically secured chains of data, once data has been added it cannot be changed without re-computing all the following hashes in the chain: blockchain data is **immutable**. This is a valuable attribute for internal record-keeping, since records cannot be changed after sign-off, either through error or through malice. By combining this with smart contract execution and the implementation of critical business processes, internal process executions could become auditable.
+In cryptographically secured chains of data, once data has been added it cannot be changed without re-computing all the following hashes in the chain: blockchain data is **immutable**. This is a valuable attribute for internal record-keeping since records cannot be changed after sign-off, either through error or through malice. By combining this with smart contract execution and the implementation of critical business processes, internal process executions could become auditable.
 
-As data and information are introduced via transactions, it becomes easy to establish what was introduced into the network when, and by whom. This enables a more cost-efficient and reliable form of bookkeeping than conventional ones. It could also streamline compliance and auditing, as well as make reporting tasks easier. The high degree of audibility and transparency makes managed blockchains especially appealing for business activities that are strongly regulated or have to conduct regular audits.
+As data and information are introduced via transactions, it becomes easy to establish what was introduced into the network when, and by whom. This enables a more cost-efficient and reliable form of bookkeeping than conventional ones. It could also streamline compliance and auditing, as well as make reporting tasks easier. The high degree of audibility and transparency makes managed blockchains, especially appealing for business activities that are strongly regulated or have to conduct regular audits.
 
 **Governance**
 
@@ -223,6 +214,13 @@ As information is shared and transactions are signed, it is easier to attribute 
 
 </ExpansionPanel>
 
+### Consortium blockchain networks
+
+A **consortium blockchain network** is an option often preferred by private enterprises, especially financial market players, to pool resources to develop a shared blockchain. A consortium might use the same protocol or infrastructure as a public blockchain, but with a few differentiating attributes:
+
+* **Limited access:** unlike public networks, many consortium blockchain models limit access to vetted and approved participants.
+* **Different consensus approaches:** because the scope of participants can be limited, crypto-economic incentives might not be necessary for a consortium blockchain network. Alternatively, the creation and verification of blocks may be executed by a limited group of authorized nodes.
+
 ### Public vs private/managed
 
 Often private and public blockchain network differences are explained by using an analogy: the difference between the intranet and the internet in the 1990s, with public blockchains compared to the internet and private ones to the intranet.
@@ -231,15 +229,15 @@ The difference between both deployment types becomes visible in direct compariso
 
 ![Public and managed network comparison](/onboarding/1-introduction-blockchain/images/public-vs-private-comparison-table.png)
 
-In summary, managed networks enable high-performance blockchain networks, which can use consensus processes that are not suited for an environment with anonymous users. A known group can create a small network for their own purposes and agree on equitable participation in the block-generation process, minimum performance metrics for acceptable validators, and governance enabling fast confirmation and even deterministic transaction finality. The principal trade-off for this performance improvement is the shunning of permissionless, public access.
+In summary, managed networks enable high-performance blockchain networks, which can use consensus processes that are not suited for an environment with anonymous users. A known group can create a small network for their purposes and agree on equitable participation in the block-generation process, minimum performance metrics for acceptable validators, and governance enabling fast confirmation and even deterministic transaction finality. The principal trade-off for this performance improvement is the shunning of permissionless, public access.
 
 Different deployment patterns have their benefits and drawbacks. They are also more or less suited to different intended network functions. **Cosmos** can be applied to both public *and* private settings and, importantly, *supports communication between networks following different consensus rules*, a seemingly intractable challenge for the predecessors of Cosmos.
 
-Next you will take a deeper dive into the features of these alternative approaches.
+Next, you will take a deeper dive into the features of these alternative approaches.
 
 ## Further learning
 
-* If you are interesting in learning more about Game Theory, [this is a useful overview](http://www.dklevine.com/general/whatis.htm)
+* If you are interested in learning more about Game Theory, [this is a useful overview](http://www.dklevine.com/general/whatis.htm)
 * XXX
 * XXX
 
