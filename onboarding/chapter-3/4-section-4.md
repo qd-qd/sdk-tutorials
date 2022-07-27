@@ -159,4 +159,4 @@ The scalability issue is one of the main pressure points Cosmos envisioned to ad
 
 ## Next up
 
-In the [final section](ADD LINK HERE) of this chapter, you dive deeper into cryptocurrency and crypto-economics.
+In the [final section](ADD LINK HERE) of this chapter, you dive deeper into cryptocurrencies and crypto economics.
