@@ -21,9 +21,9 @@ In this section you will look at:
 
 ## Smart contracts and decentralized applications (dApps)
 
-So far this course has frequently used financial transactions as a convenient way to illustrate the functioning of blockchain. However, a "transaction" can really be *any* kind of data transmission, not necessarily some directly related to money or a different form of value transfer.
+So far this course has frequently used financial transactions as a convenient way to illustrate the functioning of blockchain. However, a "transaction" can really be *any* kind of data transmission, not necessarily one directly related to money or a different form of value transfer.
 
-The potential this represents was first implemented by **Ethereum**, a platform that was designed to allow the creation of decentralized applications (dApps): pieces of autonomous software that are stored on and run from a blockchain. dApps typically utilize smart contracts, which are also autonomous computer programs (or transaction protocols).
+The potential this represents was deliberately implemented by **Ethereum**, a Virtual Machine platform that was designed for the creation of decentralized applications (dApps): pieces of autonomous software that are stored on and run from a blockchain. dApps typically utilize smart contracts, which are also autonomous computer programs (or transaction protocols).
 
 ### What is a contract?
 
@@ -31,17 +31,17 @@ This question may seem too obvious to be worth answering, but spelling it out wi
 
 > **A contract is an agreement between two or more parties that is intended to be enforceable by law.**
 
-Contracts usually concern matters like employment, rent, or the sale of goods and services. All parties agree on the terms of the contract – they specify what each must do to satisfy their obligation, and perhaps list any penalties or steps that must be taken if someone fails to do as agreed, which may or may not include terminating the contract.
+Contracts usually concern matters like employment, or the rent or sale of goods and services. All parties agree on the terms of the contract – they specify what each must do to satisfy their obligation, and perhaps list any penalties or steps that must be taken if someone fails to do as agreed, which may or may not include terminating the contract.
 
 So far, so simple. However, there are implications to a contract that quickly can become complicated. _How are the activities of each party monitored? Who adjudicates if the parties disagree about compliance? Who enforces any penalties?_ These last two questions in particular demand the involvement of third-party authorities to rule on the situation, which goes against the general philosophy of decentralization and distribution that is at the heart of blockchain.
 
 ### What is a smart contract?
 
-A **smart contract** is a similar binding agreement in software form. The terms of the contract are codified in the software such as by using a series of ***if/when...then*** statements which trigger or are triggered by certain inputs, like the actions of one of the parties.
+A **smart contract** is piece of software that effectively functions as a similarly binding agreement, though the legal equivalency to a traditional contract is highly debateable. Here, the terms of the "contract" are codified in the software such as by using a series of ***if/when...then*** statements which trigger or are triggered by certain inputs, like the actions of one of the parties. 
 
-Information is communicated to the smart contract, which checks it against the terms and reacts automatically, for example by releasing payment for services rendered. Provided the relationship is well understood and all conditions are agreed upon in advance, the automated nature of the smart contract's operations removes the need for any third-party involvement.
+Information is communicated to the smart contract, which checks it against the terms and reacts automatically, for example by releasing payment for services rendered. Smart contracts are **self-executing**, **self-verifying**, and **self-enforcing**: provided the relationship is well understood and all conditions are agreed upon in advance, the automated nature of the smart contract's operations removes the need for any third-party involvement.
 
-<HighlightBox type="Example">
+<ExpansionPanel title="A theoretical Smart Contract use case">
 
 Imagine a business relationship between two companies:
 
@@ -62,13 +62,13 @@ The smart contract might define key events of the supply chain:
  * IF B **returns** the delivery, THEN B pays A 50%.
  * IF B **loses** the delivery, THEN B pays A 150%.
 
-</HighlightBox>
-
 <HighlightBox type="note">
 
 In this example, the operations of the smart contract only rely on data about each party's activities, but the inputs to a smart contract could be much more diverse and could come from entirely different sources. For example, the calculation of the fee might depend on the cost of fuel: when company A triggers a delivery, the smart contract requests up-to-date fuel price information from an agreed source and adjusts the fee accordingly.
 
 </Highlightbox>
+
+</ExpansionPanel>
 
 The nature of blockchain is ideal for smart contracts because they provide an unchangeable, time-specific, retraceable record of all the information going into the smart contract and all activity triggered by it. Any party to the contract can audit their relationship at will, secure in the knowledge that tampering is either completely impossible or implausibly difficult and expensive to achieve – blockchain features, which will be explored in greater detail in [Chapter Two](LINK HERE) of this course.
 
@@ -76,25 +76,35 @@ The nature of blockchain is ideal for smart contracts because they provide an un
 
 Smart contracts are attractive tools because they enable applying the desirable features of blockchain to a wider variety of purposes than the cryptocurrency platforms that gave rise to them. The fact that these features are desirable at all, therefore, prompts a question: if decentralization can offer benefits to *the activities* of a business, why not directly integrate those benefits into a business itself?
 
-**Decentralized Autonomous Organizations** (DAOs) take the lessons of blockchain as they were applied to networks and apply them to organizational structures. They feature no central leadership or hierarchical management, with decisions made from the bottom-up by a democratic membership, which owns and manages the entity collectively. The governance of DAOs is highly transparent, with its underlying software available for review by potential members, and the nature of blockchain ensures it cannot be changed in secret.
+**Decentralized Autonomous Organizations** (DAOs) take the lessons of blockchain as they were applied to networks and apply them to organizational structures. They feature no central leadership or hierarchical management, with decisions made from the bottom-up by a democratic membership, which owns and manages the entity collectively. 
 
-The rules that govern a DAO are established using smart contracts, which must be carefully planned and tested by the developers before launch - often even audited by external developers. The DAO then raises funds, typically by selling tokens that grant the token holders voting rights on a range of issues, such as which activity proposals will be adopted, when the DAO's treasury may be accessed, or whether to change some aspect of governance (i.e. by modifying the smart contracts). From this point on, the members control the organization collectively – the original developers have no more authority than any other stakeholder.
+<ExpansionPanel title="How a DAO works">
 
-Various groups might find this "internet-native" organizational structure a very useful arrangement. A freelancer collective could pool their funds to achieve some useful goal, like renting a shared workspace or buying specialist software which the members could not individually afford. A charitable group could nominate beneficiaries and vote to approve donations while minimizing the drain of administration costs by removing traditional administration. However, for all its potential, when the idea of DAOs was put into practice on a major scale it was very nearly DOA instead.
+The rules that govern a DAO are established using smart contracts, which must be carefully planned and tested by the developers before launch - often even audited by external developers. The governance of DAOs is highly transparent, with its underlying software available for review by potential members, and the nature of blockchain ensures it cannot be changed in secret.
 
-<ExpansionPanel title="Dead On Arrival: the story of 'The DAO'">
+The DAO then raises funds, typically by selling tokens that grant the token holders voting rights on a range of issues, such as which activity proposals will be adopted, when the DAO's treasury may be accessed, or whether to change some aspect of governance (i.e. by modifying the smart contracts). From this point on, the members control the organization collectively – the original developers have no more authority than any other stakeholder.
 
-**The DAO** was launched in 2016, designed using the Ethereum blockchain to be a decentralized autonomous venture capital fund. Token holders would share the profits of the organization's investments, either through dividends or by an increase of the token value itself. The DAO raised the equivalent of $150 million in the cryptocurrency Ether becoming one of the most successful crowdfunding campaigns in history.
+</ExpansionPanel>
 
-Unfortunately, coding errors in The DAO's software left it vulnerable to attack. This was noticed shortly after the launch. Therefore, any change to the underlying smart contracts needed to first be proposed and then voted on by the stakeholders before it could be implemented. A proposal was adopted, but before any action to fix them was taken an attacker exploited them and siphoned out $60 million of The DAO's funds.
+Various groups might find this "internet-native" organizational structure a very useful arrangement. A freelancer collective could pool their funds to achieve some useful goal, like renting a shared workspace or buying specialist software which the members could not individually afford. A charitable group could nominate beneficiaries and vote to approve donations while minimizing the drain of administration costs by removing traditional administration.
 
-Although in the end these funds were reclaimed, doing so forced a "fork" of the Ethereum blockchain dividing it into two different versions of the chain. It is also debatable whether the attacker actually did anything wrong: their actions were perhaps unethical, but they were effectively allowed by the nature of The DAO's smart contracts, "the law" for what was permissible.
+However, for all its potential, when the idea of DAOs was put into practice on a major scale it was very nearly DOA, or "dead on arrival" instead.
+
+<ExpansionPanel title="How a DAO fails">
+
+The original DAO, called **The DAO**, was launched in 2016. It was designed using the Ethereum blockchain to be a decentralized autonomous venture capital fund. Token holders would share the profits of the organization's investments, either through dividends or by an increase of the token value itself. The DAO raised the equivalent of $150 million in the cryptocurrency Ether becoming one of the most successful crowdfunding campaigns in history.
+
+Unfortunately, coding errors in The DAO's software left it vulnerable to attack. Because this was only noticed shortly after the launch, any change to the underlying smart contracts needed to first be proposed and then voted on by the stakeholders before it could be implemented. A proposal was adopted, but before any action to fix them was taken an attacker exploited them and siphoned out $60 million of The DAO's funds.
+
+Although in the end these funds were reclaimed, doing so was controversial. Disagreement over how to respond led directly to a "forking" of the Ethereum blockchain, dividing it into two different versions of the chain. It was considered debatable whether the attacker in this case actually did anything wrong: their actions were perhaps unethical but they were allowed by the nature of The DAO's smart contracts, which was effectively "the law" regarding what was permissible within the organization.
 
 This underlines a potential challenge of operating a DAO. While they can do away with some features of traditional organizations to beneficial effect, they may operate in a gray area of traditional law, and doing so implies risk.
 
 </ExpansionPanel>
 
-DAOs are very new approaches to technology and potential legal question marks are hanging over their use. Because a DAO is decentralized and participants may be distributed across the world, in the event of a legal challenge it may be difficult to determine what jurisdiction applies or even whether multiple regional laws must come into effect.
+DAOs are very new approaches to technology and potential legal question marks are hanging over their use. Because a DAO is decentralized and participants may be distributed across the world, in the event of a legal challenge it may be difficult to determine what jurisdiction applies or even whether multiple regional laws must come into effect. 
+
+However, not only DAOs suffer in this regard: missing legal frameworks and regulatory guidelines are a common issue with blockchains in general. History has long shown that law and policy-making is slower to respond than the forces driving the necessity for change, be they social or technological.
 
 ## How Web3 is impacting employment and business culture
 
@@ -110,9 +120,9 @@ Some additional factors are worth looking at in a little more detail.
 
 ### Importance of community
 
-Community is a big factor in Web3. In many cases, a community is often established before a product with products arising out of community discourses.
+Community is a big factor in Web3. In many cases, a community is often established before a product with products arising out of community discourse.
 
-Developers may begin the community-building process by sharing a roadmap, a promise of what the community can expect from the project. In the lead-up to launch developers can engage with the growing community allowing them to influence what the project ultimately creates, for example, by encouraging them to propose or vote on potential project features, with developers committing to building a product co-defined by the community.
+Developers may begin the community-building process by sharing a roadmap, a promise of what the community can expect from the project. In the lead-up to launch developers can engage with the growing community, allowing them to influence what the project ultimately creates, for example by encouraging them to propose or vote on potential project features, with developers committing to building a product co-defined by the community.
 
 This kind of interaction often takes place on social media platforms like Reddit, Telegram, and Discord, with communities as distributed as any other feature of this ecosystem. However, this distribution is also true of development teams: with remote working ever more established as a business practice even among conventional organizations, it is natural that those in the Web3 space would be on the front line of adoption.
 
@@ -122,7 +132,7 @@ For globally distributed teams working asynchronously on a single project with i
 
 Given the pervading influence of blockchain-derived ideas such as shared responsibility and process transparency, it should not be surprising that **decision-making processes in Web3 tend to embrace democratic models**. Decisions are publicly discussed, voted on, and recorded collectively in fundamentally democratized and transparent decision-making. Web3 means participatory governance, giving people the power to set rules by a majority.
 
-This is best illustrated by DAOs: once the primary work of the development team is complete, which in itself may be a highly open and community-collaborative process, control is entirely handed over to the DAO's stakeholders. Although a project's developers will likely remain part of that stakeholders moving forward, from the point of launch onward even performing essential maintenance on the underlying software will require the support of the majority.
+This is best illustrated by DAOs: once the primary work of the development team is complete, which in itself may be a highly open and community-collaborative process, control is entirely handed over to the DAO's stakeholders. Although a project's developers will likely remain stakeholders moving forward, from the point of launch onward even performing essential maintenance on the underlying software will require the support of the majority.
 
 More traditional business entities within Web3 may retain more centralized decision-making, but that still leaves opportunities for transparency and participant autonomy. The vertical hierarchy that typifies corporate management serves to minimize both the individual's independence and their insight into the organization's overall goals. By contrast, **flat organizational structures** are a popular Web3 alternative due to their increased agility; participants at all levels are brought closer together making leadership decisions more visible, and participants are often granted the freedom to act and collaborate more fluidly or organically, with guidance and oversight less structurally imposed.
 

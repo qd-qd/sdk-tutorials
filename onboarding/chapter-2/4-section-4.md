@@ -107,7 +107,7 @@ Imagine again that you are required to provide proof of your date of birth. You 
 
 The Merkle tree of your passport document could look something like this:
 
-<!--INSERT MERKLE-IMAGE 1 HERE-->
+![A Merkle tree](/onboarding/chapter-2/images/MerkleData1.png)
 
 The "leaf" nodes at the bottom tier only contain hashes. Each piece of original data is **not** included on the chain, and because a hash cannot be reversed to reveal the data it encrypts, the actual information on your passport is not made public in any way.
 
@@ -117,15 +117,15 @@ There may of course be much more information than this on a passport – a recor
 
 ### Controlling data exposure with a Merkle proof
 
-How do you use this Merkle tree to prove your date of birth?
+How do you use this Merkle tree to prove your date of birth? A **Merkle proof** is a procedure by which a single "known" element of the tree can be shown in relation to the many "unknown" elements, such that confirming the integrity of the tree as a whole proves the validity of the known element.
 
-1. You simply *tell* the requestor of information your date of birth. They do not yet have reason to accept this information as true.
+1. First, you simply *tell* the requestor of information your date of birth. They do not yet have reason to accept this information as true.
 2. Next, you provide access to your trusted documentation tree, which reveals only a coherent hierarchy of undifferentiated hashes.
 3. Finally, you identify the leaf node which contains the hash of your date of birth:
 
-<!--INSERT MERKLE-IMAGE 2 HERE-->
+![A Merkle proof](/onboarding/chapter-2/images/MerkleData2.png)
 
-With this information, the requestor can easily generate their hash of your date of birth and test it against the accumulated hash values of the Merkle tree. If there is no discrepancy, this confirms that the date of birth you provided does indeed correspond to the leaf node. If the passport Merkle tree was uploaded by an impeccable real-world authority, your assertion can be trusted – all without revealing any further information than you intended.
+With this information, the requestor can easily generate their own hash of your date of birth and test it against the accumulated hash values of the Merkle tree. If there is no discrepancy, this confirms that the date of birth you provided does indeed correspond to the leaf node. If the passport Merkle tree was uploaded by an impeccable real-world authority, your assertion can be trusted – all without revealing any further information than you intended.
 
 ## Further learning
 

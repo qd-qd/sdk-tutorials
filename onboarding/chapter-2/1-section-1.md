@@ -21,7 +21,7 @@ You have already looked at what blockchain is – *a distributed ledger* – so 
 
 ## Ledgers - A historical context
 
-The idea of the **append-only ledger** has been known and embraced for centuries. A ledger is a chronological record of activity, like a book with vertical columns of transactions, the oldest at the top of the page and newer ones underneath it. It is a simple, logical, and reliable methodology, but in the ages before digital technology, it had a few obvious weaknesses.
+The idea of the **ledger** has been known and embraced for centuries. A ledger is a chronological record of activity, like a book with vertical columns of transactions, the oldest at the top of the page and newer ones underneath it. It is a simple, logical, and reliable methodology, but in the ages before digital technology, it had a few obvious weaknesses.
 
 Physical records are prone to decay and destruction, not to mention theft or just revision by unscrupulous actors. Fire, flood, and the passage of time can wipe out a history completely while erasing lines or tearing out pages could be as effective a crime as robbing a bank. They are also hard work to duplicate: pre-computers, backing up records meant filing cabinets full of hard copies, taking up costly storage space. Worse, before the 20th century, even a single backup of a record book would be a luxury, as it required someone copying the original ledger by hand - with the constant possibility of making errors in the process.
 
@@ -35,9 +35,9 @@ Returning to the traditional ledger, how does this map onto blockchain? What is 
 
 In this example, one "block" in the blockchain would most logically be *a page*. But instead of a book or even a shelf of books, each node of the network is a folder waiting for a new page to be added to it. Transactions are recorded chronologically on a page - when the page is filled, it is duplicated and sent to each node's folder, where it is added chronologically to the pages that came before. Thus everyone has the same information.
 
-This simplification hides *gigantic* complexity, but in essence describes what is meant by a chain of blocks: *groupings of sequentially recorded transactions verified within a given time period*. Weighty questions can be raised by this approach to networking though, starting with the fact that transactions may include extremely valuable or private information – how can security and confidentiality be maintained on a public network where everyone has a copy of the data?
+This simplification hides *gigantic* complexity, but in essence describes what is meant by a chain of blocks: *groupings of sequentially recorded transactions verified within a given time period*. Weighty questions can be raised by this approach to networking though, starting with the fact that transactions may include extremely valuable or private information – any changes to the ledger could have serious financial ramifications, so how can *immutability* be achieved on a network where every node has equal authority but is also an actor with unknown motivations?
 
-This is an important issue and is examined [later in the chapter](ADD LINK?), but there is more than one sense in which *trust* is vital to blockchain. Fundamental to the system is ensuring confidence that the blockchain that propagates through the system really *is* the same at every single node. This is achieved through one of the key cryptographic features of blockchain: **hashing**.
+This is an important issue and is examined [later in the chapter](ADD LINK?), but there is more than one sense in which *trust* is vital to blockchain. A fundamental goal is ensuring confidence that the blockchain that propagates through the network really *is* the same at every single node. This is achieved through one of the key cryptographic features of blockchain: **hashing**.
 
 ## Hashing - Calculating trust
 
@@ -56,7 +56,11 @@ In this example, a block is represented using only a simple phrase rather than m
 * **Input phrase:** Romeo and Juliet
 * **Output hash:** b15a06302f4dc7a0acf945f1c670e9f0666af3078f3dea2a62c42e25b837df32
 
+<HighlightBox type="info">
+
 This output hash has a **hexadecimal** format. Unlike the everyday decimal numbering system, which uses digits from `0` to `9`, hexadecimal uses sixteen digits, `0`to `9` *and* the letters `A` to `F`. It is a little strange at first sight, but a simple illustration would be to compare how the formats represent "nine" (both are the same, `9` and `9`) and "ten" (`10` in decimal, `A` in hexadecimal).
+
+</HighlightBox>
 
 Returning to the example's output hash, this 32-byte hexadecimal string is unique to the input phrase – if you want to prove it, try it for yourself [here](https://www.browserling.com/tools/all-hashes) and you will get the exact same 64 characters.
 
@@ -79,11 +83,7 @@ You will read more about this subject when you look at how blocks are accepted t
 
 Now imagine a Shakespearean blockchain: *an append-only ledger in which new plays are periodically added after old ones*. Could it look like this?
 
-<!--
-
-INSERT TABLE1 IMAGE
-
--->
+![An untrustworthy record of publication order](/onboarding/chapter-2/images/Table_01.png)
 
 If the plays are supposed to be *ranked in the order of their publication*, from old to new, the answer is yes. However, _is this chain a **trustworthy** record of the publication order?_
 
@@ -95,11 +95,7 @@ Blockchain requires more than just unique hashes for each block *individually*: 
 
 It is surprisingly simple:
 
-<!--
-
-INSERT TABLE2 IMAGE
-
--->
+![A trustworthy record of publication order](/onboarding/chapter-2/images/Table_02.png)
 
 If you compare the previous two tables, you'll see that only the *Romeo and Juliet* hash is the same: by adding the previous hash to the content of each new block, every subsequent hash that was generated is different. Block 2 effectively contains Block 1 as well; Block 3 contains Block 2, which contains Block 1; Block 4 contains 3, which contains 2, which contains 1...and so on.
 

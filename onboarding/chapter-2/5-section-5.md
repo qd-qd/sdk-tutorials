@@ -24,7 +24,11 @@ This section will cover:
 
 ## The objectives of Cosmos
 
-The story of blockchain is one of evolution. Initial public, general-purpose blockchains were, taken as a whole, an explosive success, but did not always appeal to the need for privacy in certain industries, so a push towards private, or managed, chains followed. This was envisioned to make blockchain technology more attractive to private business enterprises. Now the ongoing quest for complex decentralized applications (dApps) demands a more flexible development environment than can be achieved by forking and recoding existing chains. This is where Cosmos steps in.
+The story of blockchain is one of evolution. Initial public, general-purpose blockchains were, taken as a whole, an explosive success, but did not always appeal to the need for privacy in certain industries, so a push towards private, or managed, chains followed. This was envisioned to make blockchain technology more attractive to private business enterprises. 
+
+Now the ongoing quest for complex decentralized applications (dApps) demands a more flexible development environment than can be achieved by forking and recoding existing chains. Dividing a single blockchain's network resources between multiple dApps potentially impedes them all; so does being constrained by the general governance rules of that chain, regardless of the needs and characteristics of the dApps themselves.
+
+This is where Cosmos steps in.
 
 The founding **vision** of Cosmos is to provide an easy development environment for blockchain technology. Cosmos wants to address the main issues of previous blockchain projects and provide interoperability between chains to foster an **internet of blockchains** of purpose-built, or application-specific, blockchains tailored to the necessities of particular use cases and applications to coexist.
 
@@ -43,7 +47,7 @@ You can find the building blocks of blockchain technology in the 1980s and 1990s
 
 In 2008, **Bitcoin** changed the landscape by establishing blockchains as the foundation for decentralized networking. The development of decentralized applications built on blockchain networks began shortly after Bitcoin's debut, but in the early days developing dApps could be done only by forking or building on the monolithic Bitcoin codebase. In addition to limited scripting languages, this made dApp development a tedious and complex process for developers.
 
-After the introduction of Bitcoin, several so-called public chains came into being, the first being Ethereum in 2013. Ethereum can be seen as a response to the difficulties of developing applications on Bitcoin: its application layer is the **Ethereum Virtual Machine** (EVM), which runs smart contracts. Ethereum provides a single chain on which to deploy all sorts of code for a variety of use cases.
+After the introduction of Bitcoin, several so-called public chains were launched, most significantly including Ethereum in 2015. Ethereum can be seen as a response to the difficulties of developing applications on Bitcoin: its application layer is the **Ethereum Virtual Machine** (EVM), which runs smart contracts. Ethereum provides a single chain on which to deploy all sorts of code for a variety of use cases.
 
 Even though the launch of Ethereum and the EVM was a big step forward, some issues of public, general-purpose blockchains remained: mainly, low flexibility for developers and difficulties with speed, throughput, scalability, state finality, and sovereignty.
 
@@ -65,7 +69,7 @@ To achieve this vision and type of network, the ecosystem relies on an **open-so
 
 <ExpansionPanel title="What is the structure of a blockchain?">
 
-Blockchain protocols defines how the state is held and modified according to the received inputs. The inputs are called transactions.
+Blockchain protocols define how the state is held and modified according to the received inputs. The inputs are called transactions.
 
 The consensus mechanism ensures that a blockchain has a canonical transaction history. Blockchain transactions must be deterministic, meaning there is only one correct interpretation. The blockchain state is also deterministic: if you begin with the same genesis state and replicate all changes, you always achieve the same state.
 
@@ -91,21 +95,21 @@ In the world of blockchains, "speed" means **transaction speed**, i.e. the time 
 
 **State finality** is an additional concern. Finality describes whether and when committed blocks with transactions can no longer be reverted or revoked. It is important to differentiate between:
 
-* **Probabilistic finality:** implies at least the chance that changes can be made to the record, even if that chance is mathematically infinitesimal.
-* **Absolute finality:** implies no possibility of change at all, as the name suggests.
+* **Probabilistic finality:** this implies at least the chance that changes can be made to the record, even if that chance is mathematically infinitesimal.
+* **Absolute finality:** this implies no possibility of change at all, as the name suggests.
 
 </ExpansionPanel>
 
-Cosmos' application blockchains are built with the Cosmos SDK. The Cosmos SDK includes the prerequisites that make it possible for created blockchains to participate in inter-chain communications using the Inter-Blockchain Communication (IBC) Protocol. Chains built with the Cosmos SDK use the Tendermint consensus. Each of these topics is unfolded in more detail in the sections that follow.
+Cosmos' application blockchains are built with the Cosmos SDK, which allows easy chain creation and ensures certain standards. The Cosmos SDK includes the prerequisites that make it possible for blockchains to participate in inter-chain communications using the Inter-Blockchain Communication (IBC) Protocol. Chains built with the Cosmos SDK use the Tendermint consensus. Each of these topics is unfolded in more detail in the sections that follow.
 
 ## How Cosmos solves the scalability issue
 
 Scalability is a key challenge of blockchain technology. Cosmos allows applications to scale to millions of users. This degree of scalability is possible as Cosmos addresses **two types of scalability**:
 
 * **Horizontal scalability:** scaling by adding similar machines to the network. When *scaling out*, the network can accept more nodes to participate in the state replication, consensus observation, and any activity that queries the state.
-* **Vertical scalability:** scaling by improving the network's components to increase its computational power. *Scaling up*, the network can accept more transactions and any activity that modifies the state.
+* **Vertical scalability:** scaling by improving the network's components to increase its computational power. When *scaling up*, the network can accept more transactions and any activity that modifies the state.
 
-In a blockchain context, vertical scalability is typically achieved through the optimization of the consensus mechanism and applications running on the chain. On the consensus side, Cosmos achieves vertical scalability with the help of the Tendermint BFT. The Cosmos Hub currently conducts transactions in seven seconds. The only remaining bottleneck is then the application.
+In a blockchain context, vertical scalability is typically achieved through the optimization of the consensus mechanism and applications running on the chain. On the consensus side, Cosmos achieves vertical scalability with the help of the Tendermint BFT, which currently finalizes new blocks every seven seconds. The only remaining bottleneck is then the application running on its chain.
 
 The consensus mechanism and application optimization of a blockchain can only take it so far. To overcome the limits of vertical scalability, the multi-chain architecture of Cosmos even allows for **one application to run in parallel** on different but coordinated chains, whether operated by the same validator set or not. This inter-chain, horizontal scalability theoretically allows for infinite vertical-like scalability, minus the coordination overhead.
 
@@ -133,6 +137,6 @@ It becomes easier for users to navigate between different blockchains and applic
 
 This concludes Chapter 2 of the Onboarding Course! It has looked in a general way at the mechanisms of how blockchain works, as well as introduced the core features of Cosmos. 
 
-Chapter 3 takes you on a deep dive into more technical aspects of blockchain technology, which is then expanded in [Chapter](ADD LINK HERE) 4 with a closer technical look at Cosmos and some use cases of projects that take advantage of the Cosmos Ecosystem.
+Chapter 3 takes you on a deep dive into more technical aspects of blockchain technology, which is then expanded in [Chapter 4](ADD LINK HERE) with a closer technical look at Cosmos and some use cases of projects that take advantage of the Cosmos Ecosystem.
 
 Before you continue to [Chapter 3](ADD LINK HERE), it is recommended to take a look at [the Chapter 2 Resource Bank](ADD LINK HERE). Then you can take a short [self-assessment test](ADD LINK HERE) to see how comfortable you are with the information you have received so far.

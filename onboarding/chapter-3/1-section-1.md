@@ -15,8 +15,6 @@ This section will cover:
 
 * Data transfer
 * Networking and protocols
-* Points of failure in networks
-* Peer-to-peer (P2P) networking
 * Blockchain as a merge of data storage and network
 
 </HighlightBox>
@@ -82,7 +80,7 @@ Before diving into how these issues are approached with blockchain technology, r
 
 ## Networking and protocols
 
-The term **networking** covers both _hardware and software protocols used to transmit data and let computers communicate_. The interaction between software and hardware becomes especially interesting in a blockchain context because of a network's physical aspect.
+The term **networking** covers both _hardware and the software protocols used to transmit data and let computers communicate_. The interaction between software and hardware becomes especially interesting in a blockchain context because of a network's physical aspect.
 
 Imagine a cable connection between two computers. Traditionally a coaxial cable was used to carry a signal. Cables can be subject to interference from many things, so there is no guarantee that the signal originating at point A will be received by point B.
 
@@ -94,15 +92,15 @@ As an example, think about what happens in **the case of missing data**.
 
 To facilitate data transfer, protocols like TCP split data into small packets and transmit each one individually. These bits of data are converted into an analog signal on the hardware level. On the receiving end, the signals are reconstructed and the software protocol re-assembles the original piece of data. If a packet is missing, the receiving computer can ask for a **re-transmission** of the missing bundle of data.
 
-## Points of failure in networks
+### Points of failure in networks
 
 The function of a network is largely defined by its **degree of centralization**. Generally, networks can be centralized, decentralized, or distributed. You will see the term _decentralized_ come up a lot in blockchain literature.
 
 What exactly constitutes a distributed vs decentralized system is a hotly debated subject. Various network typologies have been proposed. Some view resource and power control as important aspects to differentiate networks. Differentiating distributed and decentralized networks by the location and control of resources includes a linear spectrum notion of centralization in networks.
 
-For the purpose of this discussion, take the main difference between the different types of networks to be the number of **points of failure**.
+For the purpose of this discussion, take the main difference between the different types of network to be the number of **points of failure**.
 
-A **point of failure** can be understood as _a node or a part of a network whose failure leads to the shutdown or dysfunction of the entire network, or the system no longer being able to perform its intended operations_. Centralized networks have **one** point of failure, which means they can be compromised by activity at that single point. Decentralized networks can tolerate multiple simultaneous failures before suffering the same extent of compromise.
+A **point of failure** can be understood as _a node or a part of a network whose failure leads to the shutdown or dysfunction of the entire network, or to the system no longer being able to perform its intended operations_. Centralized networks have **one** point of failure, which means they can be compromised by activity at that single point. Decentralized networks can tolerate multiple simultaneous failures before suffering the same extent of compromise.
 
 <ExpansionPanel title="Fault tolerance">
 
@@ -120,7 +118,7 @@ When learning about blockchain, it is worth understanding these fundamentals bec
 
 Although the advantages and disadvantages of each network type continue to be debated, to conclude: network design has implications on functionality and more general issues, for example, privacy and transparency. A network does not have to be purely centralized, decentralized, or distributed – it can incorporate different components of each type. The design should always match the envisioned functionality of the network.
 
-## Peer-to-peer (P2P) networking
+### Peer-to-peer (P2P) networking
 
 A **peer-to-peer (P2P) network** has a **distributed architecture**, meaning that work is distributed among members of the network. P2P networks are usually composed of computer systems connected via the internet. Each participant, called a node, connects to a limited number of other nodes, which are commonly referred to as its **peers**. Peers make resources like computing power and network bandwidth available to all peers in the network.
 
@@ -137,8 +135,6 @@ In P2P networking there is no central server, storage, or authentication of user
 ![P2P network](images/P2P-network.png)
 
 P2P networks became popular in file-sharing applications like Napster and BitTorrent, which are typically associated with illegal downloading and piracy. P2P networks are usually recommended for private households or small businesses – they are **inexpensive to set up**, but **security issues** can create expensive problems.
-
-### P2P security
 
 Security is challenging in P2P networking for two reasons:
 

@@ -1,6 +1,6 @@
 ---
 parent:
-  title: Cosmos Advanced
+  title: Chapter 4 - Cosmos Advanced
   description: A deeper-dive into the utility of Cosmos
   number: 1
 description: A deeper-dive into the utility of Cosmos

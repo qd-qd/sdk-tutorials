@@ -15,7 +15,7 @@ This section will cover:
 
 * The double-spending problem
 * The Byzantine Generals Problem
-* Privacy in blockchains
+* Privacy on blockchains
 
 </HighlightBox>
 
@@ -25,11 +25,11 @@ The importance that is placed on physical artifacts may be arbitrary, but they h
 
 This problem is amplified if you consider a digital form of currency. What prevents someone from making a copy and spending the same unit of currency twice? This is known as **double-spending**. The *double-spending problem* refers to the challenge of designing a cash system in which currency units are digital artifacts but cannot be spent more than once.
 
-<!--IMAGE PENDING-->
+![The Double-spending problem](/onboarding/1-introduction-blockchain/images/double-spending.png)
 
 In the traditional financial system, double-spending is avoided because centralized third parties, like banks, are trusted to manage and control all transactions. It is generally not possible for two parties to exchange value without involving a trusted third party to handle the settlement process and update the ledgers, as well as the account balances.
 
-In 2008, [Satoshi Nakamoto presented an alternate solution](https://bitcoin.org/en/bitcoin-paper): replacing these centralized ledger-keepers with a decentralized and distributed ledger maintained by all the nodes in a large network. Each member of the network has an exact replica of the ledger and no one can update it without forming a consensus – like a large crowd of witnesses who have to agree on proposed changes and will not allow certain events to occur, such as spending the same funds twice.
+In 2008, [Satoshi Nakamoto's Bitcoin whitepaper](https://bitcoin.org/en/bitcoin-paper) presented an alternate solution: replacing these centralized ledger-keepers with a decentralized and distributed ledger maintained by all the nodes in a large network. Each member of the network has an exact replica of the ledger and no one can update it without forming a consensus – like a large crowd of witnesses who have to agree on proposed changes and will not allow certain events to occur, such as spending the same funds twice.
 
 <HighlightBox type="info">
 
@@ -37,7 +37,7 @@ You will encounter an accessible explanation of exactly how blockchain achieves 
 
 </HighlightBox>
 
-This was the origin of Bitcoin, and it demonstrated that a network of participants who do not necessarily trust each other, can still achieve consensus about the validity of a transaction, its history, and the resulting state of the ledger. Centralization was no longer a necessity.
+This whitepaper was the origin of Bitcoin, which demonstrated that a network of participants who do not necessarily trust each other can still achieve consensus about the validity of a transaction, its history, and the resulting state of the ledger. Centralization was no longer a necessity.
 
 This leads to the other problem a distributed network faces: *maintaining consensus*.
 
@@ -45,7 +45,7 @@ This leads to the other problem a distributed network faces: *maintaining consen
 
 Imagine that three armies lay siege to a fortified city. All roads into the city are blocked and the terrain between them is filled with dangers, so the defenders have no escape but the battle is not yet won. The success or failure of the armies is contingent upon communication: the city's defenses are strong enough to destroy any one or two of the armies if they attack alone, but the city will fall to a coordinated attack by all three. The generals must agree to either attack all at once or not attack at all, but how secure are their messages?
 
-<!--IMAGE PENDING-->
+![The Byzantine Generals problem](/onboarding/1-introduction-blockchain/images/byzantine-generals.png)
 
 Each general faces several potential problems:
 
@@ -61,7 +61,7 @@ This thought experiment is known as the *Byzantine Generals Problem*, and the ch
 * Data could be lost, corrupted, or replaced with malicious alternatives.
 * Nodes might drop out of the network or actively work to undermine the shared objective.
 
-The difference is that, instead of only three generals trying to collaborate, there could be *thousands* of nodes, and instead of attacking a city, they need to agree on the state of a shared, ever-changing ledger.
+The difference is that instead of only three generals trying to collaborate there could be *thousands* of nodes, and instead of attacking a city they need to agree on the state of a shared, ever-changing ledger.
 
 ### Byzantine Fault Tolerance (BFT)
 
@@ -71,7 +71,16 @@ In essence, **blockchain is a Byzantine fault-tolerant networking system**:
 
 * It allows you to interact with unknown peers in a reliable way, but without granting anyone unwarranted trust or authority.
 * It both generates *and* secures a verifiable historical record by its collective, cooperative nature.
-* It balances the security of work being done in the public eye while maintaining the individual privacy of its users.
+
+<HighlightBox type="note">
+
+Cosmos makes use of the **Tendermint BFT**, in which a subset of nodes are tasked with validating blocks of transactions on behalf of the wider network. Tendermint BFT is language agnostic, allowing developers the freedom to create independent blockchain-based projects as they wish while still benefiting from its performance.
+
+Tendermint BFT balances "liveness" (how responsive the network is to activity) and "safety" (how quickly that activity is permanently recorded) in favor of safety, which is in contrast to many blockchain platforms.
+
+You will learn more about how blockchains operate throughout [the next chapter](ADD LINK HERE), including [specifics about Cosmos](LINK TO CH2MOD5), and you can find more information about Tendermint [later in this course](ADD LINK HERE).
+
+</HighlightBox>
 
 ## Privacy in blockchains
 
@@ -79,7 +88,7 @@ At the beginning of this course, a serious problem was identified with implicati
 
 In a centralized network, this is a less significant problem. To return to the banking example, any transactions you make are only known to you, the recipient, and the bank or banks involved. All other customers of the banking system are completely oblivious to your activity and you can trust the banks to prevent information about your activities from being accessed.
 
-Of course, the direct participants in your transaction must know who each other are and what they are doing, and to an extent, this is true in all banking. Even banks that offer "anonymous" accounts have to retain some corroborating data about who their customers are, and, of course, the owners of these accounts have some knowledge of who they send their money to, even if the record shows only mysterious numbers instead of names, but as with regular banking services, such records of transactions are kept carefully private.
+Of course, the direct participants in your transaction must know who each other are and what they are doing, and to an extent, this is true in all banking. Even banks that offer "anonymous" accounts have to retain some corroborating data about who their customers are, and the owners of these accounts have some knowledge of who they send their money to, even if the record shows only mysterious numbers instead of names. However, as with regular banking services, such records of transactions are kept carefully private.
 
 Things are very different on a blockchain-based network. All the participating nodes will receive updated versions of the ledger, meaning any transactions which have taken place will be visible to them, regardless of whether they were direct participants in a given transaction or not. So, *how can confidentiality be achieved in a blockchain network?*
 
@@ -91,14 +100,16 @@ There are three elements to any transaction, on blockchain or in the real world.
 * A **receiver**
 * A **package**
 
-The "package" could be anything. It could be a physical object: a gift, a letter, or parcel, a handful of cash, or it could be digital, like an email or text message. In blockchain, it would be data of some sort, for example, information on a payment in cryptocurrency.
+The "package" could be anything. It could be a physical object, like a gift, a letter or parcel, or a handful of cash; or it could be digital, like an email or text message. In blockchain, it would be data of some sort, for example, information on a payment in cryptocurrency.
 
 <HighlightBox type="note">
 
 In this context, "a transaction" must be broken down to its most atomic form. To illustrate this, the process of *making a purchase* actually requires **two** transactions:
 
-* One from A to B to send the payment.
-* One from B to A to send the purchased goods.
+* The first from A to B, to send the payment.
+* The second from B to A, to send the purchased goods.
+
+These two transactions are each "atomic" in the sense that neither can be divided into smaller functioning aspects.
 
 </HighlightBox>
 
@@ -114,13 +125,13 @@ Cryptocurrencies will provide a simple case study. Imagine Alice wants to send o
 
 However, not all these elements absolutely *need* to be secret for user confidentiality to be maintained: if the identities of Alice and Bob are disguised, the transfer of the currency could be between any two users of the network. Similar to the numbered accounts of secretive banking systems, users do not have to go by their real names. This means there is already a layer of anonymity between a user's real-world identity and their presence on the network.
 
-However, Alice and Bob would still need a method of confirming who they are, so they can make the transaction with confidence that they are interacting with the intended user. The solution to this problem is basically the same as the one people have used in the real world since the invention of writing: **identity is confirmed by using a signature**.
+However, Alice and Bob would still need a method of confirming who they are, so they can make the transaction with confidence that they are interacting with the intended user. The solution to this problem is basically the same as the one people have used in the real world since the invention of writing: **Identity is confirmed by using a signature**.
 
 ### Signatures
 
 When you sign your name on a job contract or sign for a parcel delivery at your door, in effect you are using a unique and verifiable symbol to represent your identity. You always use the same signature, even in different contexts, and it is used as "proof" that the person holding the pen is who they claim to be. Objects can also be signed as a form of proof, such as when an artist signs their name to a painting to confirm its authenticity.
 
-Users of distributed networks use a clever methodology based on **public-private key encryption** to achieve this same kind of proof – but this kind of signature is impossible to forge. In simplified terms, everyone on the network has two linked encryption keys: one that can be made public and one that they keep secret. To prove that a transaction is legitimately yours, you "sign" it using your **private** key. No one else can do this, but *everyone* else can use your **public** key to confirm your other key made the signature.
+Users of distributed networks use a clever methodology called **public-private key encryption** to achieve this same kind of proof – but this kind of signature is impossible to forge. In simplified terms, everyone on the network has two linked encryption keys: one that can be made public and one that they keep secret. To prove that a transaction is legitimately yours, you "sign" it using your **private** key. No one else can do this, but *everyone* else can use your **public** key to confirm your other key made the signature.
 
 Public-private key encryption can achieve impressive things. For example, Alice and Bob could use a combination of all four of their public and private keys to establish a secure channel of communication inaccessible to anyone except themselves – so the detail of their interaction through that channel can be absolutely trusted.
 

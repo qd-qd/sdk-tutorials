@@ -1,6 +1,6 @@
 ---
 parent:
-  title: Blockchain Advanced
+  title: Chapter 3 - Blockchain Advanced
   description: A deeper-dive into the mechanisms of blockchain
   number: 1
 description: A deeper-dive into the mechanisms of blockchain

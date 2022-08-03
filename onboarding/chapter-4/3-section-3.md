@@ -1,6 +1,6 @@
 ---
 title: "The Cosmos SDK and other ecosystem tools"
-order: 2
+order: 3
 description: Introducing the tools for developing Cosmos application blockchains
 tag: deep-dive
 ---

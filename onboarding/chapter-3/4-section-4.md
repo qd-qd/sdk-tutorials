@@ -61,7 +61,7 @@ The term smart contract is often misused or misunderstood. They can be viewed ei
 
 When looking at the concept of smart contracts in the **Ethereum protocol**, the focus is on the application. Code storing and execution is possible on Ethereum's distributed ledger network and smart contracts in Ethereum partially achieve what Szabo envisioned, as one can transfer and hold funds to secure and enforce pre-defined transactions and relationships. The contract itself contains the enforcement of its terms, as the execution of the agreement is clear at the moment it is deployed. This leads to third parties playing a much smaller role.
 
-Smart contract advocates expect that by automating contracting, human error is eliminated and lower error rates can be expected. Intermediaries are expected to play a secondary role in the future; it is often argued that they would only come into play when addressing performance evaluation and dispute resolution. For now, smart contracts are mainly used in making fund transfers possible through a blockchain, but they could be used for any processes in which a reliable record is necessary.
+Smart contract advocates expect that by automating contracting, human error is eliminated and lower error rates can be expected. Intermediaries are expected to play a secondary role in the future; it is often argued that they would only come into play when addressing performance evaluation and dispute resolution. For now, smart contracts are mainly used to build dApps and in making fund transfers possible through a blockchain, but they could be used for any processes in which a reliable record is necessary.
 
 ## Smart contracts in the blockchain context
 
@@ -74,6 +74,18 @@ From a programming standpoint, a smart contract is a coded **"if/when...then" st
 Smart contracts are account-holding objects that contain code functions, usually deployed on blockchains that have a virtual machine (VM) as part of their application layer. Developers are limited to the specific programming language of the VM in question and can only choose from a limited set of functions for their cryptographic operations.
 
 As all smart contracts on a given VM are run by that single machine, they share the same underlying environment and compete for network resources. This can severely restrain performance. Even if the state machine can split into multiple subsets, for example with sharding, the contracts still need to be interpreted by a VM, which would limit performance.
+
+<ExpansionPanel title="CryptoKitties – a purr-fect storm of purr-formance overload">
+
+Launched in November 2017, **CryptoKitties** is an early example of a blockchain-based "play-to-earn" game, in which players buy, sell, and breed virtual cats (NFTs of cartoon cat images) which each inherit random characteristics from their parents. Soon after its launch, CryptoKitties experienced a huge and unanticipated spike in popularity, driven by widespread media coverage when a cat token was purchased for over $100,000.
+
+The game was originally run on the Ethereum blockchain, upon which multiple dApps and smart contracts share the network's resources. The popularity of CryptoKitties grew to such an extent that at one point it accounted for an unprecedented 25% of Ethereum's network traffic, resulting in major transaction congestion and significant slowdown of both the functioning of the game and the network as a whole.
+
+Ethereum miners responded to the perceived crisis by increasing the gas limit to allow more data per block and more transactions per second, but while this solved the problem for the network it had consequences for the game's popularity. Many players found that the costs of transactions reduced their revenues when selling or breeding cats so much that playing cost more than they could earn, and participation declined almost as steeply as it had risen.
+
+CryptoKitties eventually moved to a different platform where it persists to this day. Its player numbers stabilized at a much lower level than its peak, but the game still experiences occasional spikes of interest among NFT collectors. In September 2021, one of the original CryptoKitties NFTs was sold for almost $895,000.
+
+</ExpansionPanel>
 
 ### Smart contracts are self-executing
 

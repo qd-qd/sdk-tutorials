@@ -21,7 +21,7 @@ This section will cover:
 
 ## Blockchain categorization
 
-There are various use cases for blockchain that do not necessarily revolve directly around the transfer of monetary value. Some of these are already implemented, others are yet to surface. Before you look at some specific cases, it is important to define two broad categories blockchains can be divided into **public** networks, and **private** (or **managed**) networks.
+There are various use cases for blockchain that do not necessarily revolve directly around the transfer of monetary value. Some of these are already implemented, others are yet to surface. Before you look at some specific cases, it is important to define two broad categories blockchains can be divided into: **public** networks, and **private** (or **managed**) networks.
 
 ### Public networks
 
@@ -31,6 +31,12 @@ Public networks are implemented in the way blockchain technology was originally 
 * **Absence of hierarchy:** all nodes are equal and all validators are equal.
 * **Decentralization:** many public networks are completely decentralized - this may not work well with traditional business models.
 * **Crypto-economic incentives:** without an absolute defense against malicious action, benevolence is reinforced via rewards which, in combination with often significant network scale, disincentivize behavior that might endanger network function.
+
+<HighlightBox type="info">
+
+The significance of network scale in protecting blockchains against bad actors will be explored [later in this course](ADD LINK TO CH2-SEC3).
+
+</HighlightBox>
 
 ### Managed networks
 
@@ -43,40 +49,47 @@ Managed networks likely seek certainty that pending transactions will be include
 Managed networks may use blockchain as a way of perpetuating pre-existing relationships, or automating processes. They can be:
 
 * **Designed for limited numbers of vetted and approved participants:** performance challenges and poorly connected nodes are less important.
-* **Designed for optimized performance:** participants in an enterprise network can typically run powerful, well-connected, highly available nodes.
+* **Designed for optimized performance:** participants in an enterprise network can typically run powerful, well-connected, high availability nodes.
 * **Governed by well-defined agreements:** decision-making matters such as protocol upgrades, admission requirements, and remedial actions may be codified in advance.
 
 ## Real-world use cases
 
-The most obvious examples of blockchain in action are *cryptocurrencies* and *non-fungible tokens* (NFTs), which in recent years have become a familiar term in the global discourse surrounding blockchain. Most people are already familiar with these applications, but click the following expansion panels for a brief overview of each one.
+The most obvious examples of blockchain in action are *cryptocurrencies* and *non-fungible tokens* (NFTs), which in recent years have become familiar terms in the global discourse surrounding blockchain.
 
-<ExpansionPanel title="Cryptocurrency">
+<ExpansionPanel title="Cryptocurrencies and NFTs">
+
+Most people are already familiar with these applications, but click the following expansion panels for a brief overview of each one.
 
 **Cryptocurrency**, casually referred to as "crypto", is *a digital form of currency that is not dependent on any central authority*, such as a government or bank. Bitcoin was originally conceived to help explain the features of blockchain as a software tool, but went on to become the first actual cryptocurrency and remains the most valuable example to this day.
 
 Alternative cryptocurrencies were originally based on copies or modifications of the Bitcoin code, a difficult undertaking. **Cosmos** allows developers to create new blockchains for many purposes, including cryptocurrencies, with far greater ease.
 
-</ExpansionPanel>
-
-<ExpansionPanel title="Non-Fungible Tokens (NFTs)">
-
-A **non-fungible token** is *a tradeable digital asset* (such as an image file), any transfer of ownership is proven with the immutable blockchain ledger. Unlike the units of a cryptocurrency, NFTs are individually unique, which is the basis of their value. They are also relatively easy to create, even by people with little or no coding skills.
+A **non-fungible token** is *a tradeable digital asset* (such as an image file), and any transfer of ownership is proven by the immutable blockchain ledger. Unlike the units of a cryptocurrency, NFTs are individually unique, which is the basis of their value.
 
 However, there is debate over the extent to which the sale of an NFT represents a legal transfer of rights or ownership over the associated digit asset. In practice, the trading of an NFT technically only represents a change in ownership of the NFT itself and not necessarily that of the asset, which typically is stored conventionally and referenced on the blockchain only by a URL. It is difficult to prevent anyone from accessing the target of the URL and creating a different NFT for the same asset or even duplicating the original file entirely.
 
-</ExpansionPanel>
-
 <HighlightBox type="tip">
 
-The difference between cryptocurrencies and NFTs is that strange word, **fungible**. If something is fungible, it is fundamentally interchangeable with another example of itself. Two cans of a particular brand of dog food are fungible, but two dogs are not even if they are of the same breed – any pet owner will assure you that their dog is unique, and nobody ever swaps pets.
+The difference between cryptocurrencies and NFTs is that strange word, **fungible**. If something is fungible, it is fundamentally interchangeable with another example of itself. Two cans of a particular brand of dog food are fungible, but two dogs are not, even if they are of the same breed – any pet owner will assure you that their dog is unique, and nobody ever swaps pets. 
 
-Similarly, Bitcoins are much like any other unit of currency: if you exchange one $20 bill for two $10 bills, your wealth remains unchanged – because dollars and Bitcoins are *fungible*. NFTs, as their full name suggests, are *non*-fungible: their worth lies in relation to some unique property (at least in theory), and ownership of an NFT is traded for actual financial value.
+As well as uniqueness, **non-fungibility** also indicates that a thing *cannot be broken down into smaller divisions of itself*. The contents of a can of dog food can be divided into multiple portions without losing value – it arguably becomes *more* useful, allowing you to control the expenditure of that value over time. Two halves of a dog, by contrast, are worth less than the sum of their parts.
+
+Bitcoins are much like any other unit of currency: if you exchange one $20 bill for two $10 bills, your wealth remains unchanged, and similarly you can make a transaction of 0.5 Bitcoins, for example. Both dollars and cryptocurrnecy tokens are *fungible*. 
+
+NFTs, as their full name suggests, are *non*-fungible tokens: their worth lies in relation to some unique property (at least in theory), and ownership of the whole NFT is traded for actual financial value.
+
+To summarize:
+
+* **Fungible tokens** are non-unique and divisible.
+* **Non-fungible tokens** are unique and indivisible.
 
 </HighlightBox>
 
+</ExpansionPanel>
+
 However, there is a lot more to blockchain than just these high-profile and often divisive examples. There are already more varied blockchain applications implemented today than can be easily summarized. The following use cases look at a few specific fields in detail to illustrate how blockchain technology can be leveraged in different contexts.
 
-### Government services
+### Governmental services
 
 The first thing everyone associates with "government" is bureaucracy: endless red tape, challenges and failures of communication, the laborious duplication or unhelpful separation of data between (or even within) departments, and the expenses this costs taxpayers and private entities like companies.
 
@@ -90,11 +103,11 @@ Blockchain applications can also deliver parallel but important-to-differentiate
 
 [HealthVerity](https://healthverity.com/) provides such services by using blockchain technology to restrict access permission to confidential data even as it is put to work for both the patient and interested third parties in approved, anonymized forms. [HashedHealth](https://hashedhealth.com/), which has spawned various blockchain-based platforms, is also developing a system to confirm the credentials of medical practitioners in the United States of America to prevent unlicensed activities in particular states.
 
-There are also projects related to vaccine administration and tracking, and, while not directly medical-focused, projects in the genomics industry, where the demands of personal data privacy are well-matched to blockchain's decentralized security.
+There are blockchain-based projects related to vaccine administration and tracking, and it has also been used in the genomics industry. While genomics is not directly a medical-focused field, the demands of personal data privacy are well-matched to blockchain's decentralized security.
 
 ### Vehicle manufacture and maintenance
 
-The use of blockchain as a valuable tool for supply chains is now well-established, but it is worth underlining just how beneficial it can be especially in contexts where human safety is a key concern, like vehicle manufacture, repair, and maintenance.
+The use of blockchain as a valuable tool for supply chains is now well-established, but it is worth underlining just how beneficial it can be, especially in contexts where human safety is a key concern, like vehicle manufacture, repair, and maintenance.
 
 The ability to reliably track the provenance of components, and even identify the specific vehicles in which they are used, can impede the introduction of counterfeit parts or allow for precision targeting of unit recalls if a component is found to be faulty. This significantly reduces costs to the manufacturer and removes inconvenience to car owners who could be wrongly identified as needing maintenance because their particular vehicle does not contain an affected component. The [Mobility Open Blockchain Initiative](https://dlt.mobi/) aims to deliver whole-life vehicle records including complete maintenance histories and listing regional registrations.
 
@@ -104,7 +117,7 @@ Aerospace and defense interests at both the corporate and state level are also e
 
 ### Transportation and travel
 
-Moving away from purely mechanical issues, other travel industries are implementing blockchain projects in numerous ways: decentralized ride-hailing services, in which independent drivers are not beholden to a central business; tracking the use of public transport systems like buses and "bike shares" to improve services; securing and coordinating the range of personal data that airline travelers need to manage like personal and passport data, payment details, immigration or border permissions, and now vaccination status. Smart contracts can also impact ticket purchases by delivering smoother booking processes.
+Moving away from purely mechanical issues, other travel industries are implementing blockchain projects in numerous ways: decentralized ride-hailing services, in which independent drivers are not beholden to a central business; tracking the use of public transport systems like buses and "bike shares" to improve services; securing and coordinating the range of personal data that airline travelers need to manage, such as personal and passport data, payment details, immigration or border permissions, and now vaccination status. Smart contracts can also impact ticket purchases by delivering smoother booking processes.
 
 The transportation of goods demands a great deal of information transfer, whether the supply chains in question are local, national, or global, so blockchain can have useful applications here. The [Blockchain In Transport Alliance (BiTA)](https://www.bita.studio/) identifies the technology as a way to improve transactions, shipment tracking, fleet management, and efficiency in the trucking and freight industries.
 
@@ -112,7 +125,7 @@ Vehicle purchase or leasing can also be impacted, with blockchain offering iron-
 
 ### Publishing and the press
 
-The concentration of power in publishing has been long criticized by observers, with the long-established "Big Five" forever absorbing smaller publishers and narrowing opportunities for less-established authors. Digital disruption of these so-called "gatekeepers" by Amazon and its rivals has led to accusations of market monopolization, and questionable practices towards publishers and individual authors alike. All this makes publishing a field ripe for innovative approaches to connect readers with the written word.
+The concentration of power in publishing has been long criticized by observers, with the long-established "Big Five" forever absorbing smaller publishers and narrowing opportunities for less-established authors. Digital disruption of these so-called "gatekeepers" by Amazon and its rivals has led to accusations of market monopolization, and questionable practices towards publishers and individual authors alike. All this makes publishing a field ripe for innovative ways to connect readers with the written word.
 
 The Canadian platform [Bookchain](https://www.bookchain.ca/) applies blockchain technology to various aspects of digital publishing, offering authors new ways of distributing their work with indisputable proof of attribution, protection against illegal copying or transfers, and even allowing them to track the ongoing ownership of their ebooks should buyers legitimately sell them on.
 

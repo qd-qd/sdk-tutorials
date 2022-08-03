@@ -17,7 +17,7 @@ This section will cover:
 * Deployment patterns
 * Public networks
 * Managed networks
-* Why use managed blockchains?
+* Public vs private/managed
 
 </HighlightBox>
 
@@ -25,11 +25,9 @@ This section will cover:
 
 In [Chapter 1](ADD LINK HERE), you looked at the differences between centralized, decentralized, and distributed networks, and the claim was made that a given network could incorporate elements of all three categories. If this is the case, how can the extent of decentralization be measured?
 
-<ExpansionPanel title="Measuring decentralization – the minimum Nakamoto coefficient">
-
 The _**Gini coefficient**_ and _**Lorenz curve**_ are often proposed as means to quantitatively measure decentralization. Another useful tool is the _**minimum Nakamoto coefficient**_, as proposed by Balaji S. Srinivasan and Leland Lee, who argue that quantifying decentralization is not only important for purposes of measurement but also of system optimization.
 
-**The minimum Nakamoto coefficient**
+<ExpansionPanel title="Measuring decentralization – the minimum Nakamoto coefficient">
 
 The _**minimum Nakamoto coefficient**_ quantifies the number of entities that must be compromised to compromise the system as a whole. The higher the coefficient, the higher the number of entities required to compromise the system.
 
@@ -52,9 +50,9 @@ Subsystems can differ from the ones mentioned above and can be chosen freely as 
 
 </HighlightBox>
 
-Now, that you revised decentralization conceptually, it is time to consider deployment patterns in blockchain technology.
-
 </ExpansionPanel>
+
+After you have revised decentralization conceptually, it is time to consider deployment patterns in blockchain technology.
 
 ## Deployment patterns
 
@@ -78,7 +76,7 @@ Managed chains are "private" in a sense because most allow for authentication, a
 
 <ExpansionPanel title="Permissioned and permissionless blockchains">
 
-The terms "private" and "permissioned" are often used synonymously; so to are "public" and "permissionless" - also referred to as *non-permissioned*. It is essential to understand the difference between these terms and what they entail.
+The terms "private" and "permissioned" are often used synonymously; so too are "public" and "permissionless", which are also referred to as *non-permissioned*. It is essential to understand the difference between these terms and what they entail.
 
 In **permissioned blockchains**, *an individual or group of participants hold the authority to validate blocks of transactions or to participate in the consensus mechanism*. Permissioned blockchains restrict an actor's involvement in the consensus state, as well as their ability to create smart contracts or transactions. 
 
@@ -221,7 +219,7 @@ A **consortium blockchain network** is an option often preferred by private ente
 * **Limited access:** unlike public networks, many consortium blockchain models limit access to vetted and approved participants.
 * **Different consensus approaches:** because the scope of participants can be limited, crypto-economic incentives might not be necessary for a consortium blockchain network. Alternatively, the creation and verification of blocks may be executed by a limited group of authorized nodes.
 
-### Public vs private/managed
+## Public vs private/managed
 
 Often private and public blockchain network differences are explained by using an analogy: the difference between the intranet and the internet in the 1990s, with public blockchains compared to the internet and private ones to the intranet.
 

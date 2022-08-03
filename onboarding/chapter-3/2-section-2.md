@@ -15,7 +15,6 @@ This section will cover:
 
 * Consensus mechanisms
 * Eventual consensus
-* Forking
 * Immutability
 * Block creation and finality
 * General types of consensus algorithms
@@ -54,6 +53,8 @@ Consensus algorithms establish **safety** and **liveness** by generating consens
 
 To understand consensus in blockchain technology, remember that the truth is the state all participants agree upon. Consensus is eventual in blockchain because blocks are created as transactions are performed. Thus, what is agreed upon depends on the operations taking place.
 
+Why is the consensus gradual? The combination of competitive block creation and the latency of the network means it is possible for different "truths" about the state of the blockchain to coexist. The forming of a definitive consensus is not an instantaneous event, but more a gradual agreement and acceptance of one depiction of the network's past activity over another.
+
 Take a look at why eventual consensus is important and how consensus is reached in case of competing claims.
 
 ### The CAP Theorem
@@ -75,7 +76,7 @@ However, consistency is not out of reach for a distributed network. Blockchain n
 
 While this allows blockchains to satisfy all the key demands a network might have, the eventual nature of consensus and consistency can lead to a form of partitioning event known as **forking**. Forks are important to understand, as they can have a potentially undesirable or unwanted impact on a network.
 
-## Forking
+### Forking
 
 <HighlightBox type="info">
 
@@ -85,13 +86,13 @@ In software engineering, **forking** describes a process in which a developer du
 
 Imagine you have a blockchain network in which two alternate new blocks are suggested for the next free position in the chain. In [Chapter 2](ADD LINK TO CH2-MOD3), this situation was visualized as ripples spreading out from the originating nodes as if stones dropped into a pool of water. It is possible that other nodes would receive competing claims about the winner, but they are unlikely to receive both claims simultaneously. The protocol selects the block with the most transactions or with the most complex puzzle solved.
 
-However, if nodes within the network make different decisions about which of the competing blocks to accept, you then have a **fork**, or two competing truths. The chain of blocks then continues on **two different paths** in parallel: the chain of blocks splits into two strands with groups of nodes working to add new blocks to the side of the fork they are on. As each half of the fork is extended, the nodes on the network re-evaluate each chain for length and complexity and potentially decide which side of the fork to keep working with.
+However, latency in the network means it is possible for rival valid blocks to be accepted by different groups of nodes. When nodes within the network have made different decisions about which of the competing blocks to accept, you then have a **fork**, or two competing truths. The chain of blocks then continues on **two different paths** in parallel: the chain of blocks splits, with groups of nodes working to add new blocks to the side of the fork they are on.
+
+As each half of the fork is extended, the nodes on the network re-evaluate each chain for greater length and complexity and potentially decide which side of the fork to keep working with, with protocols typically prioritizing the longest chain in what is indirectly a democratic network decision.
 
 ![Example of a fork](/onboarding/1-introduction-blockchain/images/blockchain-forking.png)
 
 Each blockchain protocol provides a mechanism to _eventually_ choose a single branch of the fork. Forks are introduced as a **means to reach consensus even when the community does not agree to**. In the end, an eventual consensus is reached and the losing strand is replaced by the winner throughout the network, returning **consistency** to the states of all nodes.
-
-### What can cause a fork?
 
 Forks are often a result of changes made to the blockchain protocol (protocol upgrades) and not transactions updating the state. As a blockchain network evolves so does its protocol in ways that can be minor or major. When a block introduces a protocol change, a fork can result if it is not supported unanimously: the network separates into two groups using different versions of the blockchain protocol.
 
@@ -104,13 +105,9 @@ When talking about forks, it is important to note that they can be differentiate
 * **Hard forks**
 * **Soft forks**
 
-### Hard forks
-
 A **hard fork** represents _a change in the protocol of a blockchain that is **not backward-compatible**_. This is the case when the new rules for validating are different to such an extent that the old rules would see *new-rule blocks* as invalid.
 
 In this circumstance, all nodes would have to accept the change and implement it by using the new rules to maintain a unified rule set for validation. If a group of nodes objects to using the new rules and continues using the old ones, a fork occurs - effectively dividing the original singular network into two parallel networks.
-
-### Soft forks
 
 A **soft fork** represents *a change of the protocol with which the rules enforced are restricted*, thus it **is backward-compatible**. Soft forks are often used to update the blockchain's protocol.
 
@@ -166,17 +163,17 @@ For a malicious node to remove or insert transactions, it would need to:
 * Update the hash of the containing block.
 * Do the same for all subsequent blocks.
 
-This is theoretically possible in a Proof-of-Work (PoW) network, but in practice requires the malicious nodes to harness more processing power than the honest nodes. A node will almost certainly end up connecting to an honest node during its life. This honest node would tell the deceived node a different truth from that of the malicious nodes, after which the new node would need to make a decision. It will always decide to go with the **longest or more difficult fork**.
+This is theoretically possible in a Proof-of-Work (PoW) network, but in practice requires the malicious nodes to harness more processing power than the honest nodes. A node will almost certainly end up connecting to an honest node during its life. This honest node would tell the deceived node a different truth from that of the malicious nodes, after which the new node would need to make a decision. It will always decide to go with the **longest fork**.
 
 It is said that the blockchain is **immutable** because of the practical difficulty to include new or change old data.
 
 ## Block creation and finality
 
-**Finality** refers to _the guarantee that transactions, blocks, and ultimately the state of the ledger cannot be altered, reversed, or manipulated after a block is validated and becomes part of the chain_. In practice, network latency influences finality. Therefore, finality is used to indicate the amount of time you have to wait to consider a transaction to have become immutable.
+**Finality** refers to _the guarantee that transactions, blocks, and ultimately the state of the ledger cannot be altered, reversed, or manipulated after a block is validated and becomes part of the chain_. In practice network latency influences finality, in conjunction with the choice of consensus algorithm. Therefore, finality is used to indicate the amount of time you have to wait to consider a transaction to have become immutable.
 
 Finality is an essential feature of blockchains. Without it, a blockchain network cannot serve properly as a network for assets with value, payment, or an immutable ledger. However, most blockchain protocols only have **probabilistic (transaction) finality** – transactions are not automatically or *instantly* final, but become more final over time as more blocks are confirmed.
 
-The amount of time it takes a blockchain network to confirm a transaction (latency) determines the nature of the chain's finality rate. There are different **types of finality** in blockchains, depending on the underlying consensus mechanism a protocol relies on.
+The amount of time it takes a blockchain network to confirm a transaction determines the nature of the chain's finality rate. There are different **types of finality** in blockchains, depending on the underlying consensus mechanism a protocol relies on.
 
 <Accordion :items="
     [

@@ -27,15 +27,15 @@ This section will cover:
 
 ## Why blockchain is the future of the internet
 
-If you go back to the *beginning* of the internet – *before the internet even existed*, in fact – you can find the first conceptual seed of what it is now evolving into because of blockchain.
+If you go back to the *beginning* of the internet – *before the internet even existed*, in fact – you can find the first conceptual seed of what blockchain represents.
 
 The genesis of the World Wide Web is considered to be the document [*Information Management: A Proposal*](https://www.w3.org/History/1989/proposal.html), written by Tim Berners-Lee in 1989, which introduced the idea of an information sharing system based on hypertext links. In it, he included the following observation under the significant heading *"Non-Centralisation"*:
 
 > _"Information systems start small and grow. They also start isolated and then merge. **A new system must allow existing systems to be linked together without requiring any central control or coordination**."_
 
-It is remarkable that the person whose ideas gave rise to the internet itself would highlight the value of non-centralization at the very beginning – and yet this is something that only decades later is finally being realized as a pathway for the future of the internet.
+It is remarkable that the person whose ideas gave rise to the internet itself would highlight the value of non-centralization at the very beginning of that journey. Much of the contemporary internet is based on centralized systems, but blockchain, *through Cosmos*, offers the posibility of actualizing Berners-Lee's statement.
 
-This is why blockchain, *though Cosmos*, is the future. In essence:
+In essence:
 
 * **Blockchain** allows us to create *networks* that do not require, as Berners-Lee said, "any central control or coordination".
 * **Cosmos** is an ecosystem that links blockchains together *in the same way*.
@@ -50,9 +50,7 @@ The terms *Web1*, *Web2*, and *Web3* can be thought of as the three supposed era
 
 ### Web1 - 1991 to 2004
 
-At the beginning of the internet and for a long time after, most websites were static web pages and very few internet users produced content. Most users were consumers, accessing information (and later downloading digital media, legally and illegally) that was created almost exclusively by large real-world entities, such as governments and corporations.
-
-<!--WEB1 BANNER IMAGE (no idea… what does “the old internet" look like?)-->
+At the beginning of the internet and for a long time after, most websites were static web pages using protocols like HTTP and UCI, and very few internet users produced content. Most users were consumers, accessing information (and later downloading digital media, legally and illegally) that was created almost exclusively by large real-world entities, such as governments and corporations.
 
 The structure and philosophy of Web1 largely mapped onto that of the existing nature of offline society: *centralized networks* in which users had little or no authority. However, note that the emergence of [Wikipedia](https://www.wikipedia.org/) (2001), a collaborative information resource *maintained by user volunteers*, already heralded the changes to come.
 
@@ -60,15 +58,11 @@ The structure and philosophy of Web1 largely mapped onto that of the existing na
 
 In the second half of the lifetime of the internet to date, a significant shift occurred in which users increasingly *produced* content as well as consuming it. Facebook (2004), Youtube (2005), and Twitter (2006) were the frontline of the emergence of social networking as a cultural force and digital media as a domain for personal creative expression as well as commercial products.
 
-<!--WEB1 BANNER IMAGE 2-->
-
 Web2 could be compared to a partially *decentralized system*. The network of Web1 systems persists to this day, but now they coexist alongside platforms where users form networks independently, though within the constraints of those platforms.
 
-### Web3 - the present to...the future?
+### Web3 - the present to... the future?
 
-The onset of Web3 refers specifically to the appearance of cryptocurrencies and tokenization as an alternative to traditional centralized forms of value exchange. However, as with the previous two internet "eras" in which a shift in user agency is key to their definitions, using blockchain technology in more varied decentralized systems is where the ongoing potential of Web3 is seen to lie, such as *smart contracts* and *decentralized applications* (dApps).
-
-<!--WEB1 BANNER IMAGE 3-->
+The onset of Web3 refers specifically to the appearance of cryptocurrencies and tokenization as an alternative to traditional centralized forms of value exchange. However, as with the previous two internet "eras" in which a shift in user agency is key to their definitions, using blockchain technology in more varied decentralized systems such as *smart contracts* and *decentralized applications* (dApps) is where the ongoing potential of Web3 is seen to lie.
 
 Web3 implies the next step in the progression previously discussed, shifting the focus of the internet more to the *distributed* networking model. While the conceptual implementations of Web1 and Web2 will likely continue, networks not reliant on centralized authorities are becoming an increasingly practical alternative.
 
@@ -76,7 +70,7 @@ Web3 implies the next step in the progression previously discussed, shifting the
 
 As stated, not everyone supports these divisions, and any borders drawn between Web1, Web2, and Web3 must be considered indistinct. There have always been platforms online where individual users have expressed themselves as creators of content: first through text forums, then on blogs, and afterwards when producing digital products like music or videos, for pleasure or profit, and leveraging the internet to sell tangible goods to customers around the world.
 
-However, until now, almost all online systems have by necessity been centralized, since before blockchain that was the only available model of design. The opportunity for decentralized and distributed networks that blockchain now makes possible is already disrupting this conceptual monopoly, and Cosmos seeks to expand this potential for systemic change.
+However, with a few exceptions like P2P file-sharing services, most online platforms have been centralized since that was the dominant model of design. The opportunity for decentralized and distributed networks that blockchain now makes possible is already disrupting this conceptual monopoly, and Cosmos seeks to expand this potential for systemic change.
 
 ## Strengths and weaknesses of blockchain
 
@@ -84,20 +78,19 @@ As discussed in the [previous section](LINK HERE), there are several key benefit
 
 * **Network and communication robustness:** distributed networks enjoy greater interconnectedness between nodes, reducing the number of points of failure that can cause the network to fail as a whole.
 * **Data security:** duplication of the ledger across multiple nodes means that any loss, corruption, or subversion of data is harder to occur, or easier to correct.
-* **Privacy and anonymity:** cryptographic techniques ensure user identities and transaction details remain confidential even when the ledger is shared by all nodes.
 * **Node equality:** in the absence of a centralized network authority, any node can take a defining role in the progressive updating of the distributed ledger.
 
 However, the nature of blockchain to date also presents some challenges to anyone seeking to use the technology in new ways, such as by developing blockchain-based applications, and the adoption of "Web3" technology has been impeded by several factors.
 
-Blockchain is difficult to code and at first, developers were forced to base new projects on established systems, like Bitcoin and Ethereum. This created other problems, like limitations of choice regarding coding language and supported features, or forcing all dApps to compete for resources on a single blockchain.
+At first developers were forced to base new projects on established systems, like Ethereum and Bitcoin, with Bitcoin being particularly difficult to code in. This also presented other problems, like limitations of choice regarding coding language and supported features, or forcing all dApps to compete for resources on a single blockchain.
 
-One critical issue was *siloing*, the inability for any two blockchain-based applications to interact with each other. Without resolving this issue, it would be hard to envision blockchain as a viable alternative to the current systems, which dominate the internet.
+One critical issue was *siloing*, the inability for any two blockchain-based applications to interact with each other. Without resolving this issue and adding *interoperability* to the capability of dApps, it would be hard to envision blockchain as a viable alternative to the current systems which dominate the internet.
 
-Fortunately, **Cosmos** provides a solution.
+Fortunately, **Cosmos** provides solutions.
 
 ## Cosmos
 
-Cosmos offers developers a decentralized network for creating independent blockchains. Developers are free to use a wider variety of programming languages, and instead of sharing space (and resources) on a single main blockchain, in Cosmos, each dApp is created as a specialized blockchain within the shared environment.
+Cosmos offers developers a decentralized network for creating independent blockchains. Developers are free to use a wider variety of programming languages, and instead of different dApps sharing space (and resources) on a single main blockchain, in Cosmos independent chains are tailored to the needs of each dApp.
 
 Crucially, unlike previous Web3 systems, the Cosmos Ecosystem is designed to facilitate communication between different blockchains. It aims to create "an internet of connected blockchains", with all the freedom of specialization and communication that the description implies.
 
@@ -113,19 +106,15 @@ The previous section began with a condensed summary of blockchain's key features
 * Fast updates with **transaction finality**, and significantly greater energy efficiency than previous blockchain applications like Bitcoin.
 * The ability for applications *inside* the ecosystem to interact with those *outside* it (both traditional software and blockchain).
 
-<HighlightBox type="info">
-
 You will have the chance to learn more about the specifics of Cosmos later in the course, but there are some key phrases here that are worth taking some time to explore directly.
-
-</HighlightBox>
 
 ### What is staking?
 
 There are several different mechanisms that blockchains can use to form consensus about the creation of new blocks. The original method, popularized by Bitcoin and called **Proof-of-Work** (PoW), will be explained in a later section, but in essence, it represents a competition between nodes to create new blocks, with the winner being financially rewarded.
 
-An alternative strategy is **Proof-of-Stake** (PoS). Here, a subset of nodes called "validators" commit (or **stake**) financial value using cryptocurrency to participate in block creation, and are rewarded for behavior that is beneficial to the network.
+An alternative strategy is **Proof-of-Stake** (PoS). Here, a subset of nodes called "validators" commit (or *stake*) financial value using cryptocurrency to participate in block creation, and are rewarded for behavior that is beneficial to the network.
 
-Cosmos uses a variation called **Delegated-Proof-of-Stake** (DPoS), which allows other nodes in the network to share in these staking rewards by **delegating** their own cryptocurrency on the validators of their choice.
+Cosmos uses a variation called **Delegated-Proof-of-Stake** (DPoS), which allows other nodes in the network to share in these staking rewards by **delegating** their own cryptocurrency to the validators of their choice.
 
 ### What is transaction finality?
 
