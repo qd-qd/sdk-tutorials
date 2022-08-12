@@ -218,4 +218,4 @@ When the acknowledgment is received successfully on the original sender chain, t
 
 ## Next up
 
-In the [next section](ADD LINK HERE), you will move away from the technical features of Cosmos to look at several hypothetical use cases which highlight the expanded potential for blockchains platformed on the Cosmos ecosystem.
+In the [next section](ADD LINK HERE), you will move away from the technical features of Cosmos to look at several hypothetical use cases which highlight the expanded potential for blockchains platformed on the Cosmos Ecosystem.

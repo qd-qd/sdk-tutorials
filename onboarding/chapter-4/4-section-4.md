@@ -1,7 +1,7 @@
 ---
 title: "Cosmos-based Use Cases"
 order: 5
-description: An introduction to projects in the Cosmos ecosystem
+description: An introduction to projects in the Cosmos Ecosystem
 tag: deep-dive
 ---
 
@@ -83,7 +83,7 @@ The rest of this section will look at three hypothetical use cases
 
 ## Use case 1: A FinTech application
 
-A **decentralized exchange** project could made possible by relying on all the advantages of Cosmos and its SDK: transaction finality, fast transaction processing (and therefore high throughput), high scalability, a high degree of security (based on the security provided by the whole Cosmos ecosystem), and the possibility of small fees, while also connecting to other chains for cross-chain token transfers.
+A **decentralized exchange** project could made possible by relying on all the advantages of Cosmos and its SDK: transaction finality, fast transaction processing (and therefore high throughput), high scalability, a high degree of security (based on the security provided by the whole Cosmos Ecosystem), and the possibility of small fees, while also connecting to other chains for cross-chain token transfers.
 
 ### Project definition
 
@@ -204,7 +204,7 @@ Allows for dApps that build on the chain:
 
 ## Further learning
 
-The hypothetical project descriptions in the section are informed by existing projects in the Cosmos ecosystem. To learn more about such projects, check the following links:
+The hypothetical project descriptions in the section are informed by existing projects in the Cosmos Ecosystem. To learn more about such projects, check the following links:
 
 * Use case 1: [Eco.com](https://eco.com/) is an example of a Fintech application.
 * Use case 2: [DATA](https://data.eco/), or the "Decentralized AI-powered Trust Alliance", is an example of a decentralized data marketplace.
@@ -216,4 +216,4 @@ The hypothetical project descriptions in the section are informed by existing pr
 
 ## Next up
 
-In the [final section of the course](ADD LINK HERE), you can get a practical feel for Cosmos by using a wallet to buy and stake ATOM with a validator, engaging with the Cosmos ecosystem directly.
+In the [final section of the course](ADD LINK HERE), you can get a practical feel for Cosmos by using a wallet to buy and stake ATOM with a validator, engaging with the Cosmos Ecosystem directly.

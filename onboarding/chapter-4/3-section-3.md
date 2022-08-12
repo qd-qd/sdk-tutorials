@@ -67,7 +67,7 @@ Ethermint is Web3 compatible and achieves high throughput with Tendermint and ho
 
 </HighlightBox>
 
-All Ethereum tools, such as Truffle and Metamask, are compatible with Ethermint. Developers can even port their Solidity smart contracts to interact with the Cosmos ecosystem. Building a chain is not necessary to develop Cosmos-compatible smart contracts, it can be all done with Ethermint. While Ethermint allows running vanilla Ethereum as a Cosmos application-specific blockchain, developers benefit from the Tendermint BFT.
+All Ethereum tools, such as Truffle and Metamask, are compatible with Ethermint. Developers can even port their Solidity smart contracts to interact with the Cosmos Ecosystem. Building a chain is not necessary to develop Cosmos-compatible smart contracts, it can be all done with Ethermint. While Ethermint allows running vanilla Ethereum as a Cosmos application-specific blockchain, developers benefit from the Tendermint BFT.
 
 
 ## Using the Cosmos SDK
@@ -165,5 +165,5 @@ Atlas also offers a [node explorer](https://atlas.cosmos.network/nodes) that let
 
 ## Next up
 
-In the [next section](ADD LINK HERE), you will take a closer look at arguably the Cosmos ecosystem's most valuable feature: the **Inter-Blockchain Communication protocol**, or **IBC**.
+In the [next section](ADD LINK HERE), you will take a closer look at arguably the Cosmos Ecosystem's most valuable feature: the **Inter-Blockchain Communication protocol**, or **IBC**.
 
