@@ -1,15 +1,15 @@
 ---
-title: "Engaging with the Cosmos Ecosystem"
+title: "Engaging With the Cosmos Ecosystem"
 order: 6
 description: A practical exercise in using Cosmos to learn about staking
 tag: deep-dive
 ---
 
-# Engaging with the Cosmos Ecosystem
+# Engaging With the Cosmos Ecosystem
 
-The [Cosmos Hub](https://hub.cosmos.network) is the first among equals of Cosmos blockchains. ATOM is its native token, also called the staking token. You need some ATOM to be able to transact on the Cosmos Hub or to participate in the proof-of-stake (PoS) consensus.
+The [Cosmos Hub](https://hub.cosmos.network) is the first among equals of Cosmos blockchains. ATOM is its native token, also called the staking token. You need some ATOM to be able to transact on the Cosmos Hub or to participate in the Proof-of-Stake (PoS) consensus.
 
-<HighlightBox type="Learning">
+<HighlightBox type="learning">
 
 In this section you are going to:
 
@@ -19,13 +19,19 @@ In this section you are going to:
 
 </HighlightBox>
 
-## Getting ATOM and Staking It
+## Getting ATOM and staking it
 
-There are two steps to successfully get ATOM:
+There are two steps to successfully getting ATOM:
 
-1. Install a wallet application and configure it safely. You will use [Keplr](https://keplr.app/).
+1. Install a wallet application and configure it safely.
+
+<HighlightBox type="info">
+
+You can find a step-by-step guide on how to use [Keplr](https://keplr.app/) further below.
+
+</HighlightBox>
+
 2. Buy some ATOM on an exchange and transfer them to your wallet.
-
 
 ## Setting up Keplr
 
@@ -45,7 +51,7 @@ When installed, Kepler should be available in your list of extensions when you c
 
 When you own ATOM with Keplr, **you are in charge**. There is no one you can call if _you forget your password/seed phrase or you send tokens to the wrong address_.
 
-**Keplr is a non-custodial wallet**.
+**Keplr is a non-custodial wallet.**
 
 </HighlightBox>
 
@@ -53,18 +59,18 @@ With the Keplr extension installed and the above warning in mind, create a new a
 
 ![Creating a new account or connecting to an existing account with Keplr](/keplr-create-menu.png)
 
-Click _Create new account_. The page that opens offers you a mnemonic, which is a secret list of words, and asks you for a password. Because **you are in charge**, it is important to understand the following points:
+Click _Create new account_. The page that opens offers you a mnemonic, which is a secret list of words and asks you for a password. Because **you are in charge**, it is important to understand the following points:
 
 * Whoever knows the **mnemonic seed** has access to **all** the assets in the wallet as easily as you do. This means that:
-    * Nobody else should be looking at your screen right now. If that is not the case click _Back_.
+    * Nobody else should be looking at your screen right now. If that is not the case, click _Back_.
+    * You should save the mnemonic seed in a safe place so that you can import it back into this or another wallet at a later date. **Make sure** you write it down somewhere safe.
 
 <HighlightBox type="warn">
 
-You should only ever share your mnemonic seed with parties you would also give access to your bank account. **Do not** share it with an exchange, a proof-of-stake validator, another blockchain service, or "someone from Cosmos" on the phone – these are _not_ trusted partners.
+You should only ever share your mnemonic seed with parties you would also give access to your bank account. **Do not** share it with an exchange, a Proof-of-Stake validator, another blockchain service, or "someone from Cosmos" on the phone – these are _not_ trusted partners.
 
 </HighlightBox>
 
-    * You should save the mnemonic seed in a safe place so that you can import it back into this or another wallet at a later date. **Make sure** you write it down somewhere safe.
 * Keplr saves your seed on disk but in an encrypted form.
 * Keplr asks you for the **encryption password**, which is used to encrypt your mnemonic on your computer. For the password, keep in mind:
     * It should be a strong password.
@@ -78,17 +84,17 @@ When you are ready, click _Next_.
 
 You will now be challenged to reproduce your mnemonic seed phrase. If you saved your seed, you should be able to click on each word in the correct order.
 
-![Keplr mnemonic recall prompt: Selecting the correct words of your mnemonic](/keplr-mnemonic-recall-prompt.png)
+![Keplr mnemonic recall prompt: selecting the correct words of your mnemonic](/keplr-mnemonic-recall-prompt.png)
 
 When done, it should look like this:
 
 ![Keplr mnemonic recall done](/keplr-mnemonic-recall-done.png)
 
-After clicking _Register_ you are all set:
+After clicking _Register_, you are all set:
 
 ![Keplr all set](/keplr-all-set.png)
 
-If you click on the extension icon again, you will see that you hold zero ATOMs. Your first public address is also visible, in the form `cosmos1...`.
+If you click on the extension icon again, you will see that you hold zero ATOMs. Your first public address is also visible in the form `cosmos1...`.
 
 If you click on the drop-down menu labeled _Cosmos_ at the top, you can see how many assets from other supported networks you have:
 
@@ -96,11 +102,11 @@ If you click on the drop-down menu labeled _Cosmos_ at the top, you can see how 
 
 <HighlightBox type="info">
 
-Consider your wallet's "address" as you would the address of your home: it is perfectly acceptable for other people to know your address, as it allows them to send you ATOM or other assets. *Knowing an address does **not** grant access to the assets at that address*.
+Consider your wallet's "address" as you would the address of your home: it is perfectly acceptable for other people to know your address, as it allows them to send you ATOM or other assets. _Knowing an address does **not** grant access to the assets at that address._
 
 </HighlightBox>
 
-You can also open the [Keplr dashboard page](https://wallet.keplr.app/#/dashboard), which interfaces with the extension. **The dashboard at this address is a web page loaded from a website and, as such, is not a trusted partner**. It will never ask you for your mnemonic or your password.
+You can also open the [Keplr dashboard page](https://wallet.keplr.app/#/dashboard), which interfaces with the extension. **The dashboard at this address is a web page loaded from a website and, as such, is not a trusted partner.** It will never ask you for your mnemonic or your password.
 
 <HighlightBox type="tip">
 
@@ -108,16 +114,15 @@ Now would be a good time for you to save your mnemonic and password safely, befo
 
 </HighlightBox>
 
-
 ## Purchase one ATOM
 
-How you purchase ATOM depends on your preferences, but you need to use your trusted exchange. You can purchase any amount you wish, although it is recommended to get at least 0.3 ATOM so that all of it is not consumed in transaction fees before the end of this exercise.
+How you purchase ATOM depends on your preferences, but you need to use a trusted exchange. You can purchase any amount you wish, although it is recommended to get at least 0.3 ATOM so that all of it is not consumed in transaction fees before the end of this exercise.
 
-For the purpose of this section it is recommended that you buy **one ATOM**.
+For the purpose of this section, it is recommended that you buy **one ATOM**.
 
 <HighlightBox type="info">
 
-As you can see in the [Get ATOM and stake page from Cosmos](https://cosmos.network/learn/get-atom), there is a [list of exchanges](https://messari.io/asset/cosmos/markets) that are known by Cosmos for offering ATOM tokens.
+As you can see in the [_Get ATOM and stake._ page from Cosmos](https://cosmos.network/learn/get-atom), there is a [list of exchanges](https://messari.io/asset/cosmos/markets) that are known by Cosmos for offering ATOM tokens.
 
 </HighlightBox>
 
@@ -125,24 +130,33 @@ When you are done, your account on the exchange should show that you _own_ one A
 
 ![When you have one ATOM on Kraken](/kraken-one-atom.png)
 
-However, you do not own it as you would if the token were in your Keplr wallet. Currently it is the exchange that owns the token and assures you that they will send it to you when asked. The exchange acts like a custodial wallet.
-
+However, you do not own it as you would if the token were in your Keplr wallet. Currently, it is the exchange that owns the token and assures you that they will send it to you when asked. The exchange acts like a custodial wallet.
 
 ## Withdraw your ATOM
 
 Your exchange has a withdrawal function that allows you to send your ATOM anywhere, including to your Keplr wallet. Now it is time to set this up.
 
-You will need your wallet address. Since the address is very long, you should avoid typing it by hand and instead copy it in the clipboard by clicking on it in Keplr:
+You will need your wallet address. Since the address is very long, you should avoid typing it by hand and instead copy it to the clipboard by clicking on it in Keplr:
 
 ![View of the Keplr address zone](/keplr-address-zone.png)
 
-Go back to your exchange, paste this address where asked, ensure that it looks identical to the original you copied, and then proceed with the confirmation the exchange requires from you:
+Go back to your exchange:
+
+1. Paste this address where asked.
+2. Ensure that it looks identical to the original you copied.
+3. Proceed with the confirmation the exchange requires from you.
 
 ![Kraken: add address](/kraken-add-address.png)
 
-When this is set, you can ask the exchange to withdraw the ATOM properly. Take note of the transaction fee of the exchange: this is much higher than a realistic transaction fee would have been had you done the transaction yourself from within your wallet:
+When this is set, you can ask the exchange to withdraw the ATOM properly.
+
+<HighlightBox type="note">
+
+Take note of the transaction fee of the exchange: this is much higher than a realistic transaction fee would have been had you done the transaction yourself from within your wallet:
 
 ![Kraken exchange parameters](/kraken-exchange-params.png)
+
+</HighlightBox>
 
 If all went well, you should see your new asset in Keplr after a few minutes:
 
@@ -152,7 +166,7 @@ Congratulations! You now own slightly less than one ATOM. Remember that **you** 
 
 <HighlightBox type="info">
 
-You can also look at your address using a public explorer, like [mintscan.io](https://mintscan.io).
+You can also look at your address using a public explorer like [mintscan.io](https://mintscan.io).
 
 </HighlightBox>
 
@@ -164,10 +178,9 @@ There you can see the transaction that originated from the exchange's wallet:
 
 ![Mintscan crediting transaction](/mintscan-crediting-tx.png)
 
-
 ## Stake your ATOM
 
-Your 0.9 ATOM is now available and waiting in your wallet. It will stay there and remain 0.9 ATOM forever, unless you use it for something.
+Your 0.9 ATOM is now available and waiting in your wallet. It will stay there and remain 0.9 ATOM forever unless you use it for something.
 
 _What about participating in the security of the Cosmos Hub blockchain?_
 
@@ -187,21 +200,29 @@ Now find a validator and delegate your ATOM to it. Click the _Stake_ button in K
 
 ![Keplr: list of validators](/keplr-validator-list.png)
 
-Right away you can discard any validators that keep 100% of the rewards for themselves, as they work for custodial wallets they keep on behalf of their customers. 
+Right away you can discard any validators that keep 100% of the rewards for themselves, as they work for custodial wallets they keep on behalf of their customers.
 
-Pick a validator that you like and click _Manage_. You should see a link directing you to more information on this validator. You can find more information on each validator on [Mintscan's validator list for Cosmos](https://www.mintscan.io/cosmos/validators). Pay attention to the uptime, as a missed block would cost you penalties.
+Pick a validator that you like and click _Manage_. You should see a link directing you to more information on this validator.
+
+<HighlightBox type="tip">
+
+You can find more information on each validator on [Mintscan's validator list for Cosmos](https://www.mintscan.io/cosmos/validators).
+
+</HighlightBox>
+
+Pay attention to the uptime, as a missed block would cost you penalties.
 
 A validator can have small or large voting power. The larger the voting power, the more often the validator is tasked with issuing a block. Voting power is closely linked to the reward amount you can expect:
 
 <Accordion :items="
     [
         {
-            title: 'Validator has large voting power',
-            description: 'If your chosen validator has large voting power, your rewards come frequently (for example every minute) but with relatively small value, as they are divided between many stakers.'
+            title: 'Validator with large voting power',
+            description: 'If your chosen validator has large voting power, your rewards come frequently (for example, every minute) but with a relatively small value, as they are divided between many stakers.'
         },
         {
-            title: 'Validator has small voting power',
-            description: 'If your chosen validator has small voting power, your rewards come infrequently (for example every hour) but with relatively large value, as they are divided between fewer stakers.'
+            title: 'Validator with small voting power',
+            description: 'If your chosen validator has small voting power, your rewards come infrequently (for example, every hour) but with a relatively large value, as they are divided between fewer stakers.'
         },
         {
             title: 'How do you choose?',
@@ -234,14 +255,13 @@ When it is confirmed, your pending staking rewards will start accruing. They wil
 
 Your rewards are said to be *pending* because you need to claim them before they are yours. The claim transaction has its fees, so it is best to wait until your rewards exceed the transaction fees before submitting any claim transaction. With only 0.8 ATOM staked, you need to wait about 10 days to get something worth the claim transaction.
 
-
 ## Claim your ATOM
 
 You did it – you waited 10 days and have been accruing rewards:
 
 ![Keplr: accruing good rewards](/keplr-accruing-good-rewards.png)
 
-This now is enough to cover the claim transaction. Go ahead and claim it. Choose low fees to make the transaction worth while:
+This now is enough to cover the claim transaction. Go ahead and claim it. Choose low fees to make the transaction worthwhile:
 
 ![Keplr: claim rewards](/keplr-claim-rewards.png)
 
