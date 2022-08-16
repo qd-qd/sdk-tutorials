@@ -280,7 +280,7 @@ export default {
 						submodules: [{
 							title: item.title,
 							description: item.frontmatter.description,
-							tag: item.frontmatter.tag,
+							tag: item.frontmatter.tags ? item.frontmatter.tags[0] : null,
 							url: item.path,
 							order: item.frontmatter.order
 						}]
@@ -292,7 +292,7 @@ export default {
 					formattedModules[index].submodules = (formattedModules[index].submodules || []).concat({
 						title: item.title,
 						description: item.frontmatter.description,
-						tag: item.frontmatter.tag,
+						tag: item.frontmatter.tags ? item.frontmatter.tags[0] : null,
 						url: item.path,
 						order: item.frontmatter.order
 					});

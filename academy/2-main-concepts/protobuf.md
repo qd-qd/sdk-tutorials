@@ -2,7 +2,8 @@
 title: "Protobuf"
 order: 7
 description: Work with Protocol Buffers
-tag: deep-dive
+tags: 
+  - deep-dive
 ---
 
 # Protobuf

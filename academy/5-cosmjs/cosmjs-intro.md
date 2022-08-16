@@ -2,7 +2,8 @@
 title: "What is CosmJS?"
 order: 2
 description: CosmJS and what it can do for me
-tag: fast-track
+tags: 
+    - fast-track
 ---
 
 # What is CosmJS?

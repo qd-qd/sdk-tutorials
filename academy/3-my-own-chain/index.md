@@ -3,7 +3,8 @@ parent:
   title: Run Your Own Cosmos Chain
   description: Run a chain for the first time
   number: 3
-tag: deep-dive
+tags: 
+  - deep-dive
 order: 0
 title: Chapter Overview - First Steps to Run Your Own Chain
 ---

@@ -3,7 +3,8 @@ parent:
   title: Golang Introduction
   description: Know your way around Golang
   number: 
-tag: fast-track
+tags: 
+  - fast-track
 order: 0
 title: Introduction to Go
 ---

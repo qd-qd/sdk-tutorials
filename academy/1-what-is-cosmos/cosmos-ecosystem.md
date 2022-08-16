@@ -2,7 +2,8 @@
 title: "The Cosmos Ecosystem"
 order: 3
 description: A universe to discover
-tag: fast-track
+tags: 
+    - fast-track
 ---
 
 # The Cosmos Ecosystem

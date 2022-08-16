@@ -2,7 +2,8 @@
 title: "Create Custom CosmJS Interfaces"
 order: 4
 description: Work with your blockchain
-tag: deep-dive
+tags: 
+    - deep-dive
 ---
 
 # Create Custom CosmJS Interfaces

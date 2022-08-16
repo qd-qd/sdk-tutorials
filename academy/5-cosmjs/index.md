@@ -3,7 +3,8 @@ parent:
   title: CosmJS
   description: The TypeScript library for the Cosmos SDK
   number: 5
-tag: deep-dive
+tags: 
+  - deep-dive
 order: 0
 title: Chapter Overview - CosmJS
 ---

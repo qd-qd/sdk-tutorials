@@ -5,7 +5,8 @@ parent:
   number: 1
 description: How does the Cosmos network of interoperable blockchains fit into the overall development of blockchain technology?
 title: Chapter Overview - Cosmos, its Ecosystem, and ATOM
-tag: fast-track
+tags: 
+  - fast-track
 order: 0
 ---
 

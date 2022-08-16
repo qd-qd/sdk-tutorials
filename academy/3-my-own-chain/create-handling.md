@@ -2,7 +2,8 @@
 title: "Message Handler - Create and Save a Game Properly"
 order: 8
 description: Create a proper game
-tag: deep-dive
+tags: 
+    - deep-dive
 ---
 
 # Message Handler - Create and Save a Game Properly

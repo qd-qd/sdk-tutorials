@@ -2,7 +2,8 @@
 title: "Message and Handler - Add a Way to Make a Move"
 order: 9
 description: Play a game
-tag: deep-dive
+tags: 
+    - deep-dive
 ---
 
 # Message and Handler - Add a Way to Make a Move

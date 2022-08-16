@@ -2,7 +2,8 @@
 title: "Transport, Authentication, and Ordering Layer - Connections"
 order: 3
 description: Establishing connections in IBC
-tag: deep-dive
+tags: 
+    - deep-dive
 ---
 
 # Transport, Authentication, and Ordering Layer - Connections

@@ -2,7 +2,8 @@
 title: "Token - Let Players Set a Wager"
 order: 16
 description: Players set a wager
-tag: deep-dive
+tags: 
+    - deep-dive
 ---
 
 # Token - Let Players Set a Wager

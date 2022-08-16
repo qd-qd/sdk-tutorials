@@ -2,7 +2,8 @@
 title: "Events - Emit Game Information"
 order: 10
 description: Emit game information using events
-tag: deep-dive
+tags: 
+  - deep-dive
 ---
 
 # Events - Emitting Game Information

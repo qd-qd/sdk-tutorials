@@ -2,7 +2,8 @@
 title: "EndBlock - Auto-Expiring Games"
 order: 15
 description: Enforce the expiration of games
-tag: deep-dive
+tags: 
+    - deep-dive
 ---
 
 # EndBlock - Auto-Expiring Games
