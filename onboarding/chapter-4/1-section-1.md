@@ -38,7 +38,7 @@ Tendermint is a consensus algorithm with Byzantine Fault-Tolerance (BFT) and a c
 * **Securely:** Tendermint continues working even if up to 1/3 of machines fail or misbehave.
 * **Consistently:** every machine computes the same state and accesses the same transaction log.
 
-Created in 2014, [Tendermint](https://tendermint.com/) accelerated the development of distinct blockchains by providing a **ready-made networking and consensus solution**. Networking and consensus no longer had to be re-created by developers for each case. Instead, developers can focus on the application layer and let Tendermint deal with the network and consensus layer by building the application on it.
+Created in 2014, [Tendermint](https://tendermint.com/) accelerated the development of distinct blockchains by providing a **ready-made networking and consensus solution**. Networking and consensus no longer had to be re-created by developers for each case. Instead, developers could focus on the application layer and let Tendermint deal with the network and consensus layers by building the application on top of it.
 
 Tendermint is widely used across the industry and is the most mature BFT consensus engine for Proof-of-Stake (PoS) blockchains.
 
@@ -50,7 +50,9 @@ You may already be using Tendermint without being aware of it, as other blockcha
 
 ### What does Tendermint provide?
 
-Tendermint is a Deligated-Proof-of-Stake (DPoS) system based on dedicated validators with good network connectivity. This is quite different from PoW, which favors inclusion and thus, must accommodate slower nodes with greater latency and less reliability, resulting in probabilistic finality. Concerning the CAP Theorem, Tendermint prefers consistency over availability.
+Tendermint is a Delegated-Proof-of-Stake (DPoS) system based on dedicated validators with good network connectivity. This is quite different from PoW, which favors inclusion and thus must accommodate slower nodes with greater latency and less reliability, resulting in probabilistic finality. 
+
+Concerning the CAP Theorem, Tendermint prefers consistency over availability. This means Tendermint's DPoS system is _always_ operational and every node's data is _always_ up to date, but that the system _could_ fail to respond when a request is made.
 
 <HighlightBox type="tip">
 
@@ -62,11 +64,11 @@ If you want to quickly recap the CAP Theorem, just check out the section on [con
 
 ![Blockchain application architecture overview](./images/architecture_overview.png)
 
-For an application-specific blockchain, a Cosmos chain, a node consists of a state-machine built with the Cosmos SDK and the consensus and networking layers, which are handled by [Tendermint Core](https://tendermint.com/core/).
+For an application-specific blockchain in the Cosmos Ecosystem, a node consists of a state-machine built with the Cosmos SDK and the consensus and networking layers, which are handled by [Tendermint Core](https://tendermint.com/core/).
 
 ### What is Tendermint Core?
 
-Tendermint Core is a blockchain application platform. It supports state machines in any language (language-agnostic) and helps developers securely and consistently replicate deterministic, finite state machines.
+Tendermint Core is a blockchain application platform. It supports state machines in any language (it is language-agnostic) and helps developers securely and consistently replicate deterministic, finite state machines.
 
 Tendermint BFT is maintained even when 1/3 of all machines fail by providing two components:
 
@@ -75,11 +77,11 @@ Tendermint BFT is maintained even when 1/3 of all machines fail by providing two
 
 ## Consensus in Tendermint Core and Cosmos
 
-Tendermint Core is a high-performance, consistent, flexible, and secure **consensus module** with strict fork accountability. It relies on Deligated-Proof-of-Stake (DPoS) and Practical Byzantine Fault Tolerance (pBFT).
+Tendermint Core is a high-performance, consistent, flexible, and secure **consensus module** with strict fork accountability. It relies on Delegated-Proof-of-Stake (DPoS) and Practical Byzantine Fault Tolerance (pBFT).
 
 <HighlightBox type="info">
 
-To recap the concepts of DPoS and pBFT in detail, see the section on [Proof-of-Work and reliable proofs for information](ADD LINK TO CH2MOD2)).
+To recap the concepts of DPoS and pBFT in detail, see the section on [Proof-of-Work and reliable proofs for information](../chapter-2/2-section-2.md).
 
 </HighlightBox>
 
@@ -116,13 +118,21 @@ While this arrangement has positive aspects and proponents, it also has clear di
 
 In a Tendermint blockchain, transactions are irreversibly finalized upon block creation and upgrades are themselves governed by the block creation and validation process. This leaves no room for uncertainty: either the nodes agree to simultaneously upgrade their protocol, or the upgrade proposal fails. A hard fork is not an option.
 
-Validators are the only nodes who vote on this decision. This means that delegators should be demanding when delegating as, unless they specify otherwise, by signaling their support with their stake they also lend their vote to the validator.
+Validators are the only nodes who vote on this decision. This means that delegators should be demanding when selecting the validator they delegate to: unless they specify otherwise, by signaling their support with their stake they also lend their vote to the validator.
 
 ## Application Blockchain Interface (ABCI)
 
 The Tendermint BFT packages the networking and consensus layers of a Cosmos blockchain and presents an interface to the application layer, the **Application Blockchain Interface (ABCI)**. Developers can focus on higher-order concerns while delegating peer-discovery, validator selection, staking, upgrades, and consensus to the Tendermint BFT. The consensus engine running in one process controls the state machine; the application runs in another process. **This architecture is equally appropriate for private and public blockchains.**
 
-The Tendermint BFT engine is connected to the application by a **socket protocol**. ABCI provides a socket for applications written in other languages. When the application is written in the same language as the Tendermint implementation, the socket is not used.
+The Tendermint BFT engine is connected to the application by a **socket protocol**. 
+
+<HighlightBox type="info">
+
+**Socket protocols** provide the transportation of application data from one node on a network to another (or from one process to another on the same node).
+
+</HighlightBox>
+
+ABCI provides a socket for applications written in other languages. When the application is written in the same language as the Tendermint implementation, the socket is not used.
 
 ![The application, ABCI, and Tendermint](/ABCI_3.png)
 
@@ -141,7 +151,7 @@ The *block time* is approximately seven seconds, and blocks may contain thousand
 There are at least two broad approaches to **application-level concerns** for blockchains:
 
 1. Create an application-specific blockchain where everything that can be done is defined in the protocol.
-2. Create a programmable state machine and push application concerns to a higher level, such as bytecode created by compilers interpreting higher-level languages.
+2. Create a programmable state machine and push application concerns to a higher level.
 
 Ethereum-like blockchains fall into the second category. Only the state machine is defined by the on-chain protocol, which defines the rules of contract creation, interaction, execution, and little else.
 
@@ -155,6 +165,14 @@ This method is not without its limitations:
 These limitations make it especially difficult to perform analysis or re-organize data, and developers are forced to adapt to the constraints.
 
 A **purpose-built or application-specific blockchain** is different. There is no need to present a Turing-complete language or a general-purpose, programmable state machine because application concerns are addressed by the protocol the developers create.
+
+<ExpansionPanel title="What is Turing-completeness?">
+
+**Turing-completeness** is a term from computability theory which describes the capacities of a system of data-manipulation rules, for example a programming language. Such a system is said to be **Turning complete** if it can simulate any other "Turing machine": that is, if it can recognize or decide _other_ data-manipulation rule sets. 
+
+Virtually all programming languages today are Turing-complete. A real-world example would be a general-purpose computer that can approximately simulate the computational behavior of any other computer. Software emulators of earlier computer systems demonstrate Turing completeness in action.
+
+</ExpansionPanel>
 
 Developers, who have worked with blockchains based on the Ethereum Virtual Machine (EVM), will recognize a shift in the way concerns are addressed. Authorization and access control, the layout of storage or the state, and application governance are not implemented as contracts on a state machine. They instead become properties of a unique blockchain that is built for a singular purpose.
 
@@ -173,4 +191,4 @@ For a deeper dive on consensus and Tendermint visit:
 
 ## Next up
 
-The [next section](ADD LINK HERE) will introduce you to a variety of tools, which developers work with in the Cosmos Ecosystem.
+The [next section](../chapter-4/2-section-2.md) will introduce you to a variety of tools, which developers work with in the Cosmos Ecosystem.

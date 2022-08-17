@@ -40,6 +40,12 @@ Without IBC the interoperability of heterogeneous chains is difficult to achieve
 
 IBC allows building a wide range of cross-chain applications including token transfers, atomic swaps, multi-chain smart contracts (with or without mutually comprehensible virtual machines), and data and code sharding of various kinds. It is an end-to-end, connection-oriented, stateful protocol for reliable, ordered, and authenticated communication between heterogeneous blockchains arranged in an unknown and dynamic topology.
 
+<HighlightBox type="info">
+
+The word _shard_ means "a small part of a whole." **Sharding** is a type of partitioning that separates large bodies of code or data into smaller, faster, more easily managed parts. These smaller parts are called _data shards_.
+
+</HighlightBox>	
+
 This is made possible by specifying a set of data structures, abstractions, and semantics that can be implemented by any distributed ledger, provided they satisfy a small set of requirements. Using IBC does not require in-depth knowledge of the low-level details of clients, connections, and proof verification. Applications that use the IBC protocol for cross-chain communication must be able to:
 
 * Bind to one or more ports.
@@ -93,9 +99,22 @@ The Gravity Bridge consists of several components:
 
 Tokens are locked on the Ethereum side by sending them to the `Gravity.sol` smart contract. This emits an event that is observable to validators running Orchestrator.
 
-When a quorum of validators agrees that tokens have been locked on Ethereum, including the requisite confirmation blocks, a relayer is selected to send an instruction to the Cosmos Gravity module, which issues new tokens. This is non-dilutive: it does not increase the circulating support because an equal number of tokens is locked on the Ethereum side.
+When a quorum of validators agrees that tokens have been locked on Ethereum, including the requisite confirmation blocks, a relayer is selected to send an instruction to the Cosmos Gravity module, which issues new tokens. This is non-dilutive: it does not increase the amount of token value in circulation because an equal number of tokens is locked on the Ethereum side.
 
-To transfer tokens from the Cosmos Hub to the Ethereum blockchain, tokens on the Cosmos network are destroyed and an equal number are released from the `Gravity.sol` smart contract - where they were previously deposited.
+To transfer tokens from the Cosmos Hub to the Ethereum blockchain, tokens on the Cosmos network are destroyed, or **burned**, and an equal number are released from the `Gravity.sol` smart contract where they were previously deposited.
+
+<HighlightBox type="info">
+
+In blockchain terminology, **burning** means _the permanent destruction of tokens_, be they non-fungible tokens (NFTs) or fungible tokens (like cryptocurrencies).
+
+Burning is achieved by transferring tokens to a frozen private address (known as a "burn address") from which they cannot be removed. A burn address has no private key, meaning any tokens transferred to it can never be recovered.
+
+In the context of the Gravity Bridge, burning maintains an equilibrium of token value on either side of the bridge:
+
+* Tokens on Ethereum are locked into the smart contract; this makes them unavailable for use, but triggers the minting of new tokens by the Cosmos Hub.
+* Unlocking the original tokens for use on Ethereum first requires the burning of tokens on the Cosmos side, so a balance of token value is maintained.
+
+</HighlightBox>	
 
 ### Key design components: trust in integrity
 
@@ -110,6 +129,16 @@ Verifying the votes of the validator set is the most expensive on-chain operatio
 ### Operational parameters ensuring security
 
 The bridge requires a validator set update on the Ethereum smart contract at least once every Cosmos unbonding period, usually every two weeks. Without an update every unbonding period, the validator set stored by the Ethereum smart contract could contain fraudulent or malicious validators who cannot be slashed for misbehavior.
+
+<HighlightBox type="info">
+
+**Unbonding** relates to _Delegated-Proof-of-Stake_, which is the default consensus methodology of the Cosmos Ecosystem.
+
+When a delegator wishes to indicate their support for a particular validator, they commit a sum of tokens as a _stake_. A validator's total stake determines the frequency at which it will perform validation duties. 
+
+Before part (or all) of a stake's value can be removed for use elsewhere, it must first undergo an "unbonding period" before the tokens become available for trading.
+
+</HighlightBox>	
 
 Cosmos full nodes do not verify events coming from Ethereum, as events are validated into the Cosmos chain's state based purely on the signatures of the current validator set. If validators represent more than 2/3 of the stake, an event could be added to the state even without a corresponding event on Ethereum. In this case, observers of both the Cosmos and Ethereum chains will need to "raise the alarm" on the issue. This functionality is built into relayers.
 
@@ -146,7 +175,15 @@ A connection enables the communication between two separate blockchains through 
 
 ### Channels
 
-Channels can be established between two IBC ports. Each port is exclusively owned by a single module. IBC data packets are sent over channels to allow modules to communicate with one another.
+Channels can be established between two IBC ports.
+
+<HighlightBox type="info">
+
+**Ports** are virtual access points in an operating system where network connections start and end. They help computers organize the traffic they receive. 
+
+</HighlightBox>	
+
+Each port is exclusively owned by a single module. IBC data packets are sent over channels to allow modules to communicate with one another.
 
 Port channels allow IBC to correctly route the packets to the destination module, while also allowing modules receiving packets to know where the packet came from. Modules may choose which channels they wish to communicate over. IBC expects modules to implement callbacks called during the channel handshake.
 
@@ -175,7 +212,7 @@ A self-contained module on one blockchain can communicate with modules on other 
 
 With both channel ends "open" communication can proceed.
 
-Just as ports come with dynamic capabilities, channel initialization returns a dynamic capability the module must claim so that modules can pass in a capability to authenticate channel actions, for example, to send packets. Channel capability is passed into the callback in the first part of the handshake.
+Just as ports come with dynamic capabilities, channel initialization returns a dynamic capability the module must claim so that modules can pass in a capability to authenticate channel actions, for example to send packets. Channel capability is passed into the callback in the first part of the handshake.
 
 ### Messages
 
@@ -227,4 +264,4 @@ When the acknowledgment is received successfully on the original sender chain, t
 
 ## Next up
 
-In the [next section](ADD LINK HERE), you will move away from the technical features of Cosmos to look at several hypothetical use cases that highlight the expanded potential for blockchains platformed on the Cosmos Ecosystem.
+In the [next section](../chapter-4/3-section-3.md), you will move away from the technical features of Cosmos to look at several hypothetical use cases that highlight the expanded potential for blockchains platformed on the Cosmos Ecosystem.

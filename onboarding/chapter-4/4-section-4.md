@@ -9,7 +9,7 @@ tag: deep-dive
 
 In this course, you have looked at the features of blockchain technology in general and of Cosmos in particular. This included an exploration of [a range of use cases](ADD LINK TO CH1/MOD5 HERE) for this technology beyond cryptocurrencies and NFTs, which brought blockchain to global attention.
 
-Now it is time to bring that same focus more closely to what Cosmos can allow developers to achieve: creating applications, which would have truly flourished if previous blockchain platforms would not proved too limiting.
+Now it is time to bring that same focus more closely to what Cosmos can allow developers to achieve: creating applications which previous blockchain platforms are too limiting for them to truly flourish.
 
 <HighlightBox type="learning">
 
@@ -61,7 +61,7 @@ A decentralized marketplace could allow investors and businesses of all scales t
 
 <ExpansionPanel title="Commercial token economics">
 
-Token economics, or "tokenomics", is a term to describe economic mechanisms to ground extrinsic value in a digital token-based system. Whereas a cryptocurrency is treated as a commodity in itself, token economics allows the same kind of transactional system to be put to use in relation to content creation and commercialization. An example might be monetizing streaming services for music or videos, which in turn could help to decentralize content production by funneling more revenues directly to content creators rather than media platforms.
+Token economics, or "tokenomics", is a term to describe economic mechanisms that ground extrinsic value in a digital token-based system. Whereas a cryptocurrency is treated as a commodity in itself, token economics allows the same kind of transactional system to be put to use in relation to content creation and commercialization. An example might be monetizing streaming services for music or video, which in turn could help to decentralize content production by funneling more revenues directly to content creators rather than media platforms.
 
 Tokens could also be used to reward fan engagement or through community-driven incentives. Community is a big part of fandom, and the nature of blockchain brings certain basic benefits (trustworthy interactions and exchanges, sources of information, data security) that can be integrated into a creator's interactions with their fan base. The adoption of tokens could allow individual fans to support creatives in a tangible way by "investing" in them, while also directly benefiting from value accruing in the tokens they own.
 
@@ -103,7 +103,7 @@ The DEX dApp will:
 
 ### Blockchain characteristics
 
-* A public chain built with the Cosmos SDK, allowing to create an easy-to-develop-on protocol layer as infrastructure.
+* A public chain built with the Cosmos SDK, allowing the creation of an easy-to-develop-on protocol layer as infrastructure.
 * A Tendermint consensus providing a PoS consensus.
 * Smart contract execution and native tokens used for fees, block rewards for validators, gas for transfers, and the delegation of stakes to validators.
 * It could either be connected to the Cosmos Hub or serve as a hub for other zones:
@@ -127,7 +127,7 @@ A public chain provides an environment for dApps based on smart contracts and th
 
 ## Use case 2: a decentralized marketplace for data
 
-The generation and consumption of data have become a vast and valuable global industry in the internet era, but the relationship is often perceived as unequal, with system participants who generate this data resource not able to share in the profits derived from their activity.
+The generation and consumption of data has become a vast and valuable global industry in the internet era, but the relationship is often perceived as unequal, with system participants who generate this data resource not able to share in the profits derived from their activity.
 
 The value of data is determined based on how it can be connected, applied, and used. A system that protects subject anonymity while monetizing this data at the source could break down public aversion or apathy towards "big data" by sharing the wealth more fairly.
 
@@ -224,4 +224,4 @@ See here for [an overview of existing projects on Cosmos](https://v1.cosmos.netw
 
 ## Next up
 
-In the [final section of the course](ADD LINK HERE), you can get a practical feel for Cosmos by using a wallet to buy and stake ATOM with a validator, engaging with the Cosmos Ecosystem directly.
+In the [final section of the course](../chapter-4/5-section-5.md), you can get a practical feel for Cosmos by using a wallet to buy and stake ATOM with a validator, engaging with the Cosmos Ecosystem directly.

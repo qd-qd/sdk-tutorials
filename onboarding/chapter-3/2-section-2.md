@@ -72,7 +72,7 @@ The **CAP Theorem**, also known as *Brewer's theorem* after Eric Brewer, states 
 
 In blockchain **availability** is essential, as the state has to be accessible to all nodes. If a blockchain system prioritized consistency over availability, in the event of any connectivity issue or of failing nodes unanswered requests become a possibility and some transactions would no longer be made. For this reason, availability is usually chosen over consistency as part of the foundations of the general architecture.
 
-However, consistency is not out of reach for a distributed network. Blockchain networks can achieve all three properties of the CAP Theorem *over time* by focusing on availability and partition tolerance and reaching ***eventual* consistency** through consensus algorithms.
+However, consistency is not out of reach for a distributed network. Blockchain networks can achieve all three properties of the CAP Theorem *over time* by focusing on availability and partition tolerance and reaching **_eventual_ consistency** through consensus algorithms.
 
 While this allows blockchains to satisfy all the key demands a network might have, the eventual nature of consensus and consistency can lead to a form of partitioning event known as **forking**. Forks are important to understand, as they can have a potentially undesirable or unwanted impact on a network.
 

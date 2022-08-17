@@ -1,11 +1,11 @@
 ---
-title: "Engaging With the Cosmos Ecosystem"
+title: "Engaging with the Cosmos Ecosystem"
 order: 6
 description: A practical exercise in using Cosmos to learn about staking
 tag: deep-dive
 ---
 
-# Engaging With the Cosmos Ecosystem
+# Engaging with the Cosmos Ecosystem
 
 The [Cosmos Hub](https://hub.cosmos.network) is the first among equals of Cosmos blockchains. ATOM is its native token, also called the staking token. You need some ATOM to be able to transact on the Cosmos Hub or to participate in the Proof-of-Stake (PoS) consensus.
 
@@ -59,7 +59,7 @@ With the Keplr extension installed and the above warning in mind, create a new a
 
 ![Creating a new account or connecting to an existing account with Keplr](/keplr-create-menu.png)
 
-Click _Create new account_. The page that opens offers you a mnemonic, which is a secret list of words and asks you for a password. Because **you are in charge**, it is important to understand the following points:
+Click _Create new account_. The page that opens offers you a mnemonic, which is a secret list of words, and asks you for a password. Because **you are in charge**, it is important to understand the following points:
 
 * Whoever knows the **mnemonic seed** has access to **all** the assets in the wallet as easily as you do. This means that:
     * Nobody else should be looking at your screen right now. If that is not the case, click _Back_.
@@ -90,7 +90,7 @@ When done, it should look like this:
 
 ![Keplr mnemonic recall done](/keplr-mnemonic-recall-done.png)
 
-After clicking _Register_, you are all set:
+After clicking _Register_ you are all set:
 
 ![Keplr all set](/keplr-all-set.png)
 
@@ -118,11 +118,11 @@ Now would be a good time for you to save your mnemonic and password safely, befo
 
 How you purchase ATOM depends on your preferences, but you need to use a trusted exchange. You can purchase any amount you wish, although it is recommended to get at least 0.3 ATOM so that all of it is not consumed in transaction fees before the end of this exercise.
 
-For the purpose of this section, it is recommended that you buy **one ATOM**.
+For the purpose of this section it is recommended that you buy **one ATOM**.
 
 <HighlightBox type="info">
 
-As you can see in the [_Get ATOM and stake._ page from Cosmos](https://cosmos.network/learn/get-atom), there is a [list of exchanges](https://messari.io/asset/cosmos/markets) that are known by Cosmos for offering ATOM tokens.
+As you can see in the [_Get ATOM and stake_ page from Cosmos](https://cosmos.network/learn/get-atom), there is a [list of exchanges](https://messari.io/asset/cosmos/markets) that are known by Cosmos for offering ATOM tokens.
 
 </HighlightBox>
 
@@ -130,7 +130,7 @@ When you are done, your account on the exchange should show that you _own_ one A
 
 ![When you have one ATOM on Kraken](/kraken-one-atom.png)
 
-However, you do not own it as you would if the token were in your Keplr wallet. Currently, it is the exchange that owns the token and assures you that they will send it to you when asked. The exchange acts like a custodial wallet.
+However, you do not own it as you would if the token were in your Keplr wallet. Currently, it is the exchange that holds the token and assures you that they will send it to you when asked. The exchange acts like a custodial wallet.
 
 ## Withdraw your ATOM
 
@@ -180,7 +180,7 @@ There you can see the transaction that originated from the exchange's wallet:
 
 ## Stake your ATOM
 
-Your 0.9 ATOM is now available and waiting in your wallet. It will stay there and remain 0.9 ATOM forever unless you use it for something.
+Your 0.9 ATOM is now available and waiting in your wallet. It will stay there and remain 0.9 ATOM forever, unless you use it for something.
 
 _What about participating in the security of the Cosmos Hub blockchain?_
 

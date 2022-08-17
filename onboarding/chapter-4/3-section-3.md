@@ -162,4 +162,4 @@ Atlas also offers a [node explorer](https://atlas.cosmos.network/nodes) that let
 
 ## Next up
 
-In the [next section](ADD LINK HERE), you will take a closer look at arguably one of the Cosmos Ecosystem's most valuable features: the **Inter-Blockchain Communication Protocol**, or **IBC**.
+In the [next section](../chapter-4/4-section-4.md), you will take a closer look at arguably one of the Cosmos Ecosystem's most valuable features: the **Inter-Blockchain Communication Protocol**, or **IBC**.
