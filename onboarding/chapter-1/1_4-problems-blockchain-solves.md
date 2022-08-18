@@ -5,7 +5,7 @@ description: Double-spending, Byzantine Fault Tolerance, and data security
 tag: fast-track
 ---
 
-# What problems does Blockchain solve?
+# What Problems Does Blockchain Solve?
 
 In a sense, the central problem blockchain solves is exactly that: *centrality* - the reliance on a single point of authority, one which simultaneously wields power over many mere users while being a key point of potential systemic weakness. However, there are some more specific issues that blockchain was specifically designed to resolve.
 
@@ -144,7 +144,11 @@ Signatures are used in this way to "identify" participants on the blockchain whi
 
 ## Further learning
 
+<HighlightBox type="reading">
+
 * ???
+
+</HighlightBox>
 
 ## Next up
 

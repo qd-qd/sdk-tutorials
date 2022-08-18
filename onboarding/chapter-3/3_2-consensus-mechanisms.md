@@ -206,9 +206,13 @@ To summarize, lottery-based algorithms have good speed and scalability but are s
 
 ## Further learning
 
+<HighlightBox type="reading">
+
 * For a good read on blockchain and the CAP Theorem, read [CryptoGraphics: CAP Theorem](https://cryptographics.info/cryptographics/blockchain/cap-theorem/).
 * ???
 * ???
+
+</HighlightBox>
 
 ## Next up
 

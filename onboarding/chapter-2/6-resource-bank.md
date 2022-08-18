@@ -1,7 +1,7 @@
 ---
 title: "Resource Bank"
 order: 7
-description: XXX
+description: Useful information for future reference
 tag: fast-track
 ---
 

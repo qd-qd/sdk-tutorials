@@ -20,7 +20,6 @@ At the end of Chapter 1, you will have a conversational level of general knowled
 
 If you will be working alongside colleagues in technical roles – or if you're just eager to learn more! – then Chapters 3 and 4 will build on this foundation to provide a more detailed understanding of the key characteristics of blockchain in general and Cosmos in particular.
 
-
 ![IMG LP CHAPTER 1]()
 
 ## In this chapter
@@ -34,7 +33,6 @@ In this chapter, you will:
 * Learn about working in the blockchain field
 * Discover the problems blockchain is designed to solve
 * Explore existing applications of blockchain technology
-
 
 At the end of this chapter you will find a [Resource Bank](./6-resource-bank.md) with useful information for future reference. There will also be a [self-assessment quiz](./7-self-assessment.md) so you can check your understanding so far, which may give you some ideas for discussion during your weekly support call with a blockchain expert.
 

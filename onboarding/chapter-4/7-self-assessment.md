@@ -1,10 +1,10 @@
 ---
 title: "Self-Assessment Quiz"
 order: 8
-description: XXX
+description: Check your learning from Chapter 4
 tag: deep-dive
 ---
 
-# Self-Assessment Quiz - TITLE OF CHAPTER XXX
+# Self-Assessment Quiz - Cosmos Advanced
 
 ##

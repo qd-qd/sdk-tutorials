@@ -158,7 +158,11 @@ Atlas also offers a [node explorer](https://atlas.cosmos.network/nodes) that let
 
 ## Further learning
 
+<HighlightBox type="reading">
+
 * ???
+
+</HighlightBox>
 
 ## Next up
 

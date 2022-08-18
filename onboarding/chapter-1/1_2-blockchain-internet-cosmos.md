@@ -140,7 +140,7 @@ Interoperability is the vital feature that Cosmos introduces to the blockchain c
 
 ## Further learning
 
-<HighlightBox type="link">
+<HighlightBox type="learning">
 
 * This video provides a brief overview of the features, resources, and objectives of Cosmos: [Cosmos: The Vision](https://youtu.be/Eb8xkDi_PUg)
 * For an accessible overview of Proof-of-Stake, see this video: [Proof-of-Stake (vs Proof-of-Work)](https://www.youtube.com/watch?v=M3EFi_POhps).

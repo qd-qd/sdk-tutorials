@@ -166,8 +166,12 @@ The scalability issue is one of the main pressure points Cosmos envisioned to ad
 
 ## Further learning
 
+<HighlightBox type="reading">
+
 * ?????
 * ?????
+
+</HighlightBox>
 
 ## Next up
 

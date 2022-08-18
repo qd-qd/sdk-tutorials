@@ -16,7 +16,9 @@ Chapter 3 delved into some core features of blockchains. In the final chapter of
 
 Again, this material is suitable for those who will be working directly alongside colleagues in technical roles (such as developers) but will also be of interest to anyone who would like to know more details about the functioning of Cosmos.
 
-## In this module
+![IMG LP CHAPTER 4]()
+
+## In this chapter
 
 <HighlightBox type="learning">
 

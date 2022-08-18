@@ -11,7 +11,7 @@ You have already looked at what blockchain is – *a distributed ledger* – so 
 
 <HighlightBox type="learning">
 
- This section will cover: 
+This section will cover: 
 
 * Ledgers - a historical context
 * Hashing - calculating trust
@@ -109,8 +109,12 @@ Not only does this mean that accidental errors are easily repaired, any delibera
 
 ## Further learning
 
+<HighlightBox type="reading">
+
 * ???
 * ???
+
+</HighlightBox>
 
 ## Next up
 

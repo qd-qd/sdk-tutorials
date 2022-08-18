@@ -228,11 +228,15 @@ In conclusion, there are a number of barriers to cryptocurrency becoming accepte
 
 ## Further learning
 
+<HighlightBox type="reading">
+
 * [European Securities and Markets Authority (2019): Initial Coin Offerings and Crypto-Assets](https://www.esma.europa.eu/sites/default/files/library/esma50-157-1391_crypto_advice.pdf)
 * [Investopedia: Volatility](https://www.investopedia.com/terms/v/volatility.asp)
 * [Volatility Tracker](https://www.shufflup.org/volatility_vol.php)
 * For an overview of cryptocurrencies, we can always recommend taking a look at [COINMARKETCAP](https://coinmarketcap.com). The list is not exclusive but includes a lot of the most common currencies.
 * For a sense of the variety of policy responses to cryptocurrency, see [A World Map of Cryptocurrencies](https://blogs.thomsonreuters.com/answerson/wp-content/uploads/sites/3/2017/10/World-of-Cryptocurrencies-graphic.pdf).
+
+</HighlightBox>
 
 ## Next up
 

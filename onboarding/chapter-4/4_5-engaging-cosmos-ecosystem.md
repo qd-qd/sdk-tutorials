@@ -1,11 +1,11 @@
 ---
-title: "Engaging with the Cosmos Ecosystem"
+title: "Engaging With the Cosmos Ecosystem"
 order: 6
 description: A practical exercise in using Cosmos to learn about staking
 tag: deep-dive
 ---
 
-# Engaging with the Cosmos Ecosystem
+# Engaging With the Cosmos Ecosystem
 
 The [Cosmos Hub](https://hub.cosmos.network) is the first among equals of Cosmos blockchains. ATOM is its native token, also called the staking token. You need some ATOM to be able to transact on the Cosmos Hub or to participate in the Proof-of-Stake (PoS) consensus.
 

@@ -235,9 +235,13 @@ Next, you will take a deeper dive into the features of these alternative approac
 
 ## Further learning
 
+<HighlightBox type="reading">
+
 * If you are interested in learning more about Game Theory, [this is a useful overview](http://www.dklevine.com/general/whatis.htm)
 * XXX
 * XXX
+
+</HighlightBox>
 
 ## Next up
 

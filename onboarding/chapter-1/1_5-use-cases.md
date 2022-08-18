@@ -141,9 +141,13 @@ Directly or indirectly, the work you do in your role contributes to this ever-ex
 
 ## Further learning
 
+<HighlightBox type="learning">
+
 * For an extended breakdown of blockchain use cases, including those mentioned here, see the comprehensive article [Banking is only the beginning](https://www.cbinsights.com/research/industries-disrupted-blockchain/), at *CBInsights.com*.
 * For a quick video overview of blockchains in the medical field, watch [3 Ways How Blockchain Will Change healthcare](https://www.youtube.com/watch?v=Oga9J0NFwAA) by The Medical Futurist.
 * You can find a full list of application projects built on the Cosmos Ecosystem [here](https://cosmos.network/ecosystem/apps/).
+
+</HighlightBox>
 
 ## Next up
 

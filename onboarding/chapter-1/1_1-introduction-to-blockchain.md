@@ -142,7 +142,7 @@ As a result, there is no longer a need for a trusted authority to oversee the ne
 
 ## Further learning
 
-<HighlightBox type="link">
+<HighlightBox type="reading">
 
 <!--PLACEHOLDER-->
 

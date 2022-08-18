@@ -129,9 +129,13 @@ It becomes easier for users to navigate between different blockchains and applic
 
 ## Further learning
 
+<HighlightBox type="reading">
+
 * Take a look at the 2016 [Cosmos Whitepaper](https://v1.cosmos.network/resources/whitepaper) to find out more about the origins of Cosmos.
 * ???
 * ???
+
+</HighlightBox>
 
 ## Next up
 

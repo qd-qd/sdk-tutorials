@@ -129,7 +129,11 @@ With this information, the requestor can easily generate their own hash of your 
 
 ## Further learning
 
+<HighlightBox type="reading">
+
 * ???
+
+</HighlightBox>
 
 ## Next up
 

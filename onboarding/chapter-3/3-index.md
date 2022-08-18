@@ -16,8 +16,9 @@ In the first two chapters of this course, you took an introductory look at a wid
 
 Chapter 3 is designed to provide a deep dive into technicalities of blockchain, suitable for those who will be working directly alongside colleagues in technical roles (such as coders), but will also be of interest to anyone who would like to know in more detail about the functioning of blockchain systems.
 
+![IMG LP CHAPTER 3]()
 
-## In this module
+## In this chapter
 
 <HighlightBox type="learning">
 
@@ -28,7 +29,6 @@ In this third chapter, you will learn about:
 * Deployment Patterns
 * Smart Contracts
 * Cryptocurrency and Crypto Economics
-
 
 </HighlightBox>
 

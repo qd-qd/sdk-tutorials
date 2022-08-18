@@ -1,6 +1,6 @@
 ---
 parent:
-  title: Onboarding for Non-technical Hires
+  title: Onboarding for Non-Technical Hires
   description: From blockchain basics to the Cosmos Ecosystem
   number: 1
 description: What is blockchain? What is Cosmos?
@@ -10,7 +10,7 @@ order: 0
 ---
 
 <div class="tm-overline tm-rf-1 tm-lh-title tm-medium tm-muted">From blockchain basics to the Cosmos Ecosystem</div>
-<h1 class="mt-4 mb-6">Onboarding for Non-technical Hires</h1>
+<h1 class="mt-4 mb-6">Onboarding for Non-Technical Hires</h1>
 
 Congratulations on your new role, and welcome to the Onboarding course! Over the next few weeks, you'll learn all you need to know about Blockchain and Cosmos.
 

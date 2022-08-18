@@ -16,7 +16,6 @@ As well as [introducing blockchain](LINK TO MOD1) and [Cosmos](LINK TO MOD2), th
 
 Chapter 2 will build on this knowledge by exploring the mechanics of blockchain in an accessible way. At the end of this chapter, you will understand how this technology works  – an everyday level of comprehension that doesn't get into the complexities of coding.
 
-
 ![IMG LP CHAPTER 2]()
 
 ## In this chapter
@@ -30,7 +29,6 @@ In this chapter, you will learn about:
 * Updating the Blockchain
 * Privacy and Confidentiality
 * Engaging with the Cosmos Ecosystem
-
 
 At the end of the chapter you will find a [Resource Bank](./6-resource-bank.md) which provides a concise run-down of exactly how Cosmos implements the various features of blockchain that have been discussed, and how it can be differentiated from other Web3 service providers. There is also another [self-assessment quiz](./7-self-assessment.md) so you can check your understanding of the chapter and identify subjects for discussion during your weekly support call with a blockchain expert.
 

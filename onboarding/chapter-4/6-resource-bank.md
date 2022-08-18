@@ -1,8 +1,10 @@
 ---
 title: "Resource Bank"
 order: 7
-description: DESCRIPTION PENDING
+description: Useful information for future reference
 tag: deep-dive
 ---
 
-# CONTENT PENDING
+# Resource Bank
+
+##

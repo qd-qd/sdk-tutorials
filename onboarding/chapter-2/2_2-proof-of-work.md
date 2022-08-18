@@ -5,7 +5,7 @@ description: How to trust the content of a block
 tag: fast-track
 ---
 
-# Proof of Work
+# Proof-of-Work
 
 The [previous section](ADD LINK HERE) looked a little deeper into the practicalities of how a reliable, distributed, append-only ledger can be implemented through the use of hashing. Now it is time to look at the methods used to make sure the information you receive is something you really can be sure about.
 
@@ -157,8 +157,12 @@ As well as avoiding energy-intensive nonce calculation, pBFT can identify compro
 
 ## Further learning
 
+<HighlightBox type="reading">
+
 * ???
 * ???
+
+</HighlightBox>
 
 ## Next up
 

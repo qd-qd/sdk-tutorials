@@ -185,8 +185,12 @@ Currency transfers and smart contract implementation is done by adding transacti
 
 ## Further learning
 
+<HighlightBox type="learning">
+
 * [Slepak, Greg (2015): Deconfusing Decentralization - a very good introductory video on the concept of decentralization](https://www.youtube.com/watch?v=7S1IqaSLrq8)
 * For a quick and clear explanation of blockchain in action, watch this video: [How Does Blockchain Actually Work?](https://www.youtube.com/watch?v=Za5lPKNV_Mk)
+
+</HighlightBox>
 
 ## Next up
 
