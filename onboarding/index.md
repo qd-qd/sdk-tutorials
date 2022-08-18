@@ -16,7 +16,7 @@ Congratulations on your new role, and welcome to the Onboarding course! Over the
 
 Let's get started!
 
-![](/)
+![LP image](./images/)
 
 <!-- Create image -->
 
