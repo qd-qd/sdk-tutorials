@@ -13,13 +13,19 @@
 			h2.home__content__overview__title {{$frontmatter.overview.title}}
 			.home__content__overview__content(v-if="$frontmatter.overview.items")
 				tm-faq.home__content__overview__content__item(v-for="item in $frontmatter.overview.items" :title="item.title" :description="item.description")
-
 		.modules(v-if="this.modules && this.modules[0].submodules && this.modules[0].submodules.length > 1")
 			h2(:id="$frontmatter.weekly ? 'weekly-path' : 'course-modules'") {{$frontmatter.weekly ? "Weekly Plan" : "Course Modules"}}
 			card-module(v-for="module in this.modules" v-if="module.title && module.number" :module="module" :main="$frontmatter.main" :weekly="$frontmatter.weekly || false").modules__item
 		.image-section(v-if="$frontmatter.image")
 			h2(v-if="$frontmatter.image.title") {{$frontmatter.image.title}}
 			tm-image.image-section__image(:src="$frontmatter.image.src")
+		.cards(v-if="$frontmatter.cardsLinks")
+			.cards__wrapper(v-for="card in $frontmatter.cardsLinks")
+				card-links.cards__item(
+					:image="card.image" 
+					:title="card.title" 
+					:description="card.description" 
+					:links="card.links")
 		.resources__wrapper(v-if="$themeConfig.resources")
 			h3.resources__title Developer resources
 			.resources
@@ -29,6 +35,14 @@
 
 
 <style lang="stylus" scoped>
+	.cards
+		display flex
+		justify-content space-between
+		flex-wrap wrap
+
+		&__wrapper
+			max-width 45%
+			margin-top 3rem
 	h2
 		margin-block 10px
 	.modules

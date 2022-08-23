@@ -33,6 +33,19 @@ overview:
       description: |
         With the fast-track, you will gain a solid understanding of Cosmos and its SDK. This might be a matter of just an hour or two. The time you spend on the deep dive depends on you – there are endless possibilities to discover. <br/><br/>
         Welcome to the cosmos!
+cardsLinks:
+  - image: /cosmos_dev_portal_module-03-lp.png
+    title: CosmJS developers
+    description: |
+      With the fast-track, you will gain a solid understanding of Cosmos and its SDK. This might be a matter of just an hour or two. The time you spend on the deep dive depends on you – there are endless possibilities to discover. <br/><br/>
+      Welcome to the cosmos!
+    links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
+  - image: /cosmos_dev_portal_module-02-lp.png
+    title: CosmJS developers 2
+    description: |
+      With the fast-track, you will gain a solid understanding of Cosmos and its SDK. This might be a matter of just an hour or two. The time you spend on the deep dive depends on you – there are endless possibilities 
+      Welcome to the cosmos!
+    links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
 ---
 
 # Welcome to the Cosmos SDK Developer Platform
