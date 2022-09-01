@@ -25,6 +25,7 @@
 					:image="card.image" 
 					:title="card.title" 
 					:description="card.description" 
+					:tag="card.tag || null"
 					:links="card.links")
 		.resources__wrapper(v-if="$themeConfig.resources")
 			h3.resources__title Developer resources
@@ -41,8 +42,9 @@
 		flex-wrap wrap
 
 		&__wrapper
-			max-width 45%
+			max-width 48%
 			margin-top 3rem
+			flex-grow 1
 	h2
 		margin-block 10px
 	.modules
