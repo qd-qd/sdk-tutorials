@@ -45,6 +45,14 @@
 			max-width 48%
 			margin-top 3rem
 			flex-grow 1
+
+		@media screen and (max-width: 1024px)
+			flex-direction column
+			
+			&__wrapper
+				max-width none
+
+
 	h2
 		margin-block 10px
 	.modules
