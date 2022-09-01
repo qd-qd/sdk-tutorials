@@ -19,14 +19,6 @@
 		.image-section(v-if="$frontmatter.image")
 			h2(v-if="$frontmatter.image.title") {{$frontmatter.image.title}}
 			tm-image.image-section__image(:src="$frontmatter.image.src")
-		.cards(v-if="$frontmatter.cardsLinks")
-			.cards__wrapper(v-for="card in $frontmatter.cardsLinks")
-				card-links.cards__item(
-					:image="card.image" 
-					:title="card.title" 
-					:description="card.description" 
-					:tag="card.tag || null"
-					:links="card.links")
 		.resources__wrapper(v-if="$themeConfig.resources")
 			h3.resources__title Developer resources
 			.resources
@@ -36,22 +28,6 @@
 
 
 <style lang="stylus" scoped>
-	.cards
-		display flex
-		justify-content space-between
-		flex-wrap wrap
-
-		&__wrapper
-			max-width 48%
-			margin-top 3rem
-			flex-grow 1
-
-		@media screen and (max-width: 1024px)
-			flex-direction column
-			
-			&__wrapper
-				max-width none
-
 
 	h2
 		margin-block 10px

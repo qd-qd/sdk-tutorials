@@ -1,6 +1,35 @@
 <!--
 layout: LandingPage
 tutorials:
+overview:
+  title: Welcome to the Cosmos Ecosystem!
+  items:
+    - title: Is this course for me?
+      description: |
+        This course offers an overview of the Cosmos SDK, as well as examples and exercises to help developers get a quick start.
+    - title: How should I go through this course?
+      description: |
+        This course unfolds the Cosmos universe, beginning with a big picture perspective and getting into how to create your own application-specific blockchain with the Cosmos SDK.<br/>
+        You can follow two tracks: The fast track and the deep dive. The fast track gives you a solid overview of the Cosmos SDK, its components, and dApps in Cosmos. The deep dive takes you through hands-on exercises to put theory into practice – showcasing how to address application concerns when developing such as managing gas fees and cross-chain communication, working with Ignite CLI, running a node, and understanding CosmWasm. All sections are tagged accordingly as “Fast track” or “Deep dive”. A look into all chapters is recommended as a basic understanding helps when things get tricky.
+    - title: What do I need?
+      description: |
+        For the fast track, you should have a solid understanding of blockchain technology and be familiar with decentralized applications. The deep dives are specially designed for experienced developers.
+    - title: How long does it take me?
+      description: |
+        With the fast-track, you will gain a solid understanding of Cosmos and its SDK. This might be a matter of just an hour or two. The time you spend on the deep dive depends on you – there are endless possibilities to discover. <br/><br/>
+        Welcome to the cosmos!
+cardsLinks:
+  - image: /cosmos_dev_portal_module-03-lp.png
+    title: CosmJS developers
+    description: |
+      Get a fast overview of
+    tag: deep-dive
+    links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
+  - image: /cosmos_dev_portal_module-02-lp.png
+    title: CosmJS developers 2
+    description: |
+      Deep dive
+    links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
 tools:
   - title: Cosmos SDK
     description: A framework for building public blockchains.

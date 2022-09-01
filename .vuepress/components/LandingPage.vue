@@ -10,35 +10,56 @@
                 .content__intro__desc.tm-measure-narrow.tm-lh-copy.tm-muted Want to discover how to use the Cosmos SDK to build application-specific blockchains? Take your first steps in the Cosmos universe with a look into this complete and comprehensive course.
                 a(href="/academy/0-welcome").tm-button.mt-7.mb-5.tm-button-disclosure
                     span Start learning
-        .tutorials__wrapper.mt-10
-            h3.tm-title.tm-lh-title.tm-rf3.tm-bold Tutorials
-            .tutorials
-                a.tutorials__item__small(href="/tutorials/understanding-authz/")
-                    card
-                        .tm-overline.tm-rf-1.tm-lh-title.tm-medium.tm-muted intermediate
-                        h4.mt-7 Understanding the Authz Module
-                        .mt-7.tm-lh-copy.tm-muted In this tutorial, you learn what the Authz module does, how to create and revoke authorizations, and how to execute authorized transactions on a local testnet.
-                        .mt-7.info-label.tm-rf-1.tm-muted 20 minute read
-                a.tutorials__item__large(v-bind:style="{'background-image': `url(/tutorial-bg-image.png)`}" href="https://docs.ignite.com/" target="_blank")
-                    .tm-measure
-                        .tm-overline.tm-rf-1.tm-lh-title.tm-medium.tm-muted Ignite CLI
-                        h2.mt-5 Build a chain in minutes
+
+        .home__content__overview(v-if="$frontmatter.overview" id="overview")
+            h2.home__content__overview__title {{$frontmatter.overview.title}}
+            .home__content__overview__content(v-if="$frontmatter.overview.items")
+                tm-faq.home__content__overview__content__item(v-for="item in $frontmatter.overview.items" :title="item.title" :description="item.description")
+
+        .tags
+            .tags__description Start with the first chapter, or select one or more tags.
+            .tags__list
+                .tags__wrapper(v-for="tag in $themeConfig.tags")
+                    .tags__list__item(v-bind:style="{'background': tag.color || ''}") {{tag.label || ''}}
 
 
-        .articles__wrapper.mt-10(v-if="$frontmatter.articles")
-            .articles__wrapper__title
-                h3.tm-title.tm-lh-title.tm-rf3.tm-bold Articles
-                //- div
-                //-     a(href="/").tm-link.tm-lh-solid.tm-rf1.tm-medium.tm-link-external
-                //-         span More articles
-            .articles.mt-8
-                .articles__item(v-for="article in $frontmatter.articles")
-                    a.articles__item__container(:href="article.url" target="_blank")
-                        .articles__item__image(v-bind:style="{'background-image': `url(${article.image})`}")
-                        .articles__item__content
-                            .tm-overline.tm-rf-1.tm-lh-title.tm-medium.tm-muted.articles__item__content__date {{article.date}}
-                            h4.articles__item__content__title.mx-5 {{article.title}}
-                            .info-label.articles__item__content__time.tm-rf-1.tm-muted.tm-lh-title {{article.time}} minute read
+        .cards(v-if="$frontmatter.cardsLinks")
+            .cards__wrapper(v-for="card in $frontmatter.cardsLinks")
+                card-links.cards__item(
+                    :image="card.image" 
+                    :title="card.title" 
+                    :description="card.description" 
+                    :tag="card.tag || null"
+                    :links="card.links")
+        //- .tutorials__wrapper.mt-10
+        //-     h3.tm-title.tm-lh-title.tm-rf3.tm-bold Tutorials
+        //-     .tutorials
+        //-         a.tutorials__item__small(href="/tutorials/understanding-authz/")
+        //-             card
+        //-                 .tm-overline.tm-rf-1.tm-lh-title.tm-medium.tm-muted intermediate
+        //-                 h4.mt-7 Understanding the Authz Module
+        //-                 .mt-7.tm-lh-copy.tm-muted In this tutorial, you learn what the Authz module does, how to create and revoke authorizations, and how to execute authorized transactions on a local testnet.
+        //-                 .mt-7.info-label.tm-rf-1.tm-muted 20 minute read
+        //-         a.tutorials__item__large(v-bind:style="{'background-image': `url(/tutorial-bg-image.png)`}" href="https://docs.ignite.com/" target="_blank")
+        //-             .tm-measure
+        //-                 .tm-overline.tm-rf-1.tm-lh-title.tm-medium.tm-muted Ignite CLI
+        //-                 h2.mt-5 Build a chain in minutes
+
+
+        //- .articles__wrapper.mt-10(v-if="$frontmatter.articles")
+        //-     .articles__wrapper__title
+        //-         h3.tm-title.tm-lh-title.tm-rf3.tm-bold Articles
+        //-         //- div
+        //-         //-     a(href="/").tm-link.tm-lh-solid.tm-rf1.tm-medium.tm-link-external
+        //-         //-         span More articles
+        //-     .articles.mt-8
+        //-         .articles__item(v-for="article in $frontmatter.articles")
+        //-             a.articles__item__container(:href="article.url" target="_blank")
+        //-                 .articles__item__image(v-bind:style="{'background-image': `url(${article.image})`}")
+        //-                 .articles__item__content
+        //-                     .tm-overline.tm-rf-1.tm-lh-title.tm-medium.tm-muted.articles__item__content__date {{article.date}}
+        //-                     h4.articles__item__content__title.mx-5 {{article.title}}
+        //-                     .info-label.articles__item__content__time.tm-rf-1.tm-muted.tm-lh-title {{article.time}} minute read
 
         .tools__wrapper.mt-10
             h3.tm-title.tm-lh-title.tm-rf3.tm-bold Tools
@@ -65,6 +86,57 @@
 </template>
 
 <style lang="stylus" scoped>
+    .home
+        &__content
+            max-width var(--content-max-width-big)
+            margin-inline auto
+
+            &__overview
+                margin-top 96px
+                display flex
+
+                &__title
+                    margin-right 16px
+                    width 50%
+
+                &__content
+                    width 50%
+                    margin-top 20px 
+
+                    &__item
+                        &:first-child
+                            padding-top 0px
+
+    .cards
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+
+        &__wrapper
+            max-width 48%
+            margin-top 3rem
+            flex-grow 1
+
+        @media screen and (max-width: 1024px)
+            flex-direction column
+            
+            &__wrapper
+                max-width none  
+
+    .tags__list
+        margin-top 1rem
+        display flex
+
+        &__item
+            cursor pointer
+            border-radius 8px
+            padding 8px
+            flex-shrink 0
+            height fit-content
+            margin-left 1rem
+            margin-block auto
+            color white
+
     .content
         margin-top var(--spacing-9)
         max-width var(--content-max-width-big)
