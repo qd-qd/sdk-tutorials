@@ -43,15 +43,14 @@ Imagine that Alice wants to send a message "for Bob's eyes only", which he can b
 How does Alice send her message privately?
 
 1. Alice writes a message she only wants Bob to be able to read.
-2. Alice also writes a "signature", which can be any sort of additional information.
-3. Alice encrypts the signature using **Alice's** *private* key.
-4. Alice collects the message, the original signature, and the *encrypted* signature into a package, which she encrypts using **Bob's** *public* key.
+2. Alice encrypts a copy of her message using **Alice's** *private*  key, which is called "signing".
+3. Alice collects the original message and the signature copy into a package, which she encrypts using **Bob's** *public* key.
 
 Now Alice sends the package to Bob. What happens next?
 
-1. Bob decrypts the package using **Bob's** *private* key, and can now read the message – no one else has this key, so even if someone intercepted the package they would not be able to read its contents.
-2. Bob decrypts the encrypted signature using **Alice's** *public* key.
-3. If the decrypted signature matches the original signature, he knows _only someone with Alice's **private** key could have encrypted it_.
+1. Bob decrypts the package using **Bob's** *private* key, and can now read the original message – no one else has this key, so even if someone intercepted the package they would not be able to read its contents.
+2. Bob decrypts the signature copy using **Alice's** *public* key.
+3. If the signature copy matches the original message, he knows _only someone with Alice's **private** key could have encrypted it_.
 4. Therefore, Alice must have been the sender.
 
 It is important to note that, at the end of this interaction, _Alice is **still** the only person who knows her private key, just as only Bob knows his_. They can go through this process again or Alice could communicate with someone completely different, but she can still use her private key with certainty that no one else has access to it.
@@ -76,7 +75,9 @@ The applications for ring signatures face limitations of scale, as large sets of
 
 You have already seen [examples of potential use cases](ADD LINK TO CH1-MOD5 HERE) for blockchain applications that move out of purely financial fields, for example, government services or healthcare information. How would that work on a practical level though? Would you feel comfortable having your medical records held on a distributed network?
 
-In practice, this would never happen. Storage space on a blockchain is costly, so it would not be economically sound to house vast numbers of detailed official documents in this way. However, there are practical alternatives to storage in this literal sense. A common solution utilizes [hashing](ADD LINK HERE) and [smart contracts](ADD LINK HERE): instead of the blockchain holding a copy of some actual documentation, it holds its *hash* in a smart contract, with the actual document (for example, your driver's license) stored off-chain.
+In practice, this would never happen. Storage space on a blockchain is costly, so it would not be economically sound to house vast numbers of detailed official documents in this way. In fact, even if such sensitive data was encrypted it would be a very bad idea to include it on a public network. Future developments in technology, be it the fabled quantum computer or merely much faster conventional computers, mean the security value of any contemporary encryption will fade over time. Far better is to deny direct access to the actual data at all. 
+
+However, there are practical alternatives to on-chain storage in a literal sense. A common solution utilizes [hashing](ADD LINK HERE) and [smart contracts](ADD LINK HERE): instead of the blockchain holding a copy of some actual documentation, it holds its *hash* in a smart contract, with the actual document (for example, your driver's license) stored off-chain.
 
 The smart contract would also embed significant supporting information, such as the origin and lineage of the document, the on-boarding process that added it to the chain, etc., such that the hash can be considered an authentic representation of the original. This means that, when presented with the actual document, an observer can easily confirm its authenticity by hashing the document and comparing it with the hash in the smart contract.
 

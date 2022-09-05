@@ -34,13 +34,15 @@ Public networks are implemented in the way blockchain technology was originally 
 
 <HighlightBox type="info">
 
-The significance of network scale in protecting blockchains against bad actors will be explored [later in this course](ADD LINK TO CH2-SEC3).
+Historically, public networks have been synonymous with the Proof-of-Work (PoW) consensus model, which underpinned Bitcoin and the many blockchain-based projects which followed it. However, the monopoly of this approach is now challenged by a variety of alternative methodologies, [as will be discussed in a later section](ADD LINK TO CH2-SEC2).
+
+The significance of network scale in protecting blockchains against bad actors [will also be explored later](ADD LINK TO CH2-SEC3).
 
 </HighlightBox>
 
 ### Managed networks
 
-Private or "managed" networks also rely on blockchain data structures. However, unlike public networks, for a managed network *Byzantine Fault Tolerance* (BFT) is not a critical factor to be solved. A public network encourages an emergent, anonymous hierarchy to temporarily arise within an unpredictable ecosystem. Managed networks, on the other hand, are predictable environments that maintain some traditional elements of authority and accountability.
+Private or "managed" networks also rely on blockchain data structures. However, while solving misbehaving nodes is always important for a stable network, in managed networks Byzantine Fault Tolerance (BFT) is less of a critical factor to be solved. A public network encourages an emergent, anonymous hierarchy to temporarily arise within an unpredictable ecosystem. Managed networks, on the other hand, are predictable environments that maintain some traditional elements of authority and accountability.
 
 Managed networks also differ from public ones in that they retain the necessity for some degree of trust, so their most logical use cases are where trust already exists between the participants. A hypothetical example might be a network between financial institutions used to settle inter-bank transactions, for which public access would be not just unnecessary but undesirable. Each institution could operate one validator and no single node would be able to corrupt the network's ledger. However, if systemic revisions to the history were required, such work would represent a coordinated action by a small number of known, trusted actors.
 
