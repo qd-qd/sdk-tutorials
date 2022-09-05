@@ -1,36 +1,73 @@
 <template lang="pug">
     .content
-        h1.tm-title.tm-lh-title.tm-rf6.tm-bold Developer Portal
+        //- h1.tm-title.tm-lh-title.tm-rf6.tm-bold Developer Portal
         a(href="/academy/0-welcome")
             card.mt-9(imageUrl="/graphics-sdk-course.png")
-                .tm-overline.tm-rf-1.tm-lh-title.tm-medium.tm-muted beginner
-                h2.mt-1 Cosmos Academy
+                .tm-overline.tm-rf-1.tm-lh-title.tm-medium.tm-muted begin your cosmos journey
+                h2.mt-1 Developer Portal
                 //- .info-label.tm-lh-title.tm-rf-1.tm-muted ~126 Hours
 
-                .content__intro__desc.tm-measure-narrow.tm-lh-copy.tm-muted Want to discover how to use the Cosmos SDK to build application-specific blockchains? Take your first steps in the Cosmos universe with a look into this complete and comprehensive course.
+                .content__intro__desc.tm-measure-narrow.tm-lh-copy.tm-muted Cosmos is a network of interoperable blockchains built on BFT consensus. <br/><br/> The ever-expanding ecosystem provides an SDK, tokens, wallets, applications, and services. Discover the Cosmos SDK to develop application-specific blockchains. <br/><br/> Ready to begin your journey?
                 a(href="/academy/0-welcome").tm-button.mt-7.mb-5.tm-button-disclosure
-                    span Start learning
+                    span Start course
 
         .home__content__overview(v-if="$frontmatter.overview" id="overview")
             h2.home__content__overview__title {{$frontmatter.overview.title}}
             .home__content__overview__content(v-if="$frontmatter.overview.items")
                 tm-faq.home__content__overview__content__item(v-for="item in $frontmatter.overview.items" :title="item.title" :description="item.description")
 
+        .home__content__intro(v-if="$frontmatter.intro" v-for="intro in $frontmatter.intro").mb-8
+            .home__content__intro__content(:class="intro.image ? 'home__content__intro__content__small' : ''")
+                .tm-overline.tm-rf-1.tm-lh-title.tm-medium.tm-muted(v-if="intro.overline") {{intro.overline}}
+                h2.home__content__intro__content__title {{intro.title}}
+                .home__content__intro__content__desc(v-html="intro.description" :class="intro.image ? 'tm-measure-narrower' : ''")
+                a.tm-button.tm-button-disclosure.mt-7(v-if="intro.action" :href="intro.action.url")
+                    span {{intro.action.label}}
+            .home__content__intro__image(v-if="intro.image")
+                tm-image(:src="intro.image")
+
         .tags
-            .tags__description Start with the first chapter, or select one or more tags.
-            .tags__list
-                .tags__wrapper(v-for="tag in $themeConfig.tags")
-                    .tags__list__item(v-bind:style="{'background': tag.color || ''}") {{tag.label || ''}}
+            .tags__description You aren't sure where to start? Take a look at all there is to dive in! <br/><br/> Start with the first chapter, or select one or more tags.
+            .tags__list.mt-8
+                .tags__wrapper(v-for="(tag, key) in $themeConfig.tags")
+                    .tags__list__item(v-bind:style="{'background': tag.color || ''}" @click="updateFilterTags(key)" :class="{'tags__list__item__selected': isTagSelected(key)}") {{tag.label || ''}}
 
 
-        .cards(v-if="$frontmatter.cardsLinks")
-            .cards__wrapper(v-for="card in $frontmatter.cardsLinks")
-                card-links.cards__item(
-                    :image="card.image" 
-                    :title="card.title" 
-                    :description="card.description" 
-                    :tag="card.tag || null"
-                    :links="card.links")
+        .modules-intro__wrapper.mt-10.mb-6
+            h3 Introduction to Cosmos
+            .cards(v-if="$frontmatter.modulesIntroduction")
+                .cards__wrapper(v-for="card in $frontmatter.modulesIntroduction")
+                    card-links.cards__item(
+                        :image="card.image" 
+                        :title="card.title" 
+                        :description="card.description" 
+                        :tag="card.tag || null"
+                        :links="card.links")
+
+        .tutorials__wrapper
+            h3 Tutorials
+            .tutorials__description.mt-6 Getting started
+            .cards(v-if="$frontmatter.tutorials")
+                .cards__wrapper(v-for="card in $frontmatter.tutorials")
+                    card-links.cards__item(
+                        :image="card.image" 
+                        :title="card.title" 
+                        :description="card.description" 
+                        :tag="card.tag || null"
+                        :links="card.links")
+
+        .exercises__wrapper
+            h3 Hands-on exercise
+            .exercises__description.mt-6 From zero to hero <br/> Work with the full Cosmo stack while developing a checkers game blockchain
+            .cards(v-if="$frontmatter.exercises")
+                .cards__wrapper(v-for="card in $frontmatter.exercises")
+                    card-links.cards__item(
+                        :image="card.image" 
+                        :title="card.title" 
+                        :description="card.description" 
+                        :tag="card.tag || null"
+                        :links="card.links")
+
         //- .tutorials__wrapper.mt-10
         //-     h3.tm-title.tm-lh-title.tm-rf3.tm-bold Tutorials
         //-     .tutorials
@@ -86,6 +123,19 @@
 </template>
 
 <style lang="stylus" scoped>
+    .border-top
+        
+        
+    .tutorials__wrapper
+        padding-top var(--spacing-10)
+        padding-bottom var(--spacing-6)
+        border-top 1px solid var(--semi-transparent-color-2)
+
+    .exercises__wrapper
+        padding-top var(--spacing-10)
+        padding-bottom var(--spacing-6)
+        border-top 1px solid var(--semi-transparent-color-2)
+
     .home
         &__content
             max-width var(--content-max-width-big)
@@ -107,6 +157,42 @@
                         &:first-child
                             padding-top 0px
 
+            &__intro
+                display flex
+                align-items center
+                margin-top 96px
+
+                &__image
+                    margin-left 16px
+                    margin-right calc(50% - 50vw)
+                    width 50%
+
+                &__content
+                    width 100%
+
+                    &__small
+                        width 50%
+
+                    &__desc
+                        margin-top 20px
+                        font-size 21px
+
+                    &__link
+                        display flex
+                        font-weight 500
+                        color var(--background-color-primary)
+                        margin-top 32px
+                        background var(--color-text)
+                        border-radius 10px
+                        padding-block 20px
+                        padding-inline 60px
+                        width fit-content
+
+                        &__icon
+                            margin-left 5px
+                            width 10px
+                            height 10px
+
     .cards
         display flex
         justify-content space-between
@@ -123,19 +209,30 @@
             &__wrapper
                 max-width none  
 
-    .tags__list
-        margin-top 1rem
-        display flex
+    .tags
+        &__description
+            font-size 21px
+            
+        &__list
+            display flex
+            flex-wrap wrap
 
-        &__item
-            cursor pointer
-            border-radius 8px
-            padding 8px
-            flex-shrink 0
-            height fit-content
-            margin-left 1rem
-            margin-block auto
-            color white
+            &__item
+                cursor pointer
+                border-radius 8px
+                padding 8px
+                flex-shrink 0
+                height fit-content
+                margin-right 1rem
+                margin-block auto
+                color white
+                opacity .6
+
+                &:hover,
+                &:active,
+                &__selected
+                    opacity 1
+
 
     .content
         margin-top var(--spacing-9)
@@ -168,49 +265,8 @@
                 margin-top 20px
 
     .tutorials
-        display flex
-
-        @media screen and (max-width: 480px)
-            flex-direction column
-
-        &__item
-            &__small
-                width 25.8vw
-                flex-grow 0
-
-                .card
-                    margin-top 32px
-
-                @media screen and (min-width: 481px) and (max-width: 1024px)
-                    width 50%
-                    margin-right: 16px
-
-                @media screen and (max-width: 480px)
-                    width 100%
-
-            &__large
-                flex-grow 1
-                border-radius 20px
-                background-color var(--background-color-secondary)
-                background-repeat no-repeat
-                background-position right
-                background-size cover
-                padding 48px
-                margin-left: 32px
-                display flex
-                flex-direction column
-                justify-content end
-                margin-top 32px
-
-                @media screen and (min-width: 481px) and (max-width: 1024px)
-                    width 50%
-                    margin-left: 16px
-
-                @media screen and (max-width: 480px)
-                    width 100%
-                    margin-left: 0px
-                    padding 24px
-                    padding-top 192px
+        &__description
+            font-size 21px
 
     .tools
         display flex
@@ -346,9 +402,6 @@
     .tools__wrapper
         margin-top 96px
 
-    .tutorials__wrapper
-        margin-top 96px
-
     .support
         &__card
             background-position right bottom !important
@@ -371,9 +424,6 @@
         .tools__wrapper
             margin-top 64px
 
-        .tutorials__wrapper
-            margin-top 64px
-
         .support__wrapper
             margin-block 64px
 
@@ -385,3 +435,28 @@
             width 100%
 
 </style>
+
+<script>
+export default {
+    data() {
+        return {
+            filterTags: []
+        }
+    },
+    methods: {
+        updateFilterTags(tag) {
+            if (this.isTagSelected(tag)) {
+                const index = this.filterTags.indexOf(tag);
+                if (index > -1) {
+                    this.filterTags.splice(index, 1);
+                }
+            } else {
+                this.filterTags.push(tag);
+            }
+        },
+        isTagSelected(tag) {
+            return this.filterTags?.includes(tag) || false;
+        }
+    }
+}
+</script>

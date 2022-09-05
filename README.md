@@ -1,6 +1,17 @@
 <!--
 layout: LandingPage
-tutorials:
+intro:
+  - overline: Developer course
+    title: Cosmos Academy
+    description: |
+      Want to discover how to use the Cosmos SDK to build application-specific blockchains?<br/><br/>
+      Take your first steps in the Cosmos universe with a look into this complete and comprehensive course.
+    action:
+      label: What is Cosmos
+      url: /academy/1-what-is-cosmos/index.html
+    secondtext: |
+      This is a beta version of the Developer Portal that will help you take your first steps with the Cosmos SDK.
+      <br>We would be grateful for your feedback. At the end of each are three icons to rate the page and a small box where you can give us feedback about things to improve. Enjoy your journey through the portal and good luck with the HackAtom!
 overview:
   title: Welcome to the Cosmos Ecosystem!
   items:
@@ -18,15 +29,19 @@ overview:
       description: |
         With the fast-track, you will gain a solid understanding of Cosmos and its SDK. This might be a matter of just an hour or two. The time you spend on the deep dive depends on you – there are endless possibilities to discover. <br/><br/>
         Welcome to the cosmos!
-cardsLinks:
-  - image: /cosmos_dev_portal_module-03-lp.png
-    title: CosmJS developers
-    description: |
-      Get a fast overview of
-    tag: deep-dive
-    links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
+modulesIntroduction:
   - image: /cosmos_dev_portal_module-02-lp.png
-    title: CosmJS developers 2
+    title: What is Cosmos?
+    description: |
+      Get a fast overview of:
+    links: ['/academy/1-what-is-cosmos/blockchain-and-cosmos.html', '/academy/1-what-is-cosmos/cosmos-ecosystem.html', '/academy/1-what-is-cosmos/atom-staking.html']
+  - image: /cosmos_dev_portal_module-02-lp.png
+    title: Cosmos Concepts
+    description: |
+      Deep dive
+    links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
+  - image: /cosmos_dev_portal_module-02-lp.png
+    title: Introduction to IBC
     description: |
       Deep dive
     links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
@@ -93,6 +108,68 @@ articles:
     time: 9
     url: https://bisontrails.co/ibc-protocol
     image: /article-03.jpg
+tutorials:
+  - image: /cosmos_dev_portal_module-02-lp.png
+    title: Cosmos Concepts
+    description: |
+      Deep dive
+    links: ['/academy/2-main-concepts/']
+  - image: /cosmos_dev_portal_module-02-lp.png
+    title: Cosmos Concepts
+    description: |
+      Deep dive
+    links: ['/academy/2-main-concepts/']
+  - image: /cosmos_dev_portal_module-02-lp.png
+    title: Cosmos Concepts
+    description: |
+      Deep dive
+    links: ['/academy/2-main-concepts/']
+  - image: /cosmos_dev_portal_module-02-lp.png
+    title: Cosmos Concepts
+    description: |
+      Deep dive
+    links: ['/academy/2-main-concepts/']
+  - image: /cosmos_dev_portal_module-02-lp.png
+    title: Cosmos Concepts
+    description: |
+      Deep dive
+    links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
+  - image: /cosmos_dev_portal_module-02-lp.png
+    title: Cosmos Concepts
+    description: |
+      Deep dive
+    links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
+  - image: /cosmos_dev_portal_module-02-lp.png
+    title: Cosmos Concepts
+    description: |
+      Deep dive
+    links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
+exercises:
+  - image: /cosmos_dev_portal_module-02-lp.png
+    title: Cosmos Concepts
+    description: |
+      Deep dive
+    links: ['/academy/2-main-concepts/']
+  - image: /cosmos_dev_portal_module-02-lp.png
+    title: Cosmos Concepts
+    description: |
+      Deep dive
+    links: ['/academy/2-main-concepts/']
+  - image: /cosmos_dev_portal_module-02-lp.png
+    title: Cosmos Concepts
+    description: |
+      Deep dive
+    links: ['/academy/2-main-concepts/']
+  - image: /cosmos_dev_portal_module-02-lp.png
+    title: Cosmos Concepts
+    description: |
+      Deep dive
+    links: ['/academy/2-main-concepts/']
+  - image: /cosmos_dev_portal_module-02-lp.png
+    title: Cosmos Concepts
+    description: |
+      Deep dive
+    links: ['/academy/2-main-concepts/']
 -->
 
 This repo contains the code and content for the published [Cosmos SDK Tutorials](https://tutorials.cosmos.network/).
