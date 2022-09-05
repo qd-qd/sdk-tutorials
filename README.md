@@ -35,12 +35,12 @@ modulesIntroduction:
     description: |
       Get a fast overview of:
     links: ['/academy/1-what-is-cosmos/blockchain-and-cosmos.html', '/academy/1-what-is-cosmos/cosmos-ecosystem.html', '/academy/1-what-is-cosmos/atom-staking.html']
-  - image: /cosmos_dev_portal_module-02-lp.png
+  - image: /cosmos_dev_portal_module-03-lp.png
     title: Cosmos Concepts
     description: |
       Deep dive
     links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
-  - image: /cosmos_dev_portal_module-02-lp.png
+  - image: /cosmos_dev_portal_module-04-lp.png
     title: Introduction to IBC
     description: |
       Deep dive
@@ -109,38 +109,38 @@ articles:
     url: https://bisontrails.co/ibc-protocol
     image: /article-03.jpg
 tutorials:
-  - image: /cosmos_dev_portal_module-02-lp.png
+  - image: /cosmos_dev_portal_module-05-lp.png
+    title: Cosmos Concepts
+    description: |
+      Deep dive
+    links: ['/academy/2-main-concepts/']
+  - image: /cosmos_dev_portal_module-04-lp.png
+    title: IBC developers
+    description: |
+      Deep dive
+    links: ['/academy/2-main-concepts/']
+  - image: /cosmos_dev_portal_module-03-lp.png
+    title: Cosmos Concepts
+    description: |
+      Deep dive
+    links: ['/academy/2-main-concepts/']
+  - image: /cosmos_dev_portal_module-05-lp.png
     title: Cosmos Concepts
     description: |
       Deep dive
     links: ['/academy/2-main-concepts/']
   - image: /cosmos_dev_portal_module-02-lp.png
-    title: Cosmos Concepts
+    title: Introduction to CosmJS
     description: |
       Deep dive
-    links: ['/academy/2-main-concepts/']
-  - image: /cosmos_dev_portal_module-02-lp.png
-    title: Cosmos Concepts
-    description: |
-      Deep dive
-    links: ['/academy/2-main-concepts/']
-  - image: /cosmos_dev_portal_module-02-lp.png
-    title: Cosmos Concepts
-    description: |
-      Deep dive
-    links: ['/academy/2-main-concepts/']
-  - image: /cosmos_dev_portal_module-02-lp.png
+    links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
+  - image: /cosmos_dev_portal_module-03-lp.png
     title: Cosmos Concepts
     description: |
       Deep dive
     links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
-  - image: /cosmos_dev_portal_module-02-lp.png
-    title: Cosmos Concepts
-    description: |
-      Deep dive
-    links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
-  - image: /cosmos_dev_portal_module-02-lp.png
-    title: Cosmos Concepts
+  - image: /cosmos_dev_portal_whats_next.png
+    title: Understand SDK modules
     description: |
       Deep dive
     links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
@@ -151,12 +151,12 @@ exercises:
       Deep dive
     links: ['/academy/2-main-concepts/']
   - image: /cosmos_dev_portal_module-02-lp.png
-    title: Cosmos Concepts
+    title: Run in Production
     description: |
       Deep dive
     links: ['/academy/2-main-concepts/']
   - image: /cosmos_dev_portal_module-02-lp.png
-    title: Cosmos Concepts
+    title: Run in Production
     description: |
       Deep dive
     links: ['/academy/2-main-concepts/']

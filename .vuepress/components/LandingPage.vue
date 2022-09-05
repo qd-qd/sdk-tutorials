@@ -33,7 +33,7 @@
                     .tags__list__item(v-bind:style="{'background': tag.color || ''}" @click="updateFilterTags(key)" :class="{'tags__list__item__selected': isTagSelected(key)}") {{tag.label || ''}}
 
 
-        .modules-intro__wrapper.mt-10.mb-6
+        .modules-intro__wrapper.mt-10.mb-10
             h3 Introduction to Cosmos
             .cards(v-if="$frontmatter.modulesIntroduction")
                 .cards__wrapper(v-for="card in $frontmatter.modulesIntroduction")
@@ -123,17 +123,15 @@
 </template>
 
 <style lang="stylus" scoped>
-    .border-top
-        
-        
+
     .tutorials__wrapper
         padding-top var(--spacing-10)
-        padding-bottom var(--spacing-6)
+        margin-bottom var(--spacing-10)
         border-top 1px solid var(--semi-transparent-color-2)
 
     .exercises__wrapper
         padding-top var(--spacing-10)
-        padding-bottom var(--spacing-6)
+        margin-bottom var(--spacing-10)
         border-top 1px solid var(--semi-transparent-color-2)
 
     .home
@@ -200,11 +198,13 @@
 
         &__wrapper
             max-width 48%
-            margin-top 3rem
+            margin-top var(--spacing-8)
             flex-grow 1
+            width 100%
 
         @media screen and (max-width: 1024px)
             flex-direction column
+            flex-wrap nowrap
             
             &__wrapper
                 max-width none  
