@@ -75,7 +75,7 @@ The applications for ring signatures face limitations of scale, as large sets of
 
 You have already seen [examples of potential use cases](ADD LINK TO CH1-MOD5 HERE) for blockchain applications that move out of purely financial fields, for example, government services or healthcare information. How would that work on a practical level though? Would you feel comfortable having your medical records held on a distributed network?
 
-In practice, this would never happen. Storage space on a blockchain is costly, so it would not be economically sound to house vast numbers of detailed official documents in this way. In fact, even if such sensitive data was encrypted it would be a very bad idea to include it on a public network. Future developments in technology, be it the fabled quantum computer or merely much faster conventional computers, mean the security value of any contemporary encryption will fade over time. Far better is to deny direct access to the actual data at all. 
+In practice, this would never happen. Storage space on a blockchain is costly, so it would not be economically sound to house vast numbers of detailed official documents in this way. In fact, even if such sensitive data was encrypted it would be a very bad idea to include it on a public network. Developments in technology, be it the fabled quantum computer or merely much faster conventional computers, mean the security value of any contemporary encryption will fade over time. Even if valuable data was later removed, a malevolent actor could easily have made copies beforehand, anticipating the ability to unlock its encryption in the future. Far better is to prevent any direct access to the actual data in the first place. 
 
 However, there are practical alternatives to on-chain storage in a literal sense. A common solution utilizes [hashing](ADD LINK HERE) and [smart contracts](ADD LINK HERE): instead of the blockchain holding a copy of some actual documentation, it holds its *hash* in a smart contract, with the actual document (for example, your driver's license) stored off-chain.
 
@@ -108,25 +108,27 @@ Imagine again that you are required to provide proof of your date of birth. You 
 
 The Merkle tree of your passport document could look something like this:
 
-![A Merkle tree](/onboarding/chapter-2/images/MerkleData1.png)
+![A Merkle tree](/onboarding/chapter-2/images/MerkleDataV2.png)
 
 The "leaf" nodes at the bottom tier only contain hashes. Each piece of original data is **not** included on the chain, and because a hash cannot be reversed to reveal the data it encrypts, the actual information on your passport is not made public in any way.
 
-These hashes are combined in pairs on the next tier up, and these nodes are then hashed in turn. You will recognize similarities to how a basic blockchain structure functions, except here each of these "non-leaf nodes" contain the hashes of exactly two nodes below. This procedure is repeated until you reach the "root" node of the Merkle tree. The hash of the root node, therefore, includes the hashes of all of its child nodes, right down to the leaves.
+These hashes are combined in pairs on the next tier up, and these nodes are then hashed in turn. You will recognize similarities to how a basic blockchain structure functions, except here each of these "non-leaf nodes" contain the hashes of exactly two nodes below. This procedure is repeated until you reach the "root" node of the Merkle tree.
 
-There may of course be much more information than this on a passport – a record of places you have traveled to and when, for example. You could certainly use this document to prove your date of birth, but you may not wish to share *any* of this additional data when you do. A **Merkle proof** allows this.
+The hash of the root node, therefore, includes the hashes of all of its child nodes, right down to the leaves. This **Merkle Root** is in fact the only piece of data residing on the blockchain.
+
+There may of course be much more information than this personal data on a passport – a record of places you have traveled to and when, for example. You could certainly use this document to prove your date of birth, but you may not wish to share *any* of this additional data when you do. A **Merkle proof** allows this.
 
 ### Controlling data exposure with a Merkle proof
 
-How do you use this Merkle tree to prove your date of birth? A **Merkle proof** is a procedure by which a single "known" element of the tree can be shown in relation to the many "unknown" elements, such that confirming the integrity of the tree as a whole proves the validity of the known element.
+How do you use this Merkle tree to prove your date of birth? A **Merkle proof** is a procedure by which a single "known" element of the tree can be shown in relation to the many "unknown" elements, such that verifying the integrity of the tree as a whole proves the validity of the known element.
 
-1. First, you simply *tell* the requestor of information your date of birth. They do not yet have reason to accept this information as true.
-2. Next, you provide access to your trusted documentation tree, which reveals only a coherent hierarchy of undifferentiated hashes.
-3. Finally, you identify the leaf node which contains the hash of your date of birth:
+1. First, you simply *tell* the verifier (the entity requesting information) your date of birth. They do not yet have reason to accept this information as true.
+2. Next, you provide access to the smart contract of your trusted documentation, and the verifier asks the issuing authority to identify the leaf node in the Merkle tree representing the requested information.
+3. Finally, you provide the verifier with a coherent hierarchy of node hashes sufficient to connect the leaf node holding your date of birth hash with the Merkle Root:
 
-![A Merkle proof](/onboarding/chapter-2/images/MerkleData2.png)
+![A Merkle proof](/onboarding/chapter-2/images/MerkleDataHighlightedV2.png)
 
-With this information, the requestor can easily generate their own hash of your date of birth and test it against the accumulated hash values of the Merkle tree. If there is no discrepancy, this confirms that the date of birth you provided does indeed correspond to the leaf node. If the passport Merkle tree was uploaded by an impeccable real-world authority, your assertion can be trusted – all without revealing any further information than you intended.
+With this information, the requestor can easily generate their own hash of your date of birth and test it against the accumulated hash values of the Merkle tree. If there is no discrepancy, this confirms that the date of birth you provided does indeed correspond to the leaf node. If the passport Merkle tree was uploaded by an impeccable real-world authority, your assertion can be trusted – all without revealing any further information than that which you intended.
 
 ## Further learning
 
