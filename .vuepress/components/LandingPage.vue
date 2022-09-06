@@ -35,7 +35,7 @@
 
 
             .modules-intro__wrapper.mt-10.mb-10(v-if="$frontmatter.modulesIntroduction && $frontmatter.modulesIntroduction.sections")
-                h3 Introduction to Cosmos
+                h3(v-if="$frontmatter.modulesIntroduction.subtitle") {{$frontmatter.modulesIntroduction.subtitle}}
                 .cards
                     .cards__wrapper(v-for="card in $frontmatter.modulesIntroduction.sections")
                         card-links.cards__item(
