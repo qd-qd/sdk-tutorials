@@ -1,21 +1,6 @@
 <template lang="pug">
     .content
         //- h1.tm-title.tm-lh-title.tm-rf6.tm-bold Developer Portal
-        a(href="/academy/0-welcome")
-            card.mt-9(imageUrl="/graphics-sdk-course.png")
-                .tm-overline.tm-rf-1.tm-lh-title.tm-medium.tm-muted begin your cosmos journey
-                h2.mt-1 Developer Portal
-                //- .info-label.tm-lh-title.tm-rf-1.tm-muted ~126 Hours
-
-                .content__intro__desc.tm-measure-narrow.tm-lh-copy.tm-muted Cosmos is a network of interoperable blockchains built on BFT consensus. <br/><br/> The ever-expanding ecosystem provides an SDK, tokens, wallets, applications, and services. Discover the Cosmos SDK to develop application-specific blockchains. <br/><br/> Ready to begin your journey?
-                a(href="/academy/0-welcome").tm-button.mt-7.mb-5.tm-button-disclosure
-                    span Start course
-
-        .home__content__overview(v-if="$frontmatter.overview" id="overview")
-            h2.home__content__overview__title {{$frontmatter.overview.title}}
-            .home__content__overview__content(v-if="$frontmatter.overview.items")
-                tm-faq.home__content__overview__content__item(v-for="item in $frontmatter.overview.items" :title="item.title" :description="item.description")
-
         .home__content__intro(v-if="$frontmatter.intro" v-for="intro in $frontmatter.intro").mb-8
             .home__content__intro__content(:class="intro.image ? 'home__content__intro__content__small' : ''")
                 .tm-overline.tm-rf-1.tm-lh-title.tm-medium.tm-muted(v-if="intro.overline") {{intro.overline}}
@@ -26,23 +11,39 @@
             .home__content__intro__image(v-if="intro.image")
                 tm-image(:src="intro.image")
 
-        .tags
-            .tags__description You aren't sure where to start? Take a look at all there is to dive in! <br/><br/> Start with the first chapter, or select one or more tags.
-            .tags__list.mt-8
-                .tags__wrapper(v-for="(tag, key) in $themeConfig.tags")
-                    .tags__list__item(v-bind:style="{'background': tag.color || ''}" @click="updateFilterTags(key)" :class="{'tags__list__item__selected': isTagSelected(key)}") {{tag.label || ''}}
+        .home__content__overview(v-if="$frontmatter.overview" id="overview")
+            h2.home__content__overview__title {{$frontmatter.overview.title}}
+            .home__content__overview__content(v-if="$frontmatter.overview.items")
+                tm-faq.home__content__overview__content__item(v-for="item in $frontmatter.overview.items" :title="item.title" :description="item.description")
+
+        .modules-introduction(v-if="$frontmatter.modulesIntroduction")
+            .home__content__intro(v-if="$frontmatter.modulesIntroduction").mb-8
+                .home__content__intro__content(:class="$frontmatter.modulesIntroduction.image ? 'home__content__intro__content__small' : ''")
+                    .tm-overline.tm-rf-1.tm-lh-title.tm-medium.tm-muted(v-if="$frontmatter.modulesIntroduction.overline") {{$frontmatter.modulesIntroduction.overline}}
+                    h2.home__content__intro__content__title {{$frontmatter.modulesIntroduction.title}}
+                    .home__content__intro__content__desc(v-html="$frontmatter.modulesIntroduction.description" :class="$frontmatter.modulesIntroduction.image ? 'tm-measure-narrower' : ''")
+                    a.tm-button.tm-button-disclosure.mt-7(v-if="$frontmatter.modulesIntroduction.action" :href="$frontmatter.modulesIntroduction.action.url")
+                        span {{$frontmatter.modulesIntroduction.action.label}}
+                .home__content__intro__image(v-if="$frontmatter.modulesIntroduction.image")
+                    tm-image(:src="$frontmatter.modulesIntroduction.image")
+
+            .tags
+                .tags__description You aren't sure where to start? Take a look at all there is to dive in! <br/><br/> Start with the first chapter, or select one or more tags.
+                .tags__list.mt-8
+                    .tags__wrapper(v-for="(tag, key) in $themeConfig.tags")
+                        .tags__list__item(v-bind:style="{'background': tag.color || ''}" @click="updateFilterTags(key)" :class="{'tags__list__item__selected': isTagSelected(key)}") {{tag.label || ''}}
 
 
-        .modules-intro__wrapper.mt-10.mb-10
-            h3 Introduction to Cosmos
-            .cards(v-if="$frontmatter.modulesIntroduction")
-                .cards__wrapper(v-for="card in $frontmatter.modulesIntroduction")
-                    card-links.cards__item(
-                        :image="card.image" 
-                        :title="card.title" 
-                        :description="card.description" 
-                        :tag="card.tag || null"
-                        :links="card.links")
+            .modules-intro__wrapper.mt-10.mb-10
+                h3 Introduction to Cosmos
+                .cards(v-if="$frontmatter.modulesIntroduction && $frontmatter.modulesIntroduction.sections")
+                    .cards__wrapper(v-for="card in $frontmatter.modulesIntroduction.sections")
+                        card-links.cards__item(
+                            :image="card.image" 
+                            :title="card.title" 
+                            :description="card.description" 
+                            :tag="card.tag || null"
+                            :links="card.links")
 
         .tutorials__wrapper
             h3 Tutorials
