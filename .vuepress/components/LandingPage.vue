@@ -27,16 +27,16 @@
                 .home__content__intro__image(v-if="$frontmatter.modulesIntroduction.image")
                     tm-image(:src="$frontmatter.modulesIntroduction.image")
 
-            .tags
+            .tags(v-if="$frontmatter.modulesIntroduction.filterByTagEnabled")
                 .tags__description You aren't sure where to start? Take a look at all there is to dive in! <br/><br/> Start with the first chapter, or select one or more tags.
                 .tags__list.mt-8
                     .tags__wrapper(v-for="(tag, key) in $themeConfig.tags")
                         .tags__list__item(v-bind:style="{'background': tag.color || ''}" @click="updateFilterTags(key)" :class="{'tags__list__item__selected': isTagSelected(key)}") {{tag.label || ''}}
 
 
-            .modules-intro__wrapper.mt-10.mb-10
+            .modules-intro__wrapper.mt-10.mb-10(v-if="$frontmatter.modulesIntroduction && $frontmatter.modulesIntroduction.sections")
                 h3 Introduction to Cosmos
-                .cards(v-if="$frontmatter.modulesIntroduction && $frontmatter.modulesIntroduction.sections")
+                .cards
                     .cards__wrapper(v-for="card in $frontmatter.modulesIntroduction.sections")
                         card-links.cards__item(
                             :image="card.image" 
@@ -45,10 +45,10 @@
                             :tag="card.tag || null"
                             :links="card.links")
 
-        .tutorials__wrapper
+        .tutorials__wrapper(v-if="$frontmatter.tutorials")
             h3 Tutorials
             .tutorials__description.mt-6 Getting started
-            .cards(v-if="$frontmatter.tutorials")
+            .cards
                 .cards__wrapper(v-for="card in $frontmatter.tutorials")
                     card-links.cards__item(
                         :image="card.image" 
@@ -57,10 +57,10 @@
                         :tag="card.tag || null"
                         :links="card.links")
 
-        .exercises__wrapper
+        .exercises__wrapper(v-if="$frontmatter.exercises")
             h3 Hands-on exercise
             .exercises__description.mt-6 From zero to hero <br/> Work with the full Cosmo stack while developing a checkers game blockchain
-            .cards(v-if="$frontmatter.exercises")
+            .cards
                 .cards__wrapper(v-for="card in $frontmatter.exercises")
                     card-links.cards__item(
                         :image="card.image" 
@@ -99,7 +99,7 @@
         //-                     h4.articles__item__content__title.mx-5 {{article.title}}
         //-                     .info-label.articles__item__content__time.tm-rf-1.tm-muted.tm-lh-title {{article.time}} minute read
 
-        .tools__wrapper.mt-10
+        .tools__wrapper.mt-10(v-if="$frontmatter.tools")
             h3.tm-title.tm-lh-title.tm-rf3.tm-bold Tools
             .tools.mt-8
                 .tools__item(v-for="tool in $frontmatter.tools")
