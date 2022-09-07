@@ -15,64 +15,80 @@ intro:
 overview:
   title: Important program information
   items:
-    - title: Is this course for me?
+    - title: Timeline and deadlines
       description: |
         This course offers an overview of the Cosmos SDK, as well as examples and exercises to help developers get a quick start.
-    - title: How should I go through this course?
+    - title: What you'll learn
       description: |
         This course unfolds the Cosmos universe, beginning with a big picture perspective and getting into how to create your own application-specific blockchain with the Cosmos SDK.<br/>
         You can follow two tracks: The fast track and the deep dive. The fast track gives you a solid overview of the Cosmos SDK, its components, and dApps in Cosmos. The deep dive takes you through hands-on exercises to put theory into practice – showcasing how to address application concerns when developing such as managing gas fees and cross-chain communication, working with Ignite CLI, running a node, and understanding CosmWasm. All sections are tagged accordingly as “Fast track” or “Deep dive”. A look into all chapters is recommended as a basic understanding helps when things get tricky.
-    - title: What do I need?
+    - title: How to get the most out of the Academy
       description: |
         For the fast track, you should have a solid understanding of blockchain technology and be familiar with decentralized applications. The deep dives are specially designed for experienced developers.
-    - title: How long does it take me?
+    - title: How much time do I need to dedicate to the Academy?
       description: |
         With the fast-track, you will gain a solid understanding of Cosmos and its SDK. This might be a matter of just an hour or two. The time you spend on the deep dive depends on you – there are endless possibilities to discover. <br/><br/>
         Welcome to the cosmos!
+    - title: What support will I get in the Academy?
+      description: |
+        With the fast-track, you will gain a solid understanding of Cosmos and its SDK. This might be a matter of just an hour or two. The time you spend on the deep dive depends on you – there are endless possibilities to discover. <br/><br/>
+        Welcome to the cosmos!
+    - title: How do I access Discord?
+      description: |
+        With the fast-track, you will gain a solid understanding of Cosmos and its SDK. This might be a matter of just an hour or two. The time you spend on the deep dive depends on you – there are endless possibilities to discover. <br/><br/>
+        Welcome to the cosmos!
+    - title: How do I get certified?
+      description: |
+        With the fast-track, you will gain a solid understanding of Cosmos and its SDK. This might be a matter of just an hour or two. The time you spend on the deep dive depends on you – there are endless possibilities to discover. <br/><br/>
+        Welcome to the cosmos!
+imageSection:
+  title: Important Dates
+  description:
+  image: /ida-timeline.svg
 modulesIntroduction:
   title: Weekly Plan
   description: |
     The Academy runs for 7 weeks. You can follow the weekly structure or decide to go your individual path - just make sure to be ready for the Final Exam after 7 weeks.
   sections:
     - image: /cosmos_dev_portal_module-02-lp.png
-      title: What is Cosmos?
+      title: Getting started
       description: |
-        Get a fast overview of:
+        This chapter is completely optional and a good introduction if you are new to blockchain technology or need a refresher on:
       links: ['/academy/1-what-is-cosmos/blockchain-and-cosmos.html', '/academy/1-what-is-cosmos/cosmos-ecosystem.html', '/academy/1-what-is-cosmos/atom-staking.html']
     - image: /cosmos_dev_portal_module-03-lp.png
-      title: Cosmos Concepts
+      title: Week 1 - Introduction to Cosmos
       description: |
-        Deep dive
+        You'll discover the Cosmos ecosystem and learn about the main concepts of the Cosmos SDK, from its Tendermint consensus to learning how keys, accounts, and transactions relate to each other. Dive into:
       links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
     - image: /cosmos_dev_portal_module-04-lp.png
-      title: Introduction to IBC
+      title: Week 2 - First Steps
       description: |
-        Deep dive
+        You'll discover how to run a node and learn how to build your own chain by following an example implementation of a checkers blockchain. Discover:
       links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
     - image: /cosmos_dev_portal_module-02-lp.png
-      title: What is Cosmos?
+      title: Week 3 - Introduction to IBC and CosmJS
       description: |
-        Get a fast overview of:
+        You'll dive into IBC to learn more about cross-chain communication and how to use CosmJS for your chain in the following sections:
       links: ['/academy/1-what-is-cosmos/blockchain-and-cosmos.html', '/academy/1-what-is-cosmos/cosmos-ecosystem.html', '/academy/1-what-is-cosmos/atom-staking.html']
     - image: /cosmos_dev_portal_module-03-lp.png
-      title: Cosmos Concepts
+      title: Week 4 - Ignite CLI and IBC Advanced
       description: |
-        Deep dive
+        You'll dive deeper into customizing the checkers blockchain to make your game more interesting and unique with Ignite, while also testing  and expanding your IBC knowledge to:
       links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
     - image: /cosmos_dev_portal_module-04-lp.png
-      title: Introduction to IBC
+      title: Week 5 - CosmJS Advanced
       description: |
-        Deep dive
+        You'll build on your previous work with CosmJS to implement a sound game GUI and a backend script that improves the user experience by:
       links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
     - image: /cosmos_dev_portal_module-02-lp.png
-      title: What is Cosmos?
+      title: Week 6 - IBC Advanced II
       description: |
-        Get a fast overview of:
+        You'll further deepen your knowledge of IBC by looking into
       links: ['/academy/1-what-is-cosmos/blockchain-and-cosmos.html', '/academy/1-what-is-cosmos/cosmos-ecosystem.html', '/academy/1-what-is-cosmos/atom-staking.html']
     - image: /cosmos_dev_portal_module-03-lp.png
-      title: Cosmos Concepts
+      title: Week 7 - Run in Production
       description: |
-        Deep dive
+        You'll build on your previous work for the checkers blockchain to adapt your blockchain to the demands of running in production:
       links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
 tools:
   - title: Cosmos SDK

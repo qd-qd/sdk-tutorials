@@ -69,6 +69,12 @@
                         :tag="card.tag || null"
                         :links="card.links")
 
+        .image-section__wrapper(v-if="$frontmatter.imageSection")
+            h2.image-section__title(v-if="$frontmatter.imageSection.title") {{$frontmatter.imageSection.title}}
+            .image-section__description.mt-8(v-if="$frontmatter.imageSection.description") {{$frontmatter.imageSection.description}}
+            .image-section__image.mt-8(v-if="$frontmatter.imageSection.image")
+                tm-image(:src="$frontmatter.imageSection.image")
+
         //- .tutorials__wrapper.mt-10
         //-     h3.tm-title.tm-lh-title.tm-rf3.tm-bold Tutorials
         //-     .tutorials
@@ -135,6 +141,11 @@
         margin-bottom var(--spacing-10)
         border-top 1px solid var(--semi-transparent-color-2)
 
+    .image-section__wrapper
+        padding-top var(--spacing-10)
+        margin-bottom var(--spacing-10)
+        border-top 1px solid var(--semi-transparent-color-2)
+
     .home
         &__content
             max-width var(--content-max-width-big)
@@ -191,6 +202,39 @@
                             margin-left 5px
                             width 10px
                             height 10px
+
+    @media screen and (max-width: 480px)
+        .home
+            &__content
+                &__intro
+                    flex-direction column-reverse
+
+                    &__content
+                        &__small
+                            width 100%
+
+                        &__link
+                            justify-content center
+                            width 100%
+
+                    &__image
+                        width 100%
+                        margin-inline calc(50% - 50vw)
+                        margin-bottom 32px
+
+                &__overview
+                    flex-direction column
+
+                    &__title
+                        width 100%
+                        margin-right 0
+
+                    &__content
+                        width 100%
+
+                        &__item
+                            &:first-child
+                                padding-top 32px
 
     .cards
         display flex
