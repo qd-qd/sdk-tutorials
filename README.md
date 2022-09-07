@@ -54,12 +54,12 @@ modulesIntroduction:
     - image: /cosmos_dev_portal_module-03-lp.png
       title: Cosmos Concepts
       description: |
-        Deep dive
+        This chapter includes an introduction to the main concepts underlying Cosmos SDK:
       links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
     - image: /cosmos_dev_portal_module-04-lp.png
       title: Introduction to IBC
       description: |
-        Deep dive
+        This chapter will give you an understanding of the Inter-Blockchain Communication Protocol including:
       links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
 tools:
   - title: Cosmos SDK
@@ -126,65 +126,65 @@ articles:
     image: /article-03.jpg
 tutorials:
   - image: /cosmos_dev_portal_module-05-lp.png
-    title: Cosmos Concepts
+    title: Good-to-know dev terms
     description: |
-      Deep dive
+      From gRPC to Protobuf - a brief overview of dev terms you encounter in the Cosmos Ecosystem.
     links: ['/academy/2-main-concepts/']
   - image: /cosmos_dev_portal_module-04-lp.png
-    title: IBC developers
+    title: Run a node, API, and CLI
     description: |
-      Deep dive
+      Take your first steps with simapp and get your first node for a Cosmos blockchain running.
     links: ['/academy/2-main-concepts/']
   - image: /cosmos_dev_portal_module-03-lp.png
-    title: Cosmos Concepts
+    title: Set up your work environment
     description: |
-      Deep dive
+      Find out what you should install on your machine to work with the Cosmos SDK and work on the hands-on exercises.
     links: ['/academy/2-main-concepts/']
   - image: /cosmos_dev_portal_module-05-lp.png
-    title: Cosmos Concepts
+    title: Golang introduction
     description: |
-      Deep dive
+      Take your first steps with Go to discover the basics, including a look at Go interfaces, structures, arrays, slices, and much more.
     links: ['/academy/2-main-concepts/']
   - image: /cosmos_dev_portal_module-02-lp.png
-    title: Introduction to CosmJS
+    title: IBC developers
     description: |
-      Deep dive
+      Want to become an IBC developer? Take a closer look at:
     links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
   - image: /cosmos_dev_portal_module-03-lp.png
-    title: Cosmos Concepts
+    title: Introduction to CosmJS
     description: |
-      Deep dive
+      Want to integrate frontend user interfaces and backend servers with you Cosmos chain? Take a closer look at:
     links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
   - image: /cosmos_dev_portal_whats_next.png
     title: Understand SDK modules
     description: |
-      Deep dive
+      Discover several tutorials on specific SDK modules:
     links: ['/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html', '/academy/2-main-concepts/', '/academy/0.0-B9lab-Blockchains/2_public.html']
 exercises:
   - image: /cosmos_dev_portal_module-02-lp.png
-    title: Cosmos Concepts
+    title: Ignite CLI - basics
     description: |
-      Deep dive
+      Get started with Ignite CLI and begin developing a checkers blockchain with custom messages, message handlers, and events. Make it possible to add a move and reject a game.
+    links: ['/academy/2-main-concepts/']
+  - image: /cosmos_dev_portal_module-02-lp.png
+    title: Ignite CLI - advanced
+    description: |
+      Continue developing your checkers blockchain with Ignite by ordering your games, including a game deadline and auto-expiring of games, recording the winners, allowing wagers, and introducing a leaderboard.
+    links: ['/academy/2-main-concepts/']
+  - image: /cosmos_dev_portal_module-02-lp.png
+    title: CosmJS - advanced
+    description: |
+      Apply your knowledge of CosmJS to the checkers blockchain exercise. You will create custom objects and messages, get an external GUI, integrating Keplr, and working on backend scripts for game indexing.
+    links: ['/academy/2-main-concepts/']
+  - image: /cosmos_dev_portal_module-02-lp.png
+    title: IBC - advanced
+    description: |
+      Test your IBC knowledge by developing your checkers blockchain further. Dive into relaying with IBC, and discover how to use the IBC token transfer module and write a custom IBC application.
     links: ['/academy/2-main-concepts/']
   - image: /cosmos_dev_portal_module-02-lp.png
     title: Run in Production
     description: |
-      Deep dive
-    links: ['/academy/2-main-concepts/']
-  - image: /cosmos_dev_portal_module-02-lp.png
-    title: Run in Production
-    description: |
-      Deep dive
-    links: ['/academy/2-main-concepts/']
-  - image: /cosmos_dev_portal_module-02-lp.png
-    title: Cosmos Concepts
-    description: |
-      Deep dive
-    links: ['/academy/2-main-concepts/']
-  - image: /cosmos_dev_portal_module-02-lp.png
-    title: Cosmos Concepts
-    description: |
-      Deep dive
+      Prepare your checkers blockchain to run in production - prepare the software, validator and keys, nodes, and migrations to run in production and interconnect your chain.
     links: ['/academy/2-main-concepts/']
 -->
 
