@@ -44,6 +44,12 @@ You should have received an email with a link to each session to be added to you
   
 </HighlightBox>
 
+<HighlightBox type="tip">
+  Find here the recording of the live session _Introduction to Cosmos_ with Billy Rennekamp, Product Lead for Cosmos Hub. 
+  <YoutubePlayer videoId="qzUgh8mvyJE"/>
+  
+  </HighlightBox>
+
 ## Next up
 
 Want to get started with the main concepts of the Cosmos SDK? Go ahead and begin with a look at [Blockchain Technology and Cosmos](academy/1-what-is-cosmos/1-blockchain-and-cosmos.md).
