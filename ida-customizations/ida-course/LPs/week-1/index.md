@@ -45,10 +45,11 @@ You should have received an email with a link to each session to be added to you
 </HighlightBox>
 
 <HighlightBox type="tip">
-  Find here the recording of the live session _Introduction to Cosmos_ with Billy Rennekamp, Product Lead for Cosmos Hub. 
+
+  Find here the recording of the live session _Introduction to Cosmos_ with Billy Rennekamp, Product Lead for Cosmos Hub.
   <YoutubePlayer videoId="qzUgh8mvyJE"/>
   
-  </HighlightBox>
+</HighlightBox>
 
 ## Next up
 
